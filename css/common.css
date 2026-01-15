@@ -1,0 +1,132 @@
+/* 기본 초기화 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body {
+    font-family: 'Noto Sans KR', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    word-break: keep-all;
+    overflow-x: hidden;
+}
+a { text-decoration: none; color: inherit; }
+ul { list-style: none; }
+.container { max-width: 1400px; margin: 0 auto; padding: 0 20px; }
+
+/* --- 헤더 공통 스타일 (투명 유지 및 색상 고정) --- */
+.header {
+    position: absolute;
+    top: 0; left: 0; width: 100%;
+    height: 100px;
+    z-index: 1000;
+    background: transparent !important;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    max-width: 1800px;
+    margin: 0 auto;
+    padding: 0 60px;
+    position: relative;
+    z-index: 100;
+}
+
+.logo { flex: 0 0 auto; }
+.logo img {
+    height: 45px;
+    width: auto;
+    filter: brightness(0) invert(1) !important; /* 항상 흰색 유지 */
+}
+
+.nav {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.gnb { display: flex; align-items: center; }
+.gnb > li { position: relative; }
+
+.gnb > li > a {
+    display: block;
+    line-height: 100px;
+    padding: 0 50px;
+    color: #fff !important; /* 호버 시 색상 변경 방지 */
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    white-space: nowrap;
+}
+
+/* 서브메뉴 */
+.submenu {
+    position: absolute;
+    top: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: auto;
+    min-width: 280px;
+    padding: 30px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.3s;
+    text-align: center;
+    z-index: 110;
+}
+
+.header:hover .submenu { opacity: 1; visibility: visible; }
+.submenu li a {
+    font-size: 16px;
+    color: #fff !important;
+    white-space: nowrap;
+    display: block;
+}
+.submenu li a:hover { opacity: 0.7; }
+
+/* 서브메뉴 배경 판 (투명) */
+.nav-bg {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    height: 0;
+    /* 배경 이미지를 가리지 않도록 아주 옅은 검정 투명도만 적용 */
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(3px); /* 뒤 배경이 살짝 흐릿하게 비침 (고급형) */
+    transition: height 0.3s ease;
+    z-index: 50;
+}
+.header:hover .nav-bg { height: 300px; }
+
+/* --- 푸터 공통 스타일 --- */
+.footer {
+    padding: 80px 0;
+    background: #1a1a1a;
+    color: #888;
+    font-size: 14px;
+    border-top: 1px solid #2a2a2a;
+}
+.footer-container { display: flex; flex-direction: column; align-items: flex-start; text-align: left; max-width: 1400px; margin: 0 auto; padding: 0 20px; }
+.footer-logo { margin-bottom: 40px; }
+.footer-logo img { height: 30px; width: auto; filter: brightness(0.9); }
+.footer-info { margin-bottom: 30px; }
+.info-row { margin-bottom: 8px; }
+.info-row span { display: inline-block; position: relative; margin-right: 20px; padding-right: 20px; }
+.info-row span:not(:last-child)::after {
+    content: ''; position: absolute; right: 0; top: 50%; transform: translateY(-50%);
+    width: 1px; height: 12px; background: #333;
+}
+.copyright { font-size: 13px; color: #555; margin-top: 10px; }
+
+/* 반응형 공통 */
+@media (max-width: 900px) {
+    .header { height: 70px; }
+    .gnb { display: none; }
+    .footer-container { align-items: center; text-align: center; }
+    .info-row span { display: block; margin-right: 0; padding-right: 0; margin-bottom: 5px; }
+    .info-row span::after { display: none; }
+}

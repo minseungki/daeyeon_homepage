@@ -1,0 +1,731 @@
+/* 서브 비주얼 - 현대자산운용 스타일 */
+.sub-visual {
+    height: 450px;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/sub/company_bg.jpg') no-repeat center/cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+.sub-visual-inner h2 { font-size: 50px; font-weight: 700; letter-spacing: 5px; margin-bottom: 15px; }
+.sub-visual-inner p { font-size: 18px; font-weight: 300; opacity: 0.8; }
+
+/* 본문 레이아웃 */
+.content-wrap { padding: 120px 0; }
+
+/* 인사말 섹션 */
+.about-intro { display: flex; gap: 80px; margin-bottom: 120px; }
+.title-box { flex: 1; }
+.top-label { display: block; font-size: 14px; color: #003466; font-weight: 700; margin-bottom: 20px; letter-spacing: 2px; }
+.title-box h3 { font-size: 38px; line-height: 1.3; color: #222; }
+.title-box h3 span { color: #003466; font-weight: 800; }
+.text-box { flex: 1.2; padding-top: 45px; }
+.text-box p { font-size: 18px; color: #666; line-height: 1.8; margin-bottom: 25px; }
+
+/* 성과 카드 섹션 */
+.achievement { display: flex; gap: 30px; margin-bottom: 120px; }
+.achieve-card {
+    flex: 1;
+    background: #f8f9fa;
+    padding: 60px 40px;
+    border-radius: 8px;
+    transition: 0.3s ease;
+}
+.achieve-card:hover { background: #fff; box-shadow: 0 20px 50px rgba(0,0,0,0.1); transform: translateY(-10px); }
+.achieve-num { font-size: 50px; font-weight: 800; color: #003466; margin-bottom: 20px; }
+.achieve-num span { font-size: 20px; }
+.achieve-card h4 { font-size: 22px; margin-bottom: 15px; color: #333; }
+.achieve-card p { font-size: 16px; color: #777; line-height: 1.6; }
+
+/* 이미지 상세 섹션 */
+.about-detail { display: flex; align-items: center; gap: 60px; }
+.detail-img-box { flex: 1.3; border-radius: 15px; overflow: hidden; }
+.detail-img-box img { width: 100%; display: block; transition: 0.5s; }
+.detail-img-box:hover img { transform: scale(1.05); }
+.detail-text-box { flex: 1; }
+.detail-text-box p { font-size: 17px; color: #555; line-height: 1.8; margin-bottom: 20px; }
+
+/* 반응형 모바일 */
+@media (max-width: 1024px) {
+    .about-intro, .achievement, .about-detail { flex-direction: column; gap: 40px; }
+    .title-box h3 { font-size: 30px; }
+    .text-box { padding-top: 0; }
+}
+
+/* 핵심 강점 섹션 */
+.core-values {
+    text-align: center;
+}
+
+.section-title-center {
+    margin-bottom: 60px;
+}
+
+.section-title-center h3 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #111;
+    margin-bottom: 20px;
+    letter-spacing: -0.5px;
+}
+
+.section-title-center p {
+    font-size: 18px;
+    color: #666;
+    font-weight: 300;
+}
+
+/* 그리드 레이아웃 */
+.value-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+/* 카드 디자인: 아이콘 없이 텍스트 중심 */
+.value-card {
+    background: #f8f9fb; /* 현대 스타일의 연한 그레이 배경 */
+    padding: 80px 20px; /* 아이콘이 없으므로 상하 패딩을 더 확보 */
+    border-radius: 15px;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid transparent;
+}
+
+.value-card:hover {
+    background: #fff;
+    border-color: #003466; /* 호버 시 대연 네이비색 테두리 */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+    transform: translateY(-10px);
+}
+
+/* 영문 텍스트 강조 (아이콘 역할 대신) */
+.value-eng {
+    font-size: 20px;
+    font-weight: 800;
+    color: #003466; /* 대연 메인 컬러 */
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+    position: relative;
+}
+
+/* 하단 장식선 */
+.value-eng::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: #003466;
+    margin: 10px auto 0;
+    opacity: 0.3;
+}
+
+/* 국문 텍스트 */
+.value-kor {
+    font-size: 17px;
+    color: #333;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    .value-grid { grid-template-columns: repeat(2, 1fr); }
+    .value-card { padding: 60px 20px; }
+}
+
+@media (max-width: 600px) {
+    .value-grid { grid-template-columns: 1fr; }
+}
+
+/* CEO 인사말 섹션 */
+.ceo-intro-flex {
+    display: flex;
+    gap: 80px;
+    align-items: flex-start;
+}
+
+/* 좌측 이미지 (세로형) */
+.ceo-image {
+    flex: 1;
+    position: relative;
+}
+
+.ceo-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 20px 20px 0px #f4f7fa; /* 이미지 뒤 디자인 요소 */
+}
+
+/* 우측 텍스트 */
+.ceo-text-content {
+    flex: 1.2;
+    padding-top: 20px;
+}
+
+.message-top .sub-title {
+    color: #003466;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 14px;
+    display: block;
+    margin-bottom: 15px;
+}
+
+.message-top h3 {
+    font-size: 34px;
+    line-height: 1.4;
+    color: #222;
+    margin-bottom: 40px;
+    word-break: keep-all;
+}
+
+.message-top h3 span {
+    color: #003466;
+    font-weight: 800;
+}
+
+/* 본문 텍스트 스타일 */
+.message-body p {
+    font-size: 17px;
+    line-height: 1.9;
+    color: #555;
+    margin-bottom: 25px;
+    word-break: keep-all;
+}
+
+.message-body .highlight {
+    font-size: 20px;
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 35px;
+}
+
+.message-body .closing {
+    margin-top: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #222;
+}
+
+/* 서명 영역 */
+.ceo-signature {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #eee;
+    text-align: right;
+}
+
+.ceo-signature .company-name {
+    font-size: 16px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.ceo-signature .ceo-name {
+    font-size: 24px;
+    font-weight: 700;
+    color: #222;
+}
+
+.ceo-signature .ceo-name span {
+    font-size: 28px;
+    margin-left: 10px;
+    font-family: 'Gungsuh', serif; /* 대표이사 성함에만 살짝 포인트 */
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    .ceo-intro-flex {
+        flex-direction: column;
+        gap: 50px;
+    }
+    .ceo-image {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .ceo-signature {
+        text-align: left;
+    }
+}
+
+/* 연혁 페이지 스타일 */
+.history-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+/* 왼쪽 세로선 (타임라인 라인) */
+.history-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 200px; /* 연도 범위와 상세 내용 사이 */
+    width: 1px;
+    height: 100%;
+    background: #eee;
+}
+
+.history-group {
+    display: flex;
+    margin-bottom: 100px;
+    position: relative;
+}
+
+/* 연도 범위 (왼쪽) */
+.history-year-range {
+    width: 200px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #003466;
+    padding-top: 5px;
+}
+
+/* 상세 목록 (오른쪽) */
+.history-list {
+    flex: 1;
+    padding-left: 60px;
+}
+
+.history-list li {
+    margin-bottom: 40px;
+    position: relative;
+}
+
+/* 타임라인 포인트 점 */
+.history-list li::before {
+    content: '';
+    position: absolute;
+    left: -64px; /* 라인 위로 정확히 위치 */
+    top: 10px;
+    width: 9px;
+    height: 9px;
+    background: #fff;
+    border: 2px solid #003466;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.history-list .date {
+    display: block;
+    font-size: 18px;
+    font-weight: 700;
+    color: #222;
+    margin-bottom: 8px;
+}
+
+.history-list p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+/* 반응형 모바일 */
+@media (max-width: 768px) {
+    .history-container::before { left: 0; }
+    .history-group { flex-direction: column; }
+    .history-year-range { margin-bottom: 30px; }
+    .history-list { padding-left: 30px; }
+    .history-list li::before { left: -34px; }
+}
+
+/* 조직도 컨테이너 */
+.org-chart-container {
+    text-align: center;
+    padding: 40px 0;
+}
+
+.node {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 15px 30px;
+    font-weight: 600;
+    color: #333;
+    transition: all 0.3s ease;
+    min-width: 180px;
+}
+
+/* 조직도 레이아웃 메인 설정 */
+.org-chart-container {
+    text-align: center;
+    padding: 20px 0;
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+/* 대표이사에서 본부 가로선까지 내려가는 중앙 긴 선 */
+.org-chart-container::before {
+    content: '';
+    position: absolute;
+    top: 80px;
+    left: 50%;
+    width: 1px;
+    height: 200px; /* 본부 가로선까지의 총 길이 */
+    background: #ccc;
+}
+
+/* 노드 공통 스타일 */
+.node {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    z-index: 2;
+    position: relative;
+}
+
+.ceo {
+    background: #003466;
+    color: #fff;
+    font-size: 20px;
+    padding: 20px 60px;
+    margin-bottom: 40px;
+}
+
+/* 중간 영역 및 경영기획실 배치 */
+.org-mid-wrap {
+    height: 100px; /* 경영기획실이 위치할 세로 공간 */
+    position: relative;
+    margin-bottom: 60px;
+}
+
+/* 경영기획실 노드 및 연결선 */
+.planning-branch {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%);
+    padding-left: 100px; /* 중앙선에서 우측으로 밀기 */
+}
+
+/* 경영기획실에서 중앙선으로 잇는 가로선 */
+.planning-branch::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    width: 100px;
+    height: 1px;
+    background: #ccc;
+}
+
+.node.planning {
+    border: 2px solid #003466;
+    color: #003466;
+    font-weight: 700;
+    padding: 12px 30px;
+    min-width: 150px;
+}
+
+/* 본부급 레이아웃 및 가로 연결선 */
+.org-structure-layout {
+    position: relative;
+    padding-top: 40px;
+}
+
+.org-structure-layout::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 12.5%; /* 첫 본부 중앙 지점 */
+    right: 12.5%; /* 마지막 본부 중앙 지점 */
+    height: 1px;
+    background: #ccc;
+}
+
+.org-main-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+}
+
+.hq-column { position: relative; }
+
+/* 각 본부로 내려오는 수직선 */
+.hq-column::after {
+    content: '';
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    width: 1px;
+    height: 40px;
+    background: #ccc;
+}
+
+.node.hq {
+    background: #edf1f5;
+    border-top: 3px solid #003466;
+    width: 100%;
+    padding: 15px 0;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/* 팀 리스트 */
+.team-list li {
+    background: #fff;
+    border: 1px solid #eee;
+    padding: 10px 0;
+    margin-bottom: 8px;
+    font-size: 14px;
+    color: #666;
+}
+
+.grid-teams {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+/* 주요 수출업체 섹션 */
+.export-overview {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.export-summary {
+    margin-bottom: 50px;
+}
+
+.export-summary .sub-title {
+    display: block;
+    font-size: 14px;
+    color: #003466;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+.export-summary h3 {
+    font-size: 36px;
+    line-height: 1.4;
+    color: #222;
+    font-weight: 500;
+}
+
+.export-summary h3 span {
+    color: #003466;
+    font-weight: 800;
+}
+
+.world-map img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    filter: drop-shadow(0 10px 20px rgba(0,0,0,0.1));
+}
+
+/* 국가별 수출 리스트 섹션 */
+.export-list-section {
+    padding-top: 50px;
+}
+
+.export-country-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3열 그리드 */
+    gap: 40px;
+}
+
+.country-item {
+    background: #f8f9fb;
+    border-radius: 8px;
+    padding: 30px;
+    text-align: left;
+    transition: 0.3s;
+    display: flex;
+    flex-direction: column;
+}
+
+.country-item:hover {
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    transform: translateY(-5px);
+    background: #fff;
+}
+
+.country-flag {
+    width: 50px; /* 국기 이미지 크기 */
+    height: 35px;
+    margin-bottom: 15px;
+    border: 1px solid #eee;
+    overflow: hidden;
+}
+
+.country-flag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.country-item h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: #003466;
+    margin-bottom: 20px;
+}
+
+.company-list {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.company-list li {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.7;
+    margin-bottom: 8px;
+    position: relative;
+    padding-left: 15px;
+}
+
+/* 리스트 스타일 (점으로 변경) */
+.company-list li::before {
+    content: '•'; /* 점 아이콘 */
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #003466;
+    font-size: 1.2em;
+}
+
+.company-list li p { /* 대한민국 수도/가스 세부 목록용 */
+    margin-top: 5px;
+    padding-left: 0;
+    font-size: 14px;
+    color: #777;
+}
+
+/* 반응형 */
+@media (max-width: 1024px) {
+    .export-country-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .export-summary h3 { font-size: 28px; }
+    .export-country-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* 지도 섹션 */
+.map-section {
+    margin-bottom: 80px;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+/* 주소 정보 타이틀 */
+.info-title {
+    text-align: center;
+    margin-bottom: 50px;
+}
+.info-title h3 {
+    font-size: 32px;
+    color: #003466;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+.info-title p {
+    color: #666;
+    font-size: 16px;
+}
+
+/* 주소 정보 그리드 */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    margin-bottom: 60px;
+}
+
+.info-card {
+    background: #f8f9fb;
+    padding: 40px 30px;
+    border-radius: 12px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.info-card:hover {
+    background: #fff;
+    box-shadow: 0 15px 30px rgba(0,0,0,0.1);
+    transform: translateY(-5px);
+}
+
+.info-card .icon {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.info-card h4 {
+    font-size: 18px;
+    color: #333;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.info-card p {
+    font-size: 15px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 5px;
+}
+
+.info-card p span {
+    font-weight: 700;
+    color: #003466;
+    margin-right: 5px;
+}
+
+/* 웹사이트 주소 강조 */
+.web-url {
+    font-weight: 700;
+    color: #003466 !important;
+    margin-top: 10px;
+    font-size: 16px !important;
+}
+
+/* 교통 안내 */
+.transport {
+    border-top: 1px solid #eee;
+    padding-top: 40px;
+}
+.trans-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.trans-item .label {
+    background: #003466;
+    color: #fff;
+    padding: 5px 15px;
+    font-size: 14px;
+    border-radius: 20px;
+}
+
+/* 반응형 */
+@media (max-width: 900px) {
+    .info-grid { grid-template-columns: 1fr; }
+}
