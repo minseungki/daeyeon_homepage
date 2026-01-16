@@ -2,3 +2,138 @@
 .sub-visual {
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/contact/visual_contact.jpg') no-repeat center/cover;
 }
+
+
+
+
+/* ===== Base ===== */
+.content-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* 전체 요소 수평 중앙 정렬 */
+}
+
+.container-contact {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    gap: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* 컨테이너가 연속으로 올 경우 사이 간격 추가 */
+.container-contact + .container-contact {
+    margin-top: 30px;
+}
+
+/* ===== Rows (한 줄 배치) ===== */
+.row {
+    display: flex;
+    justify-content: center;     /* 전체 가운데 */
+    align-items: stretch;
+    gap: 20px;
+    width: 100%;
+    flex-wrap: nowrap;           /* ✅ PC: 한 줄 유지 */
+}
+
+/* 3개 한 줄 */
+.row-3 .main-card { flex: 1 1 0; min-width: 240px; }
+
+/* 2개 한 줄 */
+.row-2 .main-card { flex: 1 1 0; min-width: 320px; }
+
+/* ===== Card (기존 톤) ===== */
+.main-card {
+    background: #f8f9fa;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border: 1px solid #eee;
+    width: 100%;
+}
+
+.main-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
+    background: #fff;
+    border-color: #003466;
+}
+
+.card-inner {
+    padding: 26px 22px;
+    text-align: center;          /* ✅ 카드 내용 가운데 */
+}
+
+/* ===== Tag / Title ===== */
+.tag {
+    display: inline-block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #003466;
+    background: rgba(0,52,102,0.08);
+    padding: 6px 14px;
+    border-radius: 20px;
+    margin-bottom: 12px;
+}
+
+h4 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    word-break: keep-all;
+}
+
+/* 전화 링크 */
+.contact-link {
+    color: inherit;
+    text-decoration: none;
+}
+
+.contact-link:hover {
+    color: #003466;
+    text-decoration: underline;
+}
+
+/* ===== Email list ===== */
+.contact-list {
+    margin-top: 16px;
+    padding-top: 14px;
+    border-top: 1px solid #eee;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.contact-list a {
+    display: inline-block;
+    padding: 10px 14px;
+    border-radius: 6px;
+    background: #f0f0f0;
+    color: #333;
+    font-size: 15px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: 0.2s;
+    word-break: break-all;
+}
+
+.contact-list a:hover {
+    background: #003466;
+    color: #fff;
+}
+
+/* ===== Responsive ===== */
+/* 화면이 줄어들면 한 줄 유지가 어려워서 자연스럽게 줄바꿈 */
+@media (max-width: 1024px) {
+    .row { flex-wrap: wrap; }
+    .row-3 .main-card { flex: 1 1 360px; }
+    .row-2 .main-card { flex: 1 1 420px; }
+}
+
+@media (max-width: 650px) {
+    .row { gap: 14px; }
+    .row-3 .main-card,
+    .row-2 .main-card { flex: 1 1 100%; min-width: 0; }
+}
