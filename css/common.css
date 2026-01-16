@@ -130,3 +130,18 @@ ul { list-style: none; }
     .info-row span { display: block; margin-right: 0; padding-right: 0; margin-bottom: 5px; }
     .info-row span::after { display: none; }
 }
+
+/* 서브 비주얼 스타일 */
+.sub-visual {
+    height: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+}
+.sub-visual-inner h2 { font-size: 50px; font-weight: 700; letter-spacing: 5px; margin-bottom: 15px; }
+.sub-visual-inner p { font-size: 18px; font-weight: 300; opacity: 0.8; }
+
+/* 본문 레이아웃 */
+.content-wrap { padding: 120px 0; }

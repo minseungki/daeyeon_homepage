@@ -1,18 +1,7 @@
-/* 서브 비주얼 - 현대자산운용 스타일 */
+/* 서브 비주얼 스타일 */
 .sub-visual {
-    height: 450px;
-    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/sub/company_bg.jpg') no-repeat center/cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #fff;
-    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/about/company_bg.jpg') no-repeat center/cover;
 }
-.sub-visual-inner h2 { font-size: 50px; font-weight: 700; letter-spacing: 5px; margin-bottom: 15px; }
-.sub-visual-inner p { font-size: 18px; font-weight: 300; opacity: 0.8; }
-
-/* 본문 레이아웃 */
-.content-wrap { padding: 120px 0; }
 
 /* 인사말 섹션 */
 .about-intro { display: flex; gap: 80px; margin-bottom: 120px; }

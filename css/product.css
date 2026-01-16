@@ -1,0 +1,157 @@
+/* 서브 비주얼 스타일 */
+.sub-visual {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/product/visual_products.jpg') no-repeat center/cover;
+}
+
+/* 제품 상세 히어로 섹션 */
+.prod-hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 100px 0;
+    gap: 60px;
+}
+
+.prod-info { flex: 1; }
+.prod-info .category {
+    display: inline-block;
+    color: #003466;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+.prod-info h1 {
+    font-size: 56px;
+    font-weight: 800;
+    line-height: 1.2;
+    color: #111;
+    margin-bottom: 30px;
+}
+.prod-info h1 span { color: #003466; font-weight: 400; display: block; font-size: 32px; }
+.prod-info .description {
+    font-size: 18px;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 40px;
+    word-break: keep-all;
+}
+
+/* 버튼 스타일 */
+.btns { display: flex; gap: 15px; }
+.btn-primary {
+    background: #003466;
+    color: #fff;
+    padding: 18px 40px;
+    border-radius: 4px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+.btn-outline {
+    border: 1px solid #ddd;
+    padding: 18px 40px;
+    border-radius: 4px;
+    transition: 0.3s;
+}
+.btn-primary:hover { background: #00254a; }
+.btn-outline:hover { background: #f8f9fb; }
+
+/* 제품 메인 비주얼 */
+.prod-visual { flex: 1.2; text-align: right; }
+.prod-visual img {
+    max-width: 100%;
+    height: auto;
+    filter: drop-shadow(0 30px 50px rgba(0,0,0,0.1));
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+}
+
+/* 스티키 네비게이션 */
+.sticky-nav {
+    position: sticky;
+    top: 80px; /* 헤더 높이에 맞춰 조절 */
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    z-index: 100;
+    padding: 20px 0;
+}
+.sticky-nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    list-style: none;
+}
+.sticky-nav a {
+    font-weight: 600;
+    color: #666;
+    font-size: 16px;
+    transition: 0.3s;
+}
+.sticky-nav a:hover { color: #003466; }
+
+/* 제품 특장점 카드 */
+.prod-features {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+    padding: 120px 0;
+}
+.feature-card {
+    padding: 50px 40px;
+    background: #f8f9fb;
+    border-radius: 12px;
+    transition: 0.4s;
+}
+.feature-card:hover {
+    background: #fff;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
+    transform: translateY(-10px);
+}
+.feature-card .num {
+    font-size: 20px;
+    font-weight: 800;
+    color: #003466;
+    margin-bottom: 20px;
+    opacity: 0.3;
+}
+.feature-card h3 { font-size: 22px; margin-bottom: 15px; color: #222; }
+.feature-card p { color: #777; line-height: 1.7; font-size: 16px; }
+
+/* 기술 규격 섹션 및 표 */
+.bg-light { background: #f4f7fa; padding: 120px 0; }
+.section-title { text-align: center; font-size: 36px; margin-bottom: 60px; color: #111; }
+
+.modern-table {
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+.modern-table th {
+    background: #003466;
+    color: #fff;
+    padding: 20px;
+    font-size: 16px;
+}
+.modern-table td {
+    padding: 20px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+    color: #444;
+}
+.modern-table tr:last-child td { border-bottom: none; }
+
+/* 반응형 모바일 */
+@media (max-width: 1024px) {
+    .prod-hero { flex-direction: column; text-align: center; padding: 60px 20px; }
+    .prod-visual { text-align: center; order: -1; }
+    .btns { justify-content: center; }
+    .prod-features { grid-template-columns: 1fr; padding: 60px 20px; }
+    .sticky-nav ul { gap: 20px; }
+}
