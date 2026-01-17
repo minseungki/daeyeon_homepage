@@ -3,155 +3,196 @@
     background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('../img/product/visual_products.jpg') no-repeat center/cover;
 }
 
-/* 제품 상세 히어로 섹션 */
-.prod-hero {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 100px 0;
-    gap: 60px;
+:root {
+    --main-blue: #004692;
+    --light-bg: #f8f9fa;
+    --border-color: #dee2e6;
+    --text-dark: #333;
 }
 
-.prod-info { flex: 1; }
-.prod-info .category {
-    display: inline-block;
-    color: #003466;
-    font-weight: 700;
-    letter-spacing: 2px;
-    margin-bottom: 20px;
-    font-size: 14px;
+
+.product-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    background: #fff;
+    padding: 40px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.05);
 }
-.prod-info h1 {
-    font-size: 56px;
-    font-weight: 800;
-    line-height: 1.2;
-    color: #111;
+
+.info-section { margin-bottom: 60px; }
+
+.section-title {
+    font-size: 1.5rem;
+    color: var(--main-blue);
+    border-left: 5px solid var(--main-blue);
+    padding-left: 15px;
+    margin-bottom: 25px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.1rem;
+    margin: 20px 0 10px;
+    color: #555;
+}
+
+/* 테이블 공통 */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid var(--border-color);
+    padding: 12px 15px;
+    font-size: 0.95rem;
+}
+
+th { background-color: var(--light-bg); color: #000; font-weight: bold; }
+
+/* 가로형 테이블 (장점 섹션) */
+.horizontal-table th { text-align: center; background: #f1f3f5; }
+.img-cell { width: 30%; border-radius: 4px; }
+
+/* 리스트 스타일 */
+.check-list, .num-list { padding-left: 20px; margin: 0; }
+.check-list li { list-style: disc; margin-bottom: 5px; }
+
+/* 세로형 테이블 (구조/재질 섹션) */
+.vertical-table thead th {
+    background: var(--main-blue);
+    color: #fff;
+}
+.vertical-table td { text-align: center; }
+.vertical-table caption { text-align: right; font-size: 0.85rem; color: #888; margin-top: 5px; }
+
+/* 이미지 컨테이너 설정 */
+.img-container {
+    width: 100%;
     margin-bottom: 30px;
 }
-.prod-info h1 span { color: #003466; font-weight: 400; display: block; font-size: 32px; }
-.prod-info .description {
-    font-size: 18px;
-    color: #666;
-    line-height: 1.8;
-    margin-bottom: 40px;
-    word-break: keep-all;
-}
 
-/* 버튼 스타일 */
-.btns { display: flex; gap: 15px; }
-.btn-primary {
-    background: #003466;
-    color: #fff;
-    padding: 18px 40px;
-    border-radius: 4px;
-    font-weight: 600;
-    transition: 0.3s;
-}
-.btn-outline {
-    border: 1px solid #ddd;
-    padding: 18px 40px;
-    border-radius: 4px;
-    transition: 0.3s;
-}
-.btn-primary:hover { background: #00254a; }
-.btn-outline:hover { background: #f8f9fb; }
-
-/* 제품 메인 비주얼 */
-.prod-visual { flex: 1.2; text-align: right; }
-.prod-visual img {
-    max-width: 100%;
-    height: auto;
-    filter: drop-shadow(0 30px 50px rgba(0,0,0,0.1));
-    animation: float 3s ease-in-out infinite;
-}
-
-@keyframes float {
-    0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-20px); }
-}
-
-/* 스티키 네비게이션 */
-.sticky-nav {
-    position: sticky;
-    top: 80px; /* 헤더 높이에 맞춰 조절 */
-    background: #fff;
-    border-bottom: 1px solid #eee;
-    z-index: 100;
-    padding: 20px 0;
-}
-.sticky-nav ul {
-    display: flex;
-    justify-content: center;
-    gap: 60px;
-    list-style: none;
-}
-.sticky-nav a {
-    font-weight: 600;
-    color: #666;
-    font-size: 16px;
-    transition: 0.3s;
-}
-.sticky-nav a:hover { color: #003466; }
-
-/* 제품 특장점 카드 */
-.prod-features {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-    padding: 120px 0;
-}
-.feature-card {
-    padding: 50px 40px;
-    background: #f8f9fb;
-    border-radius: 12px;
-    transition: 0.4s;
-}
-.feature-card:hover {
-    background: #fff;
-    box-shadow: 0 20px 40px rgba(0,0,0,0.05);
-    transform: translateY(-10px);
-}
-.feature-card .num {
-    font-size: 20px;
-    font-weight: 800;
-    color: #003466;
-    margin-bottom: 20px;
-    opacity: 0.3;
-}
-.feature-card h3 { font-size: 22px; margin-bottom: 15px; color: #222; }
-.feature-card p { color: #777; line-height: 1.7; font-size: 16px; }
-
-/* 기술 규격 섹션 및 표 */
-.bg-light { background: #f4f7fa; padding: 120px 0; }
-.section-title { text-align: center; font-size: 36px; margin-bottom: 60px; color: #111; }
-
-.modern-table {
+/* img_02: 상위 영역에 꽉 차게 설정 */
+.img-full {
     width: 100%;
-    background: #fff;
-    border-collapse: collapse;
-    border-radius: 8px;
-    overflow: hidden;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    max-width: 100%; /* 부모 영역을 절대 벗어나지 않음 */
+    height: auto;
+    display: block;
+    margin-bottom: 20px; /* 아래 이미지와의 간격 */
+    border: 1px solid #eee;
 }
-.modern-table th {
-    background: #003466;
-    color: #fff;
-    padding: 20px;
-    font-size: 16px;
-}
-.modern-table td {
-    padding: 20px;
-    text-align: center;
-    border-bottom: 1px solid #eee;
-    color: #444;
-}
-.modern-table tr:last-child td { border-bottom: none; }
 
-/* 반응형 모바일 */
-@media (max-width: 1024px) {
-    .prod-hero { flex-direction: column; text-align: center; padding: 60px 20px; }
-    .prod-visual { text-align: center; order: -1; }
-    .btns { justify-content: center; }
-    .prod-features { grid-template-columns: 1fr; padding: 60px 20px; }
-    .sticky-nav ul { gap: 20px; }
+/* img_03: 가운데 정렬을 위한 래퍼 */
+.img-center-wrapper {
+    text-align: center; /* 내부 인라인 요소 중앙 정렬 */
+    width: 100%;
+}
+
+/* img_03: 중앙 정렬 이미지 본체 */
+.img-center {
+    max-width: 80%; /* 너무 커지지 않도록 적절히 조절 가능 */
+    height: auto;
+    border: 1px solid #eee;
+    display: inline-block; /* text-align에 반응하도록 설정 */
+}
+
+.special-section {
+    display: flex;
+    justify-content: center; /* 가로 중앙 정렬 */
+    width: 100%;
+}
+
+/* Special 섹션 */
+.special-desc {
+    text-align: center;      /* 텍스트 중앙 정렬 */
+    font-weight: bold;       /* 텍스트 굵게 */
+    font-size: 1.15rem;      /* 글자 크기 살짝 키움 */
+    margin: 20px 0;          /* 위아래 여백 */
+    padding: 15px;
+}
+
+.box-img { max-width: 100%; margin-bottom: 20px; }
+
+.diagonal-header {
+    position: relative;
+    width: 150px;    /* 적절한 너비 설정 */
+    height: 80px;    /* 적절한 높이 설정 */
+    background: linear-gradient(to top right, white calc(50% - 1px), #ccc, white calc(50% + 1px));
+    /* #ccc는 선의 색상입니다. 배경색이 f9f9f9라면 white 대신 해당 색상을 넣으세요. */
+    padding: 0 !important;
+}
+
+.diagonal-header span {
+    position: absolute;
+    font-size: 0.85rem;
+    font-weight: bold;
+}
+
+/* 왼쪽 아래 (SIZE) */
+.left-bottom {
+    bottom: 10px;
+    left: 10px;
+}
+
+/* 오른쪽 위 (DIMENSION) */
+.right-top {
+    top: 10px;
+    right: 10px;
+}
+
+/* 이미지 컨테이너: 가로 전체를 쓰고 내부 요소 중앙 정렬 */
+.image-center-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    /* 가로 중앙 */
+    justify-content: center; /* 세로 중앙 (부모 높이가 있을 경우) */
+    padding: 30px 0;
+    background-color: #fff;
+    margin-bottom: 20px;
+    border: 1px solid #eee;
+    border-radius: 8px;
+}
+
+/* 도면 이미지 스타일 */
+.dimension-drawing {
+    max-width: 80%; /* 너무 커지지 않게 조절 */
+    height: auto;
+    display: block;
+}
+
+/* 이미지 하단 캡션 */
+.img-caption {
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #666;
+    font-style: italic;
+}
+
+/* 테이블 래퍼 (모바일 스크롤 대비) */
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+/* 테이블 기본 스타일 유지 */
+.dimension-table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.dimension-table th {
+    background-color: #f8f9fa;
+    padding: 12px;
+    border: 1px solid #dee2e6;
+}
+
+.dimension-table td {
+    padding: 10px;
+    border: 1px solid #dee2e6;
+}
+.font-xx-small th,.font-xx-small th span, .font-xx-small td {
+    font-size: 11px !important;
 }
