@@ -12,10 +12,13 @@ export const metadata: Metadata = {
     description: SITE.description,
 };
 
+
 export default function RootLayout({ children }: { children: React.ReactNode }) {
+    const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
     return (
         <html lang="ko">
             <head>
+                <base href={base ? `${base}/` : "/"} />
                 <Head />
             </head>
             <body>

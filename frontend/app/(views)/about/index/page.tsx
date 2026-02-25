@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/about/index");
 export default function AboutIndexPage() {
     return (
         <>
-            <link rel="stylesheet" href="/css/about.css"/>
+            <link rel="stylesheet" href="css/about.css"/>
 
             <PageShell subVisual={{
                 title: "회사 소개",

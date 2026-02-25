@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/about/ceo");
 export default function AboutCeoPage() {
     return (
         <>
-            <link rel="stylesheet" href="/css/about.css"/>
+            <link rel="stylesheet" href="css/about.css"/>
 
             <PageShell subVisual={{
                 title: "CEO 인사말",
@@ -17,7 +17,7 @@ export default function AboutCeoPage() {
                 <section className="ceo-intro-flex">
                     <div className="ceo-image">
                         <img
-                            src="/img/about/greeting_img_01.jpg"
+                            src="img/about/greeting_img_01.jpg"
                             alt={`대표이사 김영식`}
                         />
                     </div>

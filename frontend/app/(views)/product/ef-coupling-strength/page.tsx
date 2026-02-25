@@ -7,8 +7,8 @@ export const metadata: Metadata = buildSeoByPath("/product/ef-coupling-strength"
 export default function ProductEfCouplingStrengthPage() {
     return (
         <>
-            <link rel="stylesheet" href="/css/product.css"/>
-            <link rel="stylesheet" href="/css/ef-coupling-strength.css"/>
+            <link rel="stylesheet" href="css/product.css"/>
+            <link rel="stylesheet" href="css/ef-coupling-strength.css"/>
 
             <DefaultPageShell subVisual={{
                 title: "EF 이음관의 장점",
@@ -28,7 +28,7 @@ export default function ProductEfCouplingStrengthPage() {
                             </p>
                         </div>
                         <div className="hero-image-wrapper">
-                            <img src="/img/product/ef_img_01.jpg" alt="대연 PE 파이프 및 이음관 제품 이미지" className="hero-pipe-image"/>
+                            <img src="img/product/ef_img_01.jpg" alt="대연 PE 파이프 및 이음관 제품 이미지" className="hero-pipe-image"/>
                         </div>
                     </section>
                     <div className="sub-section">

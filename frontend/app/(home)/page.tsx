@@ -5,18 +5,18 @@ import KakaoMapPage from "@/app/kakao-map/page"
 
 export default function Home() {
     const slides = [
-        { src: "/img/home/banner/visual_banner_01.jpg", alt: "배너 1" },
-        { src: "/img/home/banner/visual_banner_02.jpg", alt: "배너 2" },
-        { src: "/img/home/banner/visual_banner_03.jpg", alt: "배너 3" },
-        { src: "/img/home/banner/visual_banner_04.jpg", alt: "배너 3" },
-        { src: "/img/home/banner/visual_banner_05.jpg", alt: "배너 3" },
+        { src: "img/home/banner/visual_banner_01.jpg", alt: "배너 1" },
+        { src: "img/home/banner/visual_banner_02.jpg", alt: "배너 2" },
+        { src: "img/home/banner/visual_banner_03.jpg", alt: "배너 3" },
+        { src: "img/home/banner/visual_banner_04.jpg", alt: "배너 3" },
+        { src: "img/home/banner/visual_banner_05.jpg", alt: "배너 3" },
     ];
     const title = "Connecting the World";
     const description = "대연은 안전과 혁신, 신뢰를 통해 세상을 이어줍니다.";
 
   return (
       <>
-          <link rel="stylesheet" href="/css/main.css"/>
+          <link rel="stylesheet" href="css/main.css"/>
           <section className="main-visual">
               <Slider slides={slides} interval={5000} title={title} description={description}/>
           </section>
@@ -26,15 +26,15 @@ export default function Home() {
                   <p className="section-desc">축적된 기술과 풍부한 경험을 바탕으로 안전하고 완벽한 제품을 생산 공급하기 위하여 노력하겠습니다.</p>
                   <div className="product-grid">
                       <div className="product-item">
-                          <div className="product-img-box"><img src="/img/home/solution/content_02_list_01.jpg" alt="PE 볼밸브"/></div>
+                          <div className="product-img-box"><img src="img/home/solution/content_02_list_01.jpg" alt="PE 볼밸브"/></div>
                           <div className="product-info"><h4>PE 볼밸브</h4><p>최고의 기밀성과 내구성을 자랑하는 밸브 솔루션</p></div>
                       </div>
                       <div className="product-item">
-                          <div className="product-img-box"><img src="/img/home/solution/content_02_list_02.jpg" alt="EF 이음관"/></div>
+                          <div className="product-img-box"><img src="img/home/solution/content_02_list_02.jpg" alt="EF 이음관"/></div>
                           <div className="product-info"><h4>EF 이음관</h4><p>정밀한 시공과 안전한 연결을 보장하는 이음 부속</p></div>
                       </div>
                       <div className="product-item">
-                          <div className="product-img-box"><img src="/img/home/solution/content_02_list_03.jpg" alt="PE 볼밸브"/></div>
+                          <div className="product-img-box"><img src="img/home/solution/content_02_list_03.jpg" alt="PE 볼밸브"/></div>
                           <div className="product-info"><h4>PE 볼밸브</h4><p>다양한 규격과 규제에 최적화된 고품질 밸브</p></div>
                       </div>
                   </div>

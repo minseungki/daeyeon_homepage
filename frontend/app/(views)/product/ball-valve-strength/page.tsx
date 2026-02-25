@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/product/ball-valve-strength")
 export default function ProductBallValveStrengthPage() {
     return (
         <>
-            <link rel="stylesheet" href="/css/product.css"/>
+            <link rel="stylesheet" href="css/product.css"/>
 
             <DefaultPageShell subVisual={{
                 title: "볼밸브의 장점",
@@ -22,25 +22,23 @@ export default function ProductBallValveStrengthPage() {
                             <col style={{ width: "10%" }}/>
                             <col style={{ width: "auto" }}/>
                         </colgroup>
-                        <tbody>
-                            <tr>
-                                <th>PE 볼 밸브의 장점</th>
-                                <td><img src="/img/product/pe_img_01.jpg" alt="PE 볼 밸브 장점 이미지"/></td>
-                                <td colSpan={2}>
-                                    <ul className="check-list">
-                                        <li>KS 규격품 (KS M ISO 10933 : 열가소성 플라스틱 수동식 볼 밸브)</li>
-                                        <li>지하 매몰형으로 공간활용 자유, 초소형 맨홀 사용 가능</li>
-                                        <li>PE 배관공사 시 T/F 불필요, 1/4 TURN 계/폐 방식으로 조작 간편</li>
-                                        <li>전식 및 부식 염려 없음, 긴 사용수명</li>
-                                        <li>BODY와 END 부분 전자식(EF) 융착으로 우수한 기밀성</li>
-                                        <li>PURGE용 VALVE도 폴리에틸렌 사용으로 부식 방지 및 우수한 디자인</li>
-                                        <li>END부 KS M 3514 규격 준수 (전자식 소켓 및 맞대기 융착 가능)</li>
-                                        <li>사용자 선택 가능 (NO-PURGE, 1-PURGE, 2-PURGE)</li>
-                                        <li>대형 규격(225~400mm) 기어박스 장착으로 적은 토르크 및 용이한 조작</li>
-                                    </ul>
-                                </td>
-                            </tr>
-                        </tbody>
+                        <tr>
+                            <th>PE 볼 밸브의 장점</th>
+                            <td><img src="img/product/pe_img_01.jpg" alt="PE 볼 밸브 장점 이미지"/></td>
+                            <td colSpan={2}>
+                                <ul className="check-list">
+                                    <li>KS 규격품 (KS M ISO 10933 : 열가소성 플라스틱 수동식 볼 밸브)</li>
+                                    <li>지하 매몰형으로 공간활용 자유, 초소형 맨홀 사용 가능</li>
+                                    <li>PE 배관공사 시 T/F 불필요, 1/4 TURN 계/폐 방식으로 조작 간편</li>
+                                    <li>전식 및 부식 염려 없음, 긴 사용수명</li>
+                                    <li>BODY와 END 부분 전자식(EF) 융착으로 우수한 기밀성</li>
+                                    <li>PURGE용 VALVE도 폴리에틸렌 사용으로 부식 방지 및 우수한 디자인</li>
+                                    <li>END부 KS M 3514 규격 준수 (전자식 소켓 및 맞대기 융착 가능)</li>
+                                    <li>사용자 선택 가능 (NO-PURGE, 1-PURGE, 2-PURGE)</li>
+                                    <li>대형 규격(225~400mm) 기어박스 장착으로 적은 토르크 및 용이한 조작</li>
+                                </ul>
+                            </td>
+                        </tr>
                         <tr>
                             <th>운전 시 주의사항</th>
                             <td colSpan={2}>통상적으로 밸브 계/폐 시 <strong>메인 아답타(좌측)</strong>를 사용하고, 비상시에는 <strong>비상용 보조 아답타</strong>를 사용한다.</td>
@@ -65,10 +63,10 @@ export default function ProductBallValveStrengthPage() {
                     <div className="sub-section">
                         <h3>볼 밸브 부속 재질</h3>
                         <div className="img-container">
-                            <img src="/img/product/pe_img_02.jpg" alt="부속 재질 전체 구조" className="img-full"/>
+                            <img src="img/product/pe_img_02.jpg" alt="부속 재질 전체 구조" className="img-full"/>
 
                             <div className="img-center-wrapper">
-                                <img src="/img/product/pe_img_03.jpg" alt="부속 재질 상세" className="img-center"/>
+                                <img src="img/product/pe_img_03.jpg" alt="부속 재질 상세" className="img-center"/>
                             </div>
                         </div>
                     </div>
@@ -201,7 +199,7 @@ export default function ProductBallValveStrengthPage() {
 
                 <section className="info-section">
                     <h2 className="section-title">Special Ball Valve</h2>
-                    <img src="/img/product/pe_img_04.jpg" alt="Special Ball Valve"/>
+                    <img src="img/product/pe_img_04.jpg" alt="Special Ball Valve"/>
                     <div className="special-section">
                         <p className="special-desc">“고객의 요청 시 제품의 높이, 바이패스, 플랜지 퍼지타입 등 Special 제작이 가능함.”</p>
                     </div>
@@ -209,7 +207,7 @@ export default function ProductBallValveStrengthPage() {
 
                 <section className="info-section">
                     <h2 className="section-title">기어박스 구성도 및 제품규격</h2>
-                    <img src="/img/product/pe_img_05.jpg" alt="기어박스 구성도" className="box-img"/>
+                    <img src="img/product/pe_img_05.jpg" alt="기어박스 구성도" className="box-img"/>
                     <div className="sub-section">
                         <h3>제품구조</h3>
                         <table className="vertical-table">

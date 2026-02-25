@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/about/history");
 export default function AboutHistoryPage() {
     return (
         <>
-            <link rel="stylesheet" href="/css/about.css"/>
+            <link rel="stylesheet" href="css/about.css"/>
 
             <PageShell subVisual={{
                 title: "회사연혁",

@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/about/export");
 export default function AboutExportPage() {
     return (
         <>
-            <link rel="stylesheet" href="/css/about.css"/>
+            <link rel="stylesheet" href="css/about.css"/>
 
             <PageShell subVisual={{
                 title: "주요수출업체",
@@ -20,7 +20,7 @@ export default function AboutExportPage() {
                         <h3>국내(가스, 수도), 중국, 미국, 호주, 일본, 인도 <br/>외 <span>22개국</span> 수출 진행중</h3>
                     </div>
                     <div className="world-map">
-                        <img src="/img/about/export_img.gif" alt="세계 지도"/>
+                        <img src="img/about/export_img.gif" alt="세계 지도"/>
                     </div>
                 </section>
 
@@ -29,7 +29,7 @@ export default function AboutExportPage() {
 
                         <div className="country-item">
                             <div className="country-flag">
-                                <img src="/img/about/export_list_img_01.gif" alt="대한민국 국기"/>
+                                <img src="img/about/export_list_img_01.gif" alt="대한민국 국기"/>
                             </div>
                             <h4>대한민국</h4>
                             <ul className="company-list">
@@ -44,7 +44,7 @@ export default function AboutExportPage() {
 
                         <div className="country-item">
                             <div className="country-flag">
-                                <img src="/img/about/export_list_img_02.gif" alt="중국 국기"/>
+                                <img src="img/about/export_list_img_02.gif" alt="중국 국기"/>
                             </div>
                             <h4>중국</h4>
                             <ul className="company-list">
@@ -62,7 +62,7 @@ export default function AboutExportPage() {
 
                         <div className="country-item">
                             <div className="country-flag">
-                                <img src="/img/about/export_list_img_03.gif" alt="미국 국기"/>
+                                <img src="img/about/export_list_img_03.gif" alt="미국 국기"/>
                             </div>
                             <h4>미국</h4>
                             <ul className="company-list">
@@ -81,7 +81,7 @@ export default function AboutExportPage() {
 
                         <div className="country-item">
                             <div className="country-flag">
-                                <img src="/img/about/export_list_img_04.gif" alt="호주 국기"/>
+                                <img src="img/about/export_list_img_04.gif" alt="호주 국기"/>
                             </div>
                             <h4>호주</h4>
                             <ul className="company-list">
@@ -94,7 +94,7 @@ export default function AboutExportPage() {
 
                         <div className="country-item">
                             <div className="country-flag">
-                                <img src="/img/about/export_list_img_05.gif" alt="일본 국기"/>
+                                <img src="img/about/export_list_img_05.gif" alt="일본 국기"/>
                             </div>
                             <h4>일본</h4>
                             <ul className="company-list">
@@ -108,7 +108,7 @@ export default function AboutExportPage() {
 
                         <div className="country-item">
                             <div className="country-flag">
-                                <img src="/img/about/export_list_img_06.gif" alt="인도 국기"/>
+                                <img src="img/about/export_list_img_06.gif" alt="인도 국기"/>
                             </div>
                             <h4>인도</h4>
                             <ul className="company-list">

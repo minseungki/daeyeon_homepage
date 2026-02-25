@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/tech/manual");
 export default function TechManualPage() {
     return (
         <>
-            <link rel="stylesheet" href="/css/tech.css"/>
+            <link rel="stylesheet" href="css/tech.css"/>
 
             <PageShell subVisual={{
                 title: "사용설명서",

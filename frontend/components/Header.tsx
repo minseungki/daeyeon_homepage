@@ -8,7 +8,7 @@ export default function Header() {
             <div className="container header-inner">
                 <h1 className="logo">
                     <Link href="/" aria-label={`${SITE.name} 홈으로`}>
-                        <img src="/img/home/logo.png" alt="DAEYOUN"/>
+                        <img src="img/home/logo.png" alt="DAEYOUN"/>
                     </Link>
                 </h1>
                 <Nav/>

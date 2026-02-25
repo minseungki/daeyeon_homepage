@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/about/organization");
 export default function AboutOrganizationPage() {
     return (
         <>
-            <link rel="stylesheet" href="/css/about.css"/>
+            <link rel="stylesheet" href="css/about.css"/>
 
             <PageShell subVisual={{
                 title: "조직도",

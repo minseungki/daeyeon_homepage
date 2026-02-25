@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/tech/production-system");
 export default function TechProductSystemPage() {
     return (
         <>
-            <link rel="stylesheet" href="/css/tech.css"/>
+            <link rel="stylesheet" href="css/tech.css"/>
 
             <PageShell subVisual={{
                 title: "생산시스템",

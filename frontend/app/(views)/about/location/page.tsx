@@ -9,7 +9,7 @@ export const metadata: Metadata = buildSeoByPath("/about/location");
 export default function AboutLocationPage() {
     return (
         <>
-            <link rel="stylesheet" href="/css/about.css"/>
+            <link rel="stylesheet" href="css/about.css"/>
 
             <PageShell subVisual={{
                 title: "찾아오시는 길",

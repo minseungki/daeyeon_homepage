@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/tech/quality-assurance-system
 export default function TechQualityAssuranceSystemPage() {
     return (
         <>
-            <link rel="stylesheet" href="/css/tech.css"/>
+            <link rel="stylesheet" href="css/tech.css"/>
 
             <PageShell subVisual={{
                 title: "품질보증시스템",

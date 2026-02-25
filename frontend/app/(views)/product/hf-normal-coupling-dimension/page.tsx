@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/product/hf-normal-coupling-di
 export default function ProductHfNormalCouplingDimensionPage() {
     return (
         <>
-            <link rel="stylesheet" href="/css/product.css"/>
+            <link rel="stylesheet" href="css/product.css"/>
 
             <DefaultPageShell subVisual={{
                 title: "HF 일반이음관 주요치수",

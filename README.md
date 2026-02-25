@@ -52,7 +52,8 @@ frontend/
 ```
 
 ## 배포
-- Github 자동 배포
+- Github Actions 자동 배포 (개발)
+- .github/workflows/pages.yml 파일 참고
 
 ## 페이지 개발
 ``` typescript jsx
@@ -97,4 +98,61 @@ export default function AboutCeoPage() {
   - 컨텐츠 영역
     - 해당 영역에 컨텐츠 작성
 
+### 카카오 맵
+- /app/kakao-map/page.tsx
+- /component/Head.tsx
+``` typescript jsx
+파일명 : /component/Head.tsx
 
+import Script from "next/script";
+
+export default function Head() {
+    let appkey = process.env.KAKAO_NEXT_PUBLIC_APPKEY;
+    const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+    return (
+        <>
+            <Script
+                strategy="beforeInteractive"
+                src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${appkey}&libraries=services&autoload=false`}
+            ></Script>
+
+            <base href={base ? `${base}/` : "/"} />;
+        </>
+    );
+}
+```
+- 카카오맵 키는 GitHub > Settings > Environments 안에 설정되어있고
+- 해당 키는 로컬 .env에 넣어서 로컬에서 사용
+
+### 유튜브 영상
+- /components/YouTubeEmbed.tsx 파일을 이용하여 생성한다.
+``` typescript jsx
+import YouTubeEmbed from "@/components/YouTubeEmbed";
+
+<YouTubeEmbed videoId="bd9yLroxno8" title="DAEYOUN 홍보 영상"/>
+```
+
+### 이미지 / CSS 로드
+``` typescript jsx
+파일명 : /component/Head.tsx
+
+import Script from "next/script";
+
+export default function Head() {
+    let appkey = process.env.KAKAO_NEXT_PUBLIC_APPKEY;
+    const base = process.env.NEXT_PUBLIC_BASE_PATH || "";
+    return (
+        <>
+            <Script
+                strategy="beforeInteractive"
+                src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${appkey}&libraries=services&autoload=false`}
+            ></Script>
+
+            <base href={base ? `${base}/` : "/"} />;
+        </>
+    );
+}
+```
+- GitHub Actions로 배포를 하게 되면 url root경로가 프로젝트명으로 잡혀서 base 태그를 사용
+  - https://[계정].github.io/[프로젝트명]
+- 이에 img/css 로드는 상대 경로를 사용한다.
