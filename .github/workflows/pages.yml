@@ -40,6 +40,7 @@ jobs:
         env:
           GITHUB_PAGES: "true"
           NEXT_PUBLIC_BASE_PATH: "/daeyeon_homepage"
+          NEXT_PUBLIC_KAKAO_APPKEY: ${{ secrets.NEXT_PUBLIC_KAKAO_APPKEY }}
 
       # GitHub Pages가 Jekyll 처리를 하면서 _next 같은 폴더를 건드리는 이슈 회피용
       - name: Add .nojekyll

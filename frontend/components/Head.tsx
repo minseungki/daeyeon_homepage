@@ -1,7 +1,7 @@
 import Script from "next/script";
 
 export default function Head() {
-    const appKey = process.env.KAKAO_NEXT_PUBLIC_APPKEY;
+    const appKey = process.env.NEXT_PUBLIC_KAKAO_APPKEY;
     return (
         <Script
             strategy="beforeInteractive"
