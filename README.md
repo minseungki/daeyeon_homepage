@@ -4,6 +4,9 @@
 - UI 라이브러리 : [React.js](https://ko.react.dev/) 19.2.3
 - 웹 프레임워크 : [Next.js](https://nextjs.org/) 16.1.6
 
+## 도메인 변경 및 추가
+- 도메인 변경 시 카카오 디벨로퍼에 도메인을 등록해야 맵이 로드된다.
+
 ## 프로젝트 구조
 ```
 .github
@@ -156,3 +159,4 @@ export default function Head() {
 - GitHub Actions로 배포를 하게 되면 url root경로가 프로젝트명으로 잡혀서 base 태그를 사용
   - https://[계정].github.io/[프로젝트명]
 - 이에 img/css 로드는 상대 경로를 사용한다.
+
