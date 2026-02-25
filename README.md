@@ -6,6 +6,9 @@
 
 ## 프로젝트 구조
 ```
+.github
+└─ workflows
+   └─ pages.yml               # GitHub Actions 배포 설정 파일
 frontend/
 ├─ app/
 │  ├─ (home)                  # 메인 전용 그룹 (폴더명에 괄호가 있으면 URL에는 안 보임)
