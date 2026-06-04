@@ -1,6 +1,5 @@
 import "../globals.css";
 import type { Metadata } from "next";
-import Head from "@/components/Head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SplashScreen from "@/components/SplashScreen";
@@ -20,7 +19,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <html lang="ko">
             <head>
                 <base href={base ? `${base}/` : "/"} />
-                <Head />
+                {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+                <script src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_APPKEY}&libraries=services&autoload=false`} />
             </head>
             <body>
                 <SplashScreen />
