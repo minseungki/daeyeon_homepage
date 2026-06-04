@@ -3,6 +3,7 @@ import type { Metadata } from "next";
 import Head from "@/components/Head";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import SplashScreen from "@/components/SplashScreen";
 import { SITE } from "@/config/site";
 import React from "react";
 
@@ -22,6 +23,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
                 <Head />
             </head>
             <body>
+                <SplashScreen />
                 <Header />
                 <main>{children}</main>
                 <Footer />
