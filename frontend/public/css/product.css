@@ -10,29 +10,20 @@
 .info-section { margin-bottom: 70px; }
 
 .section-title {
-    font-size: 0.8rem;
-    font-weight: 700;
-    letter-spacing: 2.5px;
-    color: var(--main-blue);
-    text-transform: uppercase;
-    margin-bottom: 10px;
-}
-
-.section-heading {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
     font-weight: 800;
     color: #111;
-    margin-bottom: 30px;
-    letter-spacing: -0.3px;
-    padding-bottom: 20px;
-    border-bottom: 2px solid #eee;
+    margin-bottom: 24px;
+    padding-bottom: 16px;
+    border-bottom: 2px solid var(--main-blue);
+    letter-spacing: -0.2px;
 }
 
 h3 {
-    font-size: 1rem;
+    font-size: 0.95rem;
     font-weight: 700;
     margin: 24px 0 10px;
-    color: #444;
+    color: #555;
 }
 
 /* 테이블 공통 */

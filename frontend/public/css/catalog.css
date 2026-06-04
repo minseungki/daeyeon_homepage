@@ -13,23 +13,31 @@
 
 /* 2. 개별 카드 내부 정렬 */
 .catalog-card {
-    background: #f8f9fa;
-    border-radius: 12px;
+    background: #fff;
+    border-radius: 16px;
     overflow: hidden;
-    transition: all 0.3s ease;
-    border: 1px solid #eee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eef0f3;
     display: flex;
     flex-direction: column;
-    align-items: center; /* 카드 내 모든 Flex 아이템 수평 중앙 정렬 */
-    text-align: center;  /* 텍스트 중앙 정렬 */
-    width: 100%;         /* 그리드 칸을 꽉 채우되 align-items로 내부 정렬 */
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+.catalog-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #003466, #1a6fc4);
 }
 
 .catalog-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-    background: #fff;
-    border-color: #003466;
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 52, 102, 0.1);
+    border-color: #c8d8ea;
 }
 
 /* 3. 썸네일 박스 내 이미지 정중앙 */
@@ -84,26 +92,26 @@
     display: block;
 }
 
-/* 5. PDF 버튼 중앙 정렬 */
+/* 5. PDF 버튼 */
 .pdf-link {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    gap: 10px;
+    gap: 8px;
     text-decoration: none;
-    color: #333;
-    font-weight: 600;
-    font-size: 15px;
-    padding: 12px 25px;
-    background: #f0f0f0;
-    border-radius: 4px;
-    transition: 0.2s;
-    width: auto; /* 버튼 내용만큼만 너비 차지 */
+    color: #fff;
+    font-weight: 700;
+    font-size: 14px;
+    padding: 12px 28px;
+    background: #003466;
+    border-radius: 50px;
+    transition: background 0.2s, transform 0.2s;
+    letter-spacing: 0.5px;
 }
 
 .pdf-link:hover {
-    background: #003466;
-    color: #fff;
+    background: #1a6fc4;
+    transform: translateY(-2px);
 }
 
 /* 반응형 설정 */

@@ -1,115 +1,122 @@
-
-
-
-
-
-/* ===== Base ===== */
+/* ===== Contact 문의안내 ===== */
 .content-wrap {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* 전체 요소 수평 중앙 정렬 */
+    align-items: center;
 }
 
 .container-contact {
     max-width: 1200px;
     margin: 0 auto;
     width: 100%;
-    gap: 30px;
     display: flex;
     flex-direction: column;
 }
 
-/* 컨테이너가 연속으로 올 경우 사이 간격 추가 */
 .container-contact + .container-contact {
-    margin-top: 30px;
+    margin-top: 28px;
 }
 
-/* ===== Rows (한 줄 배치) ===== */
+/* ===== Rows ===== */
 .row {
     display: flex;
-    justify-content: center;     /* 전체 가운데 */
+    justify-content: center;
     align-items: stretch;
     gap: 20px;
     width: 100%;
-    flex-wrap: nowrap;           /* ✅ PC: 한 줄 유지 */
+    flex-wrap: nowrap;
 }
 
-/* 3개 한 줄 */
 .row-3 .main-card { flex: 1 1 0; min-width: 240px; }
-
-/* 2개 한 줄 */
 .row-2 .main-card { flex: 1 1 0; min-width: 320px; }
 
-/* ===== Card (기존 톤) ===== */
+/* ===== Card ===== */
 .main-card {
-    background: #f8f9fa;
-    border-radius: 12px;
+    background: #fff;
+    border-radius: 16px;
     overflow: hidden;
-    transition: all 0.3s ease;
-    border: 1px solid #eee;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid #eef0f3;
     width: 100%;
+    position: relative;
+}
+
+.main-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, #003466, #1a6fc4);
+    border-radius: 16px 16px 0 0;
 }
 
 .main-card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 15px 30px rgba(0,0,0,0.08);
-    background: #fff;
-    border-color: #003466;
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(0, 52, 102, 0.1);
+    border-color: #c8d8ea;
 }
 
 .card-inner {
-    padding: 26px 22px;
-    text-align: center;          /* ✅ 카드 내용 가운데 */
+    padding: 36px 28px;
+    text-align: center;
 }
 
-/* ===== Tag / Title ===== */
+/* ===== 아이콘 ===== */
+.card-icon {
+    font-size: 28px;
+    margin-bottom: 16px;
+    display: block;
+    line-height: 1;
+}
+
+/* ===== Tag ===== */
 .tag {
     display: inline-block;
-    font-size: 13px;
-    font-weight: 600;
+    font-size: 12px;
+    font-weight: 700;
     color: #003466;
-    background: rgba(0,52,102,0.08);
-    padding: 6px 14px;
+    background: rgba(0, 52, 102, 0.08);
+    padding: 5px 14px;
     border-radius: 20px;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
 }
 
 h4 {
     margin: 0;
     font-size: 18px;
     font-weight: 700;
-    line-height: 1.4;
+    line-height: 1.5;
+    color: #111;
     word-break: keep-all;
 }
 
-/* 전화 링크 */
 .contact-link {
     color: inherit;
     text-decoration: none;
+    transition: color 0.2s;
 }
 
-.contact-link:hover {
-    color: #003466;
-    text-decoration: underline;
-}
+.contact-link:hover { color: #003466; }
 
 /* ===== Email list ===== */
 .contact-list {
-    margin-top: 16px;
-    padding-top: 14px;
-    border-top: 1px solid #eee;
+    margin-top: 18px;
+    padding-top: 16px;
+    border-top: 1px solid #f0f0f0;
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
 .contact-list a {
-    display: inline-block;
-    padding: 10px 14px;
-    border-radius: 6px;
-    background: #f0f0f0;
-    color: #333;
-    font-size: 15px;
+    display: block;
+    padding: 10px 16px;
+    border-radius: 8px;
+    background: #f7f8fa;
+    color: #444;
+    font-size: 14px;
     font-weight: 600;
     text-decoration: none;
     transition: 0.2s;
@@ -122,15 +129,15 @@ h4 {
 }
 
 /* ===== Responsive ===== */
-/* 화면이 줄어들면 한 줄 유지가 어려워서 자연스럽게 줄바꿈 */
 @media (max-width: 1024px) {
     .row { flex-wrap: wrap; }
-    .row-3 .main-card { flex: 1 1 360px; }
-    .row-2 .main-card { flex: 1 1 420px; }
+    .row-3 .main-card { flex: 1 1 300px; }
+    .row-2 .main-card { flex: 1 1 400px; }
 }
 
 @media (max-width: 650px) {
     .row { gap: 14px; }
     .row-3 .main-card,
     .row-2 .main-card { flex: 1 1 100%; min-width: 0; }
+    .card-inner { padding: 28px 20px; }
 }
