@@ -7,7 +7,7 @@ const nextConfig: NextConfig = {
   /* config options here */
     ...(isPages
         ? { output: "export", basePath: `/${repo}`, assetPrefix: `/${repo}` }
-        : {}),
+        : { basePath: "/daeyeon-homepage", trailingSlash: true }),
 };
 
 export default nextConfig;
