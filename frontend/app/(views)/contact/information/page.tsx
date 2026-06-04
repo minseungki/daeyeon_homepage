@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/contact/information");
 export default function ContactInformationPage() {
     return (
         <>
-            <link rel="stylesheet" href="css/contact.css"/>
+            <link rel="stylesheet" href="css/contact.css?v=2"/>
 
             <PageShell subVisual={{
                 title: "문의안내",

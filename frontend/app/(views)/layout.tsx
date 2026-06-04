@@ -1,7 +1,14 @@
 import "../globals.css";
+import type { Viewport } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SplashScreen from "@/components/SplashScreen";
+
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
+    minimumScale: 1,
+};
 
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
     const base = process.env.NEXT_PUBLIC_BASE_PATH || "";

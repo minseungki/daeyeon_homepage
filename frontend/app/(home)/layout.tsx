@@ -1,5 +1,5 @@
 import "../globals.css";
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SplashScreen from "@/components/SplashScreen";
@@ -10,6 +10,12 @@ import React from "react";
 export const metadata: Metadata = {
     title: SITE.name,
     description: SITE.description,
+};
+
+export const viewport: Viewport = {
+    width: "device-width",
+    initialScale: 1,
+    minimumScale: 1,
 };
 
 

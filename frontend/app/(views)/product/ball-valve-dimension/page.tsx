@@ -7,20 +7,21 @@ export const metadata: Metadata = buildSeoByPath("/product/ball-valve-dimension"
 export default function ProductBallValveDimensionPage() {
     return (
         <>
-            <link rel="stylesheet" href="css/product.css"/>
+            <link rel="stylesheet" href="css/product.css?v=3"/>
 
             <DefaultPageShell subVisual={{
                 title: "볼밸브 주요치수",
                 message: "고객과의 약속을 최우선으로 생각하며, 최고의 제품만을 고집하는 기업이 되도록 노력하겠습니다.",
                 pageClass: "product"
             }}>
-                <section className="info-section">
+                <section className="info-section dim-page">
                     <h2 className="section-title">가스용, 수도용 PE 볼밸브 주요치수</h2>
                     <div className="sub-section">
                         <h3>ISO · ASTM · JIS 스텐다드 PE 볼 밸브</h3>
                         <img src="img/product/pe_02_img_01.jpg" className="box-img"/>
-                        <table className="vertical-table">
+                        <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <caption>* ISO / KS Standard PE Valve Dimensional Table</caption>
+                            <colgroup><col style={{ width: "120px" }}/></colgroup>
                             <thead>
                             <tr>
                                 <th className="diagonal-header">
@@ -230,8 +231,9 @@ export default function ProductBallValveDimensionPage() {
                             </tbody>
                         </table>
 
-                        <table className="vertical-table">
+                        <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <caption>* ASTM Standard PE Valve Dimensional Table</caption>
+                            <colgroup><col style={{ width: "120px" }}/></colgroup>
                             <thead>
                             <tr>
                                 <th className="diagonal-header">
@@ -331,13 +333,16 @@ export default function ProductBallValveDimensionPage() {
                             </tbody>
                         </table>
 
-                        <div className="split-container">
-                            <div className="image-side">
-                                <img src="img/product/pe_02_img_02.jpg" alt="PE 볼 밸브 치수 도면" className="box-img"/>
-                            </div>
+                        <img src="img/product/pe_02_img_02.jpg" alt="PE 볼 밸브 치수 도면" className="box-img"/>
 
-                            <table className="vertical-table">
+                        <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                                 <caption>* JIS Standard PE Valve Dimensional Table</caption>
+                                <colgroup>
+                                    <col style={{ width: "120px" }}/>
+                                    <col/>
+                                    <col/>
+                                    <col/>
+                                </colgroup>
                                 <thead>
                                 <tr>
                                     <th className="diagonal-header">
@@ -381,21 +386,16 @@ export default function ProductBallValveDimensionPage() {
                                     <td>1026</td>
                                 </tr>
                                 </tbody>
-                            </table>
-                        </div>
+                        </table>
                     </div>
 
                     <div className="sub-section">
                         <h3>NO - 퍼지 타입 PE 볼 밸브</h3>
                         <img src="img/product/pe_02_img_03.jpg" className="box-img"/>
-                        <table className="vertical-table">
+                        <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <caption>* ISO / KS No-Purge type PE Valve Dimensional Table</caption>
                             <colgroup>
-                                <col style={{ width: "40%" }}/>
-                                <col style={{ width: "15%" }}/>
-                                <col style={{ width: "15%" }}/>
-                                <col style={{ width: "15%" }}/>
-                                <col style={{ width: "15%" }}/>
+                                <col style={{ width: "120px" }}/>
                             </colgroup>
                             <thead>
                             <tr>
@@ -479,15 +479,10 @@ export default function ProductBallValveDimensionPage() {
                     <div className="sub-section">
                         <h3>1 - 퍼지 타입 PE 볼 밸브</h3>
                         <img src="img/product/pe_02_img_04.jpg" className="box-img"/>
-                        <table className="vertical-table">
+                        <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <caption>* ISO / KS No-Purge type PE Valve Dimensional Table</caption>
                             <colgroup>
-                                <col style={{ width: "40%" }}/>
-                                <col style={{ width: "10%" }}/>
-                                <col style={{ width: "10%" }}/>
-                                <col style={{ width: "10%" }}/>
-                                <col style={{ width: "10%" }}/>
-                                <col style={{ width: "20%" }}/>
+                                <col style={{ width: "120px" }}/>
                             </colgroup>
                             <thead>
                                 <tr>
@@ -582,16 +577,10 @@ export default function ProductBallValveDimensionPage() {
                     <div className="sub-section">
                     <h3>2 - 퍼지 타입 PE 볼 밸브</h3>
                     <img src="img/product/pe_02_img_05.jpg" className="box-img"/>
-                    <table className="vertical-table">
+                    <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                         <caption>* ISO / KS 2-Purge type PE Valve Dimensional Table</caption>
                         <colgroup>
-                            <col style={{ width: "30%" }}/>
-                            <col style={{ width: "10%" }}/>
-                            <col style={{ width: "10%" }}/>
-                            <col style={{ width: "10%" }}/>
-                            <col style={{ width: "10%" }}/>
-                            <col style={{ width: "10%" }}/>
-                            <col style={{ width: "20%" }}/>
+                            <col style={{ width: "120px" }}/>
                         </colgroup>
                         <thead>
                             <tr>
@@ -697,8 +686,9 @@ export default function ProductBallValveDimensionPage() {
                     <div className="sub-section">
                 <h3>PE 볼 밸브 (Short type)</h3>
                 <img src="img/product/pe_02_img_06.jpg" className="box-img"/>
-                <table className="vertical-table font-xx-small">
+                <table className="vertical-table font-xx-small" style={{ tableLayout: "fixed", minWidth: "900px" }}>
                     <caption>* KS 볼 밸브 (꼬마타입)</caption>
+                    <colgroup><col style={{ width: "120px" }}/></colgroup>
                     <thead>
                     <tr>
                         <th className="diagonal-header">

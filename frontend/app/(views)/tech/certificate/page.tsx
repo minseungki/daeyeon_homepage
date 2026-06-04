@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/tech/certificate");
 export default function TechCertificatePage() {
     return (
         <>
-            <link rel="stylesheet" href="css/tech.css"/>
+            <link rel="stylesheet" href="css/tech.css?v=2"/>
 
             <PageShell subVisual={{
                 title: "인증서",

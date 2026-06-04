@@ -1,17 +1,15 @@
-/* 카탈로그&승인원 */
-/* 1. 그리드 컨테이너 중앙 정렬 */
+/* 카탈로그&승인원 — mobile base (360px) */
 .catalog-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: 1fr;
     gap: 30px;
-    margin: 60px auto; /* 상하 60px, 좌우 auto로 브라우저 중앙 배치 */
-    max-width: 1200px;
-    width: 100%; /* 너비를 100% 확보하여 auto margin이 작동하게 함 */
-    justify-content: center; /* 그리드 아이템들을 수평 중앙으로 */
-    justify-items: center;  /* 각 그리드 영역 내 아이템들을 수평 중앙으로 */
+    margin: 60px auto;
+    max-width: 400px;
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
 }
 
-/* 2. 개별 카드 내부 정렬 */
 .catalog-card {
     background: #fff;
     border-radius: 16px;
@@ -36,19 +34,18 @@
 
 .catalog-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 16px 40px rgba(0, 52, 102, 0.1);
+    box-shadow: 0 16px 40px rgba(0,52,102,0.1);
     border-color: #c8d8ea;
 }
 
-/* 3. 썸네일 박스 내 이미지 정중앙 */
 .catalog-thumb {
     position: relative;
     width: 100%;
     height: 300px;
     background: #fff;
     display: flex;
-    align-items: center;    /* 수직 중앙 */
-    justify-content: center; /* 수평 중앙 */
+    align-items: center;
+    justify-content: center;
     padding: 30px;
     box-sizing: border-box;
 }
@@ -59,40 +56,23 @@
     width: auto;
     height: auto;
     object-fit: contain;
-    /* 세로형 문서 느낌을 주는 그림자 */
     filter: drop-shadow(5px 5px 10px rgba(0,0,0,0.1));
 }
 
-/* 4. 텍스트 정보 영역 중앙 정렬 */
 .catalog-info {
     padding: 30px 20px;
     border-top: 1px solid #eee;
-    width: 100%; /* 부모 너비에 맞춤 */
+    width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center; /* 내부 요소들 중앙 정렬 */
+    align-items: center;
     box-sizing: border-box;
 }
 
-.info-top {
-    margin-bottom: 20px;
-}
+.info-top { margin-bottom: 20px; }
+.info-top h4 { font-size: 19px; font-weight: 700; color: #222; margin-bottom: 8px; word-break: keep-all; }
+.info-top .lang { font-size: 14px; color: #888; display: block; }
 
-.info-top h4 {
-    font-size: 19px;
-    font-weight: 700;
-    color: #222;
-    margin-bottom: 8px;
-    word-break: keep-all;
-}
-
-.info-top .lang {
-    font-size: 14px;
-    color: #888;
-    display: block;
-}
-
-/* 5. PDF 버튼 */
 .pdf-link {
     display: inline-flex;
     align-items: center;
@@ -108,24 +88,14 @@
     transition: background 0.2s, transform 0.2s;
     letter-spacing: 0.5px;
 }
+.pdf-link:hover { background: #1a6fc4; transform: translateY(-2px); }
 
-.pdf-link:hover {
-    background: #1a6fc4;
-    transform: translateY(-2px);
+/* sm (640px) — 2열 */
+@media (min-width: 640px) {
+    .catalog-grid { grid-template-columns: repeat(2, 1fr); max-width: 800px; }
 }
 
-/* 반응형 설정 */
-@media (max-width: 1024px) {
-    .catalog-grid {
-        grid-template-columns: repeat(2, 1fr);
-        max-width: 800px;
-    }
+/* lg (1024px) — 3열 */
+@media (min-width: 1024px) {
+    .catalog-grid { grid-template-columns: repeat(3, 1fr); max-width: 1200px; }
 }
-
-@media (max-width: 650px) {
-    .catalog-grid {
-        grid-template-columns: 1fr;
-        max-width: 350px; /* 모바일에서 카드가 너무 넓어지지 않게 조정 */
-    }
-}
-/* 카탈로그&승인원 */

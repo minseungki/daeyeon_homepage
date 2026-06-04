@@ -9,7 +9,7 @@ export default function SubVisual({title, message, pageClass} : subVisualProps) 
         <>
             <style>{`
             .sub-visual {
-                height: 450px;
+                height: 280px;
                 display: flex;
                 align-items: center;
                 justify-content: center;
@@ -18,13 +18,13 @@ export default function SubVisual({title, message, pageClass} : subVisualProps) 
                 padding: 0 20px;
             }
 
-            .sub-visual-inner h2 { font-size: 50px; font-weight: 700; letter-spacing: 5px; margin-bottom: 15px; }
-            .sub-visual-inner p { font-size: 18px; font-weight: 300; opacity: 0.8; word-break: keep-all; }
+            .sub-visual-inner h2 { font-size: 28px; font-weight: 700; letter-spacing: 2px; margin-bottom: 10px; }
+            .sub-visual-inner p { font-size: 13px; font-weight: 300; opacity: 0.8; word-break: keep-all; }
 
-            @media (max-width: 768px) {
-                .sub-visual { height: 280px; }
-                .sub-visual-inner h2 { font-size: 28px; letter-spacing: 2px; margin-bottom: 10px; }
-                .sub-visual-inner p { font-size: 13px; }
+            @media (min-width: 1024px) {
+                .sub-visual { height: 450px; }
+                .sub-visual-inner h2 { font-size: 50px; letter-spacing: 5px; margin-bottom: 15px; }
+                .sub-visual-inner p { font-size: 18px; }
             }
             
             .sub-visual.about {

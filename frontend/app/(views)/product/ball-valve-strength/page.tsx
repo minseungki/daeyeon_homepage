@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/product/ball-valve-strength")
 export default function ProductBallValveStrengthPage() {
     return (
         <>
-            <link rel="stylesheet" href="css/product.css"/>
+            <link rel="stylesheet" href="css/product.css?v=3"/>
 
             <DefaultPageShell subVisual={{
                 title: "볼밸브의 장점",
@@ -16,7 +16,7 @@ export default function ProductBallValveStrengthPage() {
             }}>
                 <section className="info-section">
                     <h2 className="section-title">가스용, 수도용 PE 볼 밸브 장점 및 시공 시 주의사항</h2>
-                    <table className="horizontal-table">
+                    <div className="table-wrap"><table className="horizontal-table">
                         <colgroup>
                             <col style={{ width: "15%" }}/>
                             <col style={{ width: "10%" }}/>
@@ -55,7 +55,7 @@ export default function ProductBallValveStrengthPage() {
                                 </ol>
                             </td>
                         </tr>
-                    </table>
+                    </table></div>
                 </section>
 
                 <section className="info-section">
@@ -134,7 +134,7 @@ export default function ProductBallValveStrengthPage() {
 
                 <section className="info-section">
                     <h2 className="section-title">PE 볼 밸브 사양</h2>
-                    <table className="vertical-table">
+                    <div className="table-wrap"><table className="vertical-table">
                         <thead>
                         <tr>
                             <th>구분</th>
@@ -193,7 +193,7 @@ export default function ProductBallValveStrengthPage() {
                             <td colSpan={2}>OPEN : 1/4 Turn Left, CLOSE : 1/4 Turn Right</td>
                         </tr>
                         </tbody>
-                    </table>
+                    </table></div>
 
                 </section>
 

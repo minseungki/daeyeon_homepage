@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/about/export");
 export default function AboutExportPage() {
     return (
         <>
-            <link rel="stylesheet" href="css/about.css"/>
+            <link rel="stylesheet" href="css/about.css?v=2"/>
 
             <PageShell subVisual={{
                 title: "주요수출업체",

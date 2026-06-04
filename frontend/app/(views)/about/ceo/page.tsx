@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/about/ceo");
 export default function AboutCeoPage() {
     return (
         <>
-            <link rel="stylesheet" href="css/about.css"/>
+            <link rel="stylesheet" href="css/about.css?v=2"/>
 
             <PageShell subVisual={{
                 title: "CEO 인사말",

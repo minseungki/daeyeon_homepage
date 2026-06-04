@@ -32,10 +32,10 @@
 .dot { width: 10px; height: 10px; border: 1.5px solid rgba(255,255,255,0.6); border-radius: 50%; cursor: pointer; transition: 0.3s; }
 .dot.active { background: #fff; width: 30px; border-radius: 10px; border-color: #fff; }
 
-/* OUR SOLUTIONS 섹션 */
-.products { padding: 110px 0; background: #f8f9fb; text-align: center; }
+/* OUR SOLUTIONS 섹션 — mobile base */
+.products { padding: 56px 0; background: #f8f9fb; text-align: center; }
 .section-title {
-    font-size: 13px;
+    font-size: 11px;
     font-weight: 700;
     letter-spacing: 3px;
     color: #003466;
@@ -43,15 +43,15 @@
     margin-bottom: 16px;
 }
 .section-heading {
-    font-size: clamp(28px, 3vw, 42px);
+    font-size: 22px;
     font-weight: 800;
     color: #111;
-    margin-bottom: 18px;
+    margin-bottom: 12px;
     letter-spacing: -0.5px;
 }
-.section-desc { font-size: 17px; color: #777; margin: 0 auto 60px; max-width: 680px; line-height: 1.8; }
+.section-desc { font-size: 13px; color: #777; margin: 0 auto 32px; max-width: 680px; line-height: 1.7; }
 
-.product-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; margin-bottom: 50px; }
+.product-grid { display: grid; grid-template-columns: 1fr; gap: 28px; max-width: 480px; margin: 0 auto 50px; }
 .product-item {
     background: #fff;
     border-radius: 16px;
@@ -63,20 +63,20 @@
     transform: translateY(-8px);
     box-shadow: 0 16px 40px rgba(0,0,0,0.12);
 }
-.product-img-box { width: 100%; height: 260px; overflow: hidden; }
+.product-img-box { width: 100%; height: 200px; overflow: hidden; }
 .product-img-box img { width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s ease; }
 .product-item:hover .product-img-box img { transform: scale(1.04); }
-.product-info { padding: 24px 28px 28px; text-align: left; }
-.product-info h4 { font-size: 20px; font-weight: 700; margin-bottom: 8px; color: #111; }
-.product-info p { font-size: 15px; color: #888; line-height: 1.6; }
+.product-info { padding: 16px 18px 20px; text-align: left; }
+.product-info h4 { font-size: 16px; font-weight: 700; margin-bottom: 8px; color: #111; }
+.product-info p { font-size: 13px; color: #888; line-height: 1.6; }
 
 .btn-wrap { margin-top: 10px; }
 .btn-detail {
     display: inline-block;
-    padding: 14px 48px;
+    padding: 12px 36px;
     background: #003466;
     color: #fff;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: 600;
     border-radius: 50px;
     letter-spacing: 0.5px;
@@ -84,35 +84,36 @@
 }
 .btn-detail:hover { background: #004f9a; transform: translateY(-2px); }
 
-/* ABOUT DAEYOUN 유튜브 섹션 */
-.about-video { padding: 110px 0; background: #fff; text-align: center; }
+/* ABOUT DAEYOUN 유튜브 섹션 — mobile base */
+.about-video { padding: 56px 0; background: #fff; text-align: center; }
 .video-wrapper {
     position: relative; max-width: 960px; margin: 0 auto; padding-bottom: 56.25%;
     height: 0; overflow: hidden; border-radius: 16px; box-shadow: 0 24px 60px rgba(0,0,0,0.12);
 }
 .video-wrapper iframe { position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0; }
 
-/* CONTACT US 섹션 */
-.contact-us { padding: 110px 0; background: #f8f9fb; border-top: 1px solid #eee; text-align: center; }
+/* CONTACT US 섹션 — mobile base */
+.contact-us { padding: 56px 0; background: #f8f9fb; border-top: 1px solid #eee; text-align: center; }
 .contact-info-box { margin-bottom: 40px; }
 .info-item { margin-bottom: 16px; }
 .contact-us .label { display: block; font-size: 13px; color: #003466; font-weight: 700; margin-bottom: 5px; letter-spacing: 1px; text-transform: uppercase; }
-.contact-us .value { font-size: 17px; color: #333; }
-.info-group { display: flex; justify-content: center; gap: 40px; margin-top: 10px; }
+.contact-us .value { font-size: 15px; color: #333; }
+.info-group { display: flex; flex-direction: column; justify-content: center; gap: 12px; margin-top: 10px; }
 
-/* 메인 반응형 */
-@media (max-width: 900px) {
-    .product-grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
-    .info-group { flex-direction: column; gap: 12px; }
-    .products, .about-video, .contact-us { padding: 70px 0; }
-    .section-title { font-size: 11px; }
-    .section-heading { font-size: 22px; margin-bottom: 12px; }
-    .section-desc { font-size: 13px; margin-bottom: 32px; line-height: 1.7; }
-    .product-img-box { height: 200px; }
-    .product-info { padding: 16px 18px 20px; }
-    .product-info h4 { font-size: 16px; }
-    .product-info p { font-size: 13px; }
-    .btn-detail { padding: 12px 36px; font-size: 14px; }
-    .products, .about-video, .contact-us { padding: 56px 0; }
-    .contact-us .value { font-size: 15px; }
+/* 메인 반응형 — lg (1024px) desktop */
+@media (min-width: 1024px) {
+    .products { padding: 110px 0; }
+    .section-title { font-size: 13px; }
+    .section-heading { font-size: clamp(28px, 3vw, 42px); margin-bottom: 18px; }
+    .section-desc { font-size: 17px; margin-bottom: 60px; line-height: 1.8; }
+    .product-grid { grid-template-columns: repeat(3, 1fr); max-width: none; margin-left: 0; margin-right: 0; margin-bottom: 50px; }
+    .product-img-box { height: 260px; }
+    .product-info { padding: 24px 28px 28px; }
+    .product-info h4 { font-size: 20px; }
+    .product-info p { font-size: 15px; }
+    .btn-detail { padding: 14px 48px; font-size: 15px; }
+    .about-video { padding: 110px 0; }
+    .contact-us { padding: 110px 0; }
+    .contact-us .value { font-size: 17px; }
+    .info-group { flex-direction: row; gap: 40px; }
 }

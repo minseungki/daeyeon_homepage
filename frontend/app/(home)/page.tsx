@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
       <>
-          <link rel="stylesheet" href="css/main.css"/>
+          <link rel="stylesheet" href="css/main.css?v=2"/>
           <section className="main-visual">
               <Slider slides={slides} interval={5000} title={title} description={description}/>
           </section>

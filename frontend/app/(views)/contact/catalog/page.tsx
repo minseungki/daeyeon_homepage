@@ -7,7 +7,7 @@ export const metadata: Metadata = buildSeoByPath("/contact/catalog");
 export default function ContactCatalogPage() {
     return (
         <>
-            <link rel="stylesheet" href="css/catalog.css"/>
+            <link rel="stylesheet" href="css/catalog.css?v=2"/>
 
             <PageShell subVisual={{
                 title: "카다로그&승인원",

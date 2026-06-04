@@ -1,4 +1,4 @@
-/* ===== Contact 문의안내 ===== */
+/* ===== Contact 문의안내 — mobile base (360px) ===== */
 .content-wrap {
     display: flex;
     flex-direction: column;
@@ -13,22 +13,20 @@
     flex-direction: column;
 }
 
-.container-contact + .container-contact {
-    margin-top: 28px;
-}
+.container-contact + .container-contact { margin-top: 28px; }
 
-/* ===== Rows ===== */
+/* ===== Rows — mobile base (single column stack) ===== */
 .row {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: stretch;
-    gap: 20px;
+    gap: 14px;
     width: 100%;
-    flex-wrap: nowrap;
 }
 
-.row-3 .main-card { flex: 1 1 0; min-width: 240px; }
-.row-2 .main-card { flex: 1 1 0; min-width: 320px; }
+.row-3 .main-card,
+.row-2 .main-card { flex: 1 1 100%; min-width: 0; }
 
 /* ===== Card ===== */
 .main-card {
@@ -52,22 +50,14 @@
 
 .main-card:hover {
     transform: translateY(-6px);
-    box-shadow: 0 16px 40px rgba(0, 52, 102, 0.1);
+    box-shadow: 0 16px 40px rgba(0,52,102,0.1);
     border-color: #c8d8ea;
 }
 
-.card-inner {
-    padding: 36px 28px;
-    text-align: center;
-}
+.card-inner { padding: 28px 20px; text-align: center; }
 
 /* ===== 아이콘 ===== */
-.card-icon {
-    font-size: 28px;
-    margin-bottom: 16px;
-    display: block;
-    line-height: 1;
-}
+.card-icon { font-size: 28px; margin-bottom: 16px; display: block; line-height: 1; }
 
 /* ===== Tag ===== */
 .tag {
@@ -75,7 +65,7 @@
     font-size: 12px;
     font-weight: 700;
     color: #003466;
-    background: rgba(0, 52, 102, 0.08);
+    background: rgba(0,52,102,0.08);
     padding: 5px 14px;
     border-radius: 20px;
     margin-bottom: 14px;
@@ -83,21 +73,9 @@
     text-transform: uppercase;
 }
 
-h4 {
-    margin: 0;
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 1.5;
-    color: #111;
-    word-break: keep-all;
-}
+h4 { margin: 0; font-size: 18px; font-weight: 700; line-height: 1.5; color: #111; word-break: keep-all; }
 
-.contact-link {
-    color: inherit;
-    text-decoration: none;
-    transition: color 0.2s;
-}
-
+.contact-link { color: inherit; text-decoration: none; transition: color 0.2s; }
 .contact-link:hover { color: #003466; }
 
 /* ===== Email list ===== */
@@ -109,7 +87,6 @@ h4 {
     flex-direction: column;
     gap: 10px;
 }
-
 .contact-list a {
     display: block;
     padding: 10px 16px;
@@ -122,22 +99,12 @@ h4 {
     transition: 0.2s;
     word-break: break-all;
 }
+.contact-list a:hover { background: #003466; color: #fff; }
 
-.contact-list a:hover {
-    background: #003466;
-    color: #fff;
-}
-
-/* ===== Responsive ===== */
-@media (max-width: 1024px) {
-    .row { flex-wrap: wrap; }
-    .row-3 .main-card { flex: 1 1 300px; }
-    .row-2 .main-card { flex: 1 1 400px; }
-}
-
-@media (max-width: 650px) {
-    .row { gap: 14px; }
-    .row-3 .main-card,
-    .row-2 .main-card { flex: 1 1 100%; min-width: 0; }
-    .card-inner { padding: 28px 20px; }
+/* ===== lg (1024px) — multi-column layout ===== */
+@media (min-width: 1024px) {
+    .row { flex-wrap: nowrap; gap: 20px; }
+    .row-3 .main-card { flex: 1 1 0; min-width: 240px; }
+    .row-2 .main-card { flex: 1 1 0; min-width: 320px; }
+    .card-inner { padding: 36px 28px; }
 }

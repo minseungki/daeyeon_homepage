@@ -7,8 +7,8 @@ export const metadata: Metadata = buildSeoByPath("/product/ef-coupling-strength"
 export default function ProductEfCouplingStrengthPage() {
     return (
         <>
-            <link rel="stylesheet" href="css/product.css"/>
-            <link rel="stylesheet" href="css/ef-coupling-strength.css"/>
+            <link rel="stylesheet" href="css/product.css?v=3"/>
+            <link rel="stylesheet" href="css/ef-coupling-strength.css?v=2"/>
 
             <DefaultPageShell subVisual={{
                 title: "EF 이음관의 장점",
