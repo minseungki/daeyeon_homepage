@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
-import KakaoMapPage from "@/app/kakao-map/page"
+import KakaoMap from "@/components/KakaoMap";
 import { SITE } from "@/config/site";
 
 export const metadata: Metadata = buildSeoByPath("/about/location");
@@ -17,7 +17,7 @@ export default function AboutLocationPage() {
                 pageClass: "about"
             }}>
                 <section>
-                    <KakaoMapPage />
+                    <KakaoMap />
                     <div className="info-grid">
                         <div className="info-card">
                             <div className="card-icon">📍</div>

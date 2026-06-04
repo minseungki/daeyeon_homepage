@@ -1,7 +1,7 @@
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import { SITE } from "@/config/site";
 import Slider from "@/components/Slider";
-import KakaoMapPage from "@/app/kakao-map/page"
+import KakaoMap from "@/components/KakaoMap";
 
 export default function Home() {
     const slides = [
@@ -76,7 +76,7 @@ export default function Home() {
                               </div>
                           </div>
                       </div>
-                      <KakaoMapPage />
+                      <KakaoMap />
                   </div>
               </div>
           </section>

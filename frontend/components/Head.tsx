@@ -6,6 +6,7 @@ export default function Head() {
     const appKey = process.env.NEXT_PUBLIC_KAKAO_APPKEY;
     return (
         <Script
+            id="kakao-maps-sdk"
             strategy="afterInteractive"
             src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${appKey}&libraries=services&autoload=false`}
         />
