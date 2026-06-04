@@ -105,8 +105,14 @@
     .product-grid { grid-template-columns: 1fr; max-width: 480px; margin-left: auto; margin-right: auto; }
     .info-group { flex-direction: column; gap: 12px; }
     .products, .about-video, .contact-us { padding: 70px 0; }
-    .section-heading { font-size: clamp(22px, 5vw, 32px); }
-    .section-desc { font-size: 15px; margin-bottom: 40px; }
-    .product-img-box { height: 220px; }
-    .product-info { padding: 18px 20px 22px; }
+    .section-title { font-size: 11px; }
+    .section-heading { font-size: 22px; margin-bottom: 12px; }
+    .section-desc { font-size: 13px; margin-bottom: 32px; line-height: 1.7; }
+    .product-img-box { height: 200px; }
+    .product-info { padding: 16px 18px 20px; }
+    .product-info h4 { font-size: 16px; }
+    .product-info p { font-size: 13px; }
+    .btn-detail { padding: 12px 36px; font-size: 14px; }
+    .products, .about-video, .contact-us { padding: 56px 0; }
+    .contact-us .value { font-size: 15px; }
 }

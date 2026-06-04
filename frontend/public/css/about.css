@@ -743,12 +743,56 @@
     .org-main-grid { grid-template-columns: 1fr; }
 }
 
-/* 모바일 공통 여백 */
+/* 모바일 공통 여백 및 폰트 */
 @media (max-width: 768px) {
-    .about-intro { margin-bottom: 70px; gap: 40px; }
-    .achievement { flex-direction: column; margin-bottom: 60px; }
+    /* 인사말 */
+    .about-intro { margin-bottom: 60px; gap: 30px; flex-direction: column; }
+    .title-box h3 { font-size: 22px; line-height: 1.4; }
+    .top-label { font-size: 12px; margin-bottom: 12px; }
+    .text-box p { font-size: 14px; margin-bottom: 16px; }
+    .text-box { padding-top: 0; }
+
+    /* 통계 카드 */
+    .achievement { flex-direction: column; margin-bottom: 60px; gap: 16px; }
+    .achieve-card { padding: 32px 24px; }
+    .achieve-num { font-size: 38px; margin-bottom: 12px; }
+    .achieve-num span { font-size: 18px; }
+    .achieve-card h4 { font-size: 15px; margin-bottom: 8px; }
+    .achieve-card p { font-size: 13px; }
+
+    /* 핵심 강점 */
+    .section-title-center { margin-bottom: 32px; }
+    .section-title-center h3 { font-size: 22px; }
+    .section-title-center p { font-size: 13px; }
+    .value-card { padding: 28px 20px; }
+    .value-icon { font-size: 22px; margin-bottom: 14px; }
+    .value-eng { font-size: 11px; }
+    .value-kor { font-size: 18px; }
+    .value-desc { font-size: 13px; }
+
+    /* CEO */
+    .ceo-intro-flex { flex-direction: column; gap: 30px; }
+    .message-top h3 { font-size: 22px; }
+    .message-body p { font-size: 14px; }
+    .message-body .highlight { font-size: 16px; }
+    .ceo-signature .ceo-name { font-size: 18px; }
+
+    /* 연혁 */
     .history-container { padding: 0 4px; }
-    .section-title-center { margin-bottom: 40px; }
-    .section-title-center h3 { font-size: 28px; }
-    .export-country-grid { grid-template-columns: 1fr; }
+    .history-year-range { font-size: 13px; }
+    .history-list .date { font-size: 13px; }
+    .history-list p { font-size: 13px; }
+
+    /* 수출업체 */
+    .export-summary h3 { font-size: 20px; }
+    .export-country-grid { grid-template-columns: 1fr; gap: 16px; }
+    .country-item { padding: 20px; }
+    .country-item h4 { font-size: 16px; margin-bottom: 12px; }
+    .company-list li { font-size: 13px; }
+
+    /* 찾아오시는 길 */
+    .info-grid { grid-template-columns: 1fr; gap: 14px; }
+    .info-card { padding: 24px 20px; }
+    .info-card h4 { font-size: 14px; }
+    .info-card p { font-size: 13px; }
 }

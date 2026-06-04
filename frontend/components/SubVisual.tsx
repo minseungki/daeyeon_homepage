@@ -15,10 +15,17 @@ export default function SubVisual({title, message, pageClass} : subVisualProps) 
                 justify-content: center;
                 color: #fff;
                 text-align: center;
+                padding: 0 20px;
             }
-            
+
             .sub-visual-inner h2 { font-size: 50px; font-weight: 700; letter-spacing: 5px; margin-bottom: 15px; }
-            .sub-visual-inner p { font-size: 18px; font-weight: 300; opacity: 0.8; }
+            .sub-visual-inner p { font-size: 18px; font-weight: 300; opacity: 0.8; word-break: keep-all; }
+
+            @media (max-width: 768px) {
+                .sub-visual { height: 280px; }
+                .sub-visual-inner h2 { font-size: 28px; letter-spacing: 2px; margin-bottom: 10px; }
+                .sub-visual-inner p { font-size: 13px; }
+            }
             
             .sub-visual.about {
                 background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/about/company_bg.jpg') no-repeat center/cover;
