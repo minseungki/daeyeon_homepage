@@ -724,3 +724,31 @@
 @media (max-width: 900px) {
     .info-grid { grid-template-columns: 1fr; }
 }
+
+/* 조직도 모바일 */
+@media (max-width: 768px) {
+    .org-chart-container::before { display: none; }
+    .org-mid-wrap { height: 60px; }
+    .org-mid-wrap::before { display: none; }
+    .planning-branch { position: static; transform: none; padding-left: 0; margin-top: 16px; }
+    .planning-branch::before { display: none; }
+    .org-structure-layout::before,
+    .org-structure-layout::after { display: none; }
+    .org-main-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; padding-top: 20px; }
+    .hq-column::before { display: none; }
+    .ceo { padding: 14px 40px; font-size: 16px; }
+}
+
+@media (max-width: 480px) {
+    .org-main-grid { grid-template-columns: 1fr; }
+}
+
+/* 모바일 공통 여백 */
+@media (max-width: 768px) {
+    .about-intro { margin-bottom: 70px; gap: 40px; }
+    .achievement { flex-direction: column; margin-bottom: 60px; }
+    .history-container { padding: 0 4px; }
+    .section-title-center { margin-bottom: 40px; }
+    .section-title-center h3 { font-size: 28px; }
+    .export-country-grid { grid-template-columns: 1fr; }
+}

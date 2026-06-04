@@ -191,3 +191,27 @@ tr:hover td { background: #f5f8ff; }
 .font-xx-small th,.font-xx-small th span, .font-xx-small td {
     font-size: 11px !important;
 }
+/* 모바일 반응형 */
+@media (max-width: 768px) {
+    .content-wrap { padding: 60px 0; }
+    .info-section { margin-bottom: 50px; }
+    .section-title { font-size: 1rem; }
+
+    /* 모든 테이블 가로 스크롤 */
+    table { display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .table-wrapper { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+
+    th, td { padding: 9px 10px; font-size: 0.82rem; white-space: nowrap; }
+
+    /* 이미지 */
+    .img-full, .img-center, .box-img, .dimension-drawing { max-width: 100%; }
+    .img-center { max-width: 100%; }
+    .image-center-container { padding: 16px 0; }
+
+    /* EF 제품 소개 카드 */
+    .product-intro-card { padding: 24px 20px; }
+}
+
+@media (max-width: 480px) {
+    th, td { padding: 7px 8px; font-size: 0.78rem; }
+}

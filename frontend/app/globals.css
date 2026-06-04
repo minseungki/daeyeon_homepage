@@ -287,8 +287,12 @@ ul { list-style: none; }
 /* 반응형 공통 */
 @media (max-width: 900px) {
     .header { height: 70px; }
+    .header-inner { height: 70px; padding: 0 20px; }
+    .logo img { height: 36px; }
+    .nav { flex: 0 0 auto; }
     .gnb { display: none; }
     .hamburger { display: flex; }
+    .content-wrap { padding: 70px 0; }
     .footer-container { align-items: center; text-align: center; }
     .info-row span { display: block; margin-right: 0; padding-right: 0; margin-bottom: 5px; }
     .info-row span::after { display: none; }
