@@ -5,9 +5,8 @@ const isPages = process.env.GITHUB_PAGES === "true";
 
 const nextConfig: NextConfig = {
   /* config options here */
-    output: "export",
     ...(isPages
-        ? { basePath: `/${repo}`, assetPrefix: `/${repo}` }
+        ? { output: "export", basePath: `/${repo}`, assetPrefix: `/${repo}` }
         : {}),
 };
 
