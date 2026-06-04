@@ -1,0 +1,43 @@
+name: Deploy to Production Server
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install & Build
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run build
+        env:
+          NEXT_PUBLIC_KAKAO_APPKEY: ${{ secrets.NEXT_PUBLIC_KAKAO_APPKEY }}
+
+      - name: Deploy to Server
+        uses: appleboy/ssh-action@v1
+        with:
+          host: ${{ secrets.SERVER_HOST }}
+          username: ${{ secrets.SERVER_USER }}
+          key: ${{ secrets.SERVER_SSH_KEY }}
+          script: |
+            cd /var/www/daeyeon_homepage
+            git pull origin main
+            cd frontend
+            npm ci
+            npm run build
+            pm2 restart daeyeon-homepage || pm2 start npm --name "daeyeon-homepage" -- start
+            pm2 save
