@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useState, useEffect } from "react";
 
 type NavItem = { href: string; label: string };
 type NavGroup = { label: string; items: NavItem[] };
@@ -36,15 +37,27 @@ const groups: NavGroup[] = [
 
 export default function Nav() {
     const pathname = usePathname();
+    const [mobileOpen, setMobileOpen] = useState(false);
+    const [openGroup, setOpenGroup] = useState<string | null>(null);
+
+    useEffect(() => {
+        setMobileOpen(false);
+    }, [pathname]);
+
+    useEffect(() => {
+        document.body.style.overflow = mobileOpen ? "hidden" : "";
+        return () => { document.body.style.overflow = ""; };
+    }, [mobileOpen]);
 
     return (
         <>
+            {/* 데스크탑 GNB */}
             <nav className="nav">
                 <ul className="gnb">
                     {groups.map((g) => (
                         <li key={g.label}>
                             <Link href={g.items[0].href}>{g.label}</Link>
-                            <ul key={g.label} className="submenu">
+                            <ul className="submenu">
                                 {g.items.map((it) => {
                                     const active = pathname === it.href;
                                     return (
@@ -64,6 +77,48 @@ export default function Nav() {
                     ))}
                 </ul>
             </nav>
+
+            {/* 모바일 햄버거 버튼 */}
+            <button
+                className={`hamburger ${mobileOpen ? "open" : ""}`}
+                onClick={() => setMobileOpen(!mobileOpen)}
+                aria-label="메뉴 열기"
+            >
+                <span /><span /><span />
+            </button>
+
+            {/* 모바일 드로어 */}
+            {mobileOpen && (
+                <div className="mobile-nav">
+                    <ul className="mobile-gnb">
+                        {groups.map((g) => (
+                            <li key={g.label} className="mobile-group">
+                                <button
+                                    className={`mobile-group-btn ${openGroup === g.label ? "active" : ""}`}
+                                    onClick={() => setOpenGroup(openGroup === g.label ? null : g.label)}
+                                >
+                                    {g.label}
+                                    <span className="arrow">{openGroup === g.label ? "▲" : "▼"}</span>
+                                </button>
+                                {openGroup === g.label && (
+                                    <ul className="mobile-submenu">
+                                        {g.items.map((it) => (
+                                            <li key={it.href}>
+                                                <Link
+                                                    href={it.href}
+                                                    className={pathname === it.href ? "active" : ""}
+                                                >
+                                                    {it.label}
+                                                </Link>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                )}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            )}
         </>
-);
+    );
 }

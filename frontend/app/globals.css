@@ -1,6 +1,4 @@
 /* 기본 초기화 */
-body { outline: 5px solid red; }
-
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
     font-family: 'Noto Sans KR', sans-serif;
@@ -129,10 +127,80 @@ ul { list-style: none; }
 .copyright { font-size: 13px; color: #555; margin-top: 10px; }
 /* --- 푸터 공통 스타일 --- */
 
+/* 햄버거 버튼 */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 6px;
+    width: 44px;
+    height: 44px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 6px;
+    z-index: 1100;
+}
+.hamburger span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 2px;
+    transition: all 0.3s ease;
+    transform-origin: center;
+}
+.hamburger.open span:nth-child(1) { transform: translateY(8px) rotate(45deg); }
+.hamburger.open span:nth-child(2) { opacity: 0; }
+.hamburger.open span:nth-child(3) { transform: translateY(-8px) rotate(-45deg); }
+
+/* 모바일 드로어 */
+.mobile-nav {
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    height: calc(100vh - 70px);
+    background: rgba(10, 20, 40, 0.97);
+    z-index: 999;
+    overflow-y: auto;
+    padding: 20px 0 40px;
+}
+.mobile-gnb { list-style: none; }
+.mobile-group { border-bottom: 1px solid rgba(255,255,255,0.08); }
+.mobile-group-btn {
+    width: 100%;
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 15px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    padding: 18px 30px;
+    text-align: left;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobile-group-btn.active { color: #7eb3ff; }
+.arrow { font-size: 11px; opacity: 0.6; }
+.mobile-submenu { list-style: none; background: rgba(255,255,255,0.04); }
+.mobile-submenu li a {
+    display: block;
+    padding: 13px 30px 13px 46px;
+    color: rgba(255,255,255,0.7);
+    font-size: 14px;
+    transition: color 0.2s;
+}
+.mobile-submenu li a:hover,
+.mobile-submenu li a.active { color: #fff; }
+
 /* 반응형 공통 */
 @media (max-width: 900px) {
     .header { height: 70px; }
     .gnb { display: none; }
+    .hamburger { display: flex; }
     .footer-container { align-items: center; text-align: center; }
     .info-row span { display: block; margin-right: 0; padding-right: 0; margin-bottom: 5px; }
     .info-row span::after { display: none; }

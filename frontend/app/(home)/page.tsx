@@ -22,7 +22,8 @@ export default function Home() {
           </section>
           <section className="products">
               <div className="container">
-                  <h3 className="section-title">OUR SOLUTIONS</h3>
+                  <p className="section-title">OUR SOLUTIONS</p>
+                  <h2 className="section-heading">대연의 핵심 제품</h2>
                   <p className="section-desc">축적된 기술과 풍부한 경험을 바탕으로 안전하고 완벽한 제품을 생산 공급하기 위하여 노력하겠습니다.</p>
                   <div className="product-grid">
                       <div className="product-item">
@@ -43,7 +44,8 @@ export default function Home() {
           </section>
           <section className="about-video">
               <div className="container">
-                  <h3 className="section-title">ABOUT DAEYOUN</h3>
+                  <p className="section-title">ABOUT DAEYOUN</p>
+                  <h2 className="section-heading">대연 홍보 영상</h2>
                   <p className="section-desc">
                       고객과의 약속을 최우선으로 생각하며, 최고의 제품만을 고집하는 기업이 되도록 노력하겠습니다.
                   </p>
@@ -55,7 +57,8 @@ export default function Home() {
           </section>
           <section className="contact-us">
               <div className="container">
-                  <h3 className="section-title">CONTACT US</h3>
+                  <p className="section-title">CONTACT US</p>
+                  <h2 className="section-heading">찾아오시는 길</h2>
                   <div className="contact-content">
                       <div className="contact-info-box">
                           <div className="info-item">

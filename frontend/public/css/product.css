@@ -7,45 +7,61 @@
     --text-dark: #333;
 }
 
-.info-section { margin-bottom: 60px; }
+.info-section { margin-bottom: 70px; }
 
 .section-title {
-    font-size: 1.5rem;
+    font-size: 0.8rem;
+    font-weight: 700;
+    letter-spacing: 2.5px;
     color: var(--main-blue);
-    border-left: 5px solid var(--main-blue);
-    padding-left: 15px;
-    margin-bottom: 25px;
-    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.section-heading {
+    font-size: 1.7rem;
+    font-weight: 800;
+    color: #111;
+    margin-bottom: 30px;
+    letter-spacing: -0.3px;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
 }
 
 h3 {
-    font-size: 1.1rem;
-    margin: 20px 0 10px;
-    color: #555;
+    font-size: 1rem;
+    font-weight: 700;
+    margin: 24px 0 10px;
+    color: #444;
 }
 
 /* 테이블 공통 */
 table {
     width: 100%;
     border-collapse: collapse;
-    margin-bottom: 20px;
+    margin-bottom: 24px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.06);
 }
 
 th, td {
-    border: 1px solid var(--border-color);
-    padding: 12px 15px;
-    font-size: 0.95rem;
+    border: 1px solid #e8eaed;
+    padding: 13px 16px;
+    font-size: 0.92rem;
 }
 
-th { background-color: var(--light-bg); color: #000; font-weight: bold; }
+th { background: #f0f4f8; color: #222; font-weight: 700; }
+tr:nth-child(even) td { background: #fafbfc; }
+tr:hover td { background: #f5f8ff; }
 
 /* 가로형 테이블 (장점 섹션) */
-.horizontal-table th { text-align: center; background: #f1f3f5; }
-.img-cell { width: 30%; border-radius: 4px; }
+.horizontal-table th { text-align: center; }
+.img-cell { width: 30%; }
 
 /* 리스트 스타일 */
 .check-list, .num-list { padding-left: 20px; margin: 0; }
-.check-list li { list-style: disc; margin-bottom: 5px; }
+.check-list li { list-style: disc; margin-bottom: 6px; color: #555; line-height: 1.7; }
 
 /* 세로형 테이블 (구조/재질 섹션) */
 .vertical-table thead th {
@@ -53,7 +69,7 @@ th { background-color: var(--light-bg); color: #000; font-weight: bold; }
     color: #fff;
 }
 .vertical-table td { text-align: center; }
-.vertical-table caption { text-align: right; font-size: 0.85rem; color: #888; margin-top: 5px; }
+.vertical-table caption { text-align: right; font-size: 0.85rem; color: #999; margin-top: 6px; }
 
 /* 이미지 컨테이너 설정 */
 .img-container {
