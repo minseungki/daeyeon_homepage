@@ -2,10 +2,22 @@
 
 import { Map, MapMarker, CustomOverlayMap } from 'react-kakao-maps-sdk'
 import { SITE } from "@/config/site"
-import { useState } from "react"
+import { useState, useEffect } from "react"
 
 export default function KakaoMapPage() {
+    const [kakaoReady, setKakaoReady] = useState(false)
     const initial = { lat: 36.7215259575344, lng: 126.924729809111, level: 4 }
+
+    useEffect(() => {
+        const check = () => {
+            if (window.kakao?.maps?.load) {
+                window.kakao.maps.load(() => setKakaoReady(true))
+            } else {
+                setTimeout(check, 200)
+            }
+        }
+        check()
+    }, [])
 
     const [center, setCenter] = useState({ lat: initial.lat, lng: initial.lng })
     const [level, setLevel] = useState(initial.level)
@@ -24,6 +36,12 @@ export default function KakaoMapPage() {
 
     const zoomIn = () => setLevel(l => Math.max(1, l - 1))
     const zoomOut = () => setLevel(l => Math.min(14, l + 1))
+
+    if (!kakaoReady) return (
+        <div style={{ width: '100%', height: '360px', background: '#f0f4f8', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#999', fontSize: '14px', borderRadius: '8px' }}>
+            지도를 불러오는 중입니다...
+        </div>
+    )
 
     return (
         <>
