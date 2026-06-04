@@ -60,23 +60,28 @@ export default function AboutIndexPage() {
 
                     <div className="value-grid">
                         <div className="value-card">
+                            <span className="value-icon">₩</span>
                             <span className="value-eng">ECONOMY</span>
                             <p className="value-kor">경제성</p>
+                            <p className="value-desc">합리적인 가격과 뛰어난 내구성으로 장기 유지비를 절감합니다.</p>
                         </div>
-
                         <div className="value-card">
+                            <span className="value-icon">⚗</span>
                             <span className="value-eng">RESISTANCE</span>
                             <p className="value-kor">내화학성</p>
+                            <p className="value-desc">폴리에틸렌 소재 특성으로 부식·화학약품에 강한 내성을 가집니다.</p>
                         </div>
-
                         <div className="value-card">
+                            <span className="value-icon">◎</span>
                             <span className="value-eng">SIMPLICITY</span>
                             <p className="value-kor">간편성</p>
+                            <p className="value-desc">전기융착 방식으로 누구나 간편하고 신속하게 시공할 수 있습니다.</p>
                         </div>
-
                         <div className="value-card">
+                            <span className="value-icon">◈</span>
                             <span className="value-eng">LIGHTWEIGHT</span>
                             <p className="value-kor">경량성</p>
+                            <p className="value-desc">금속 배관 대비 가벼운 무게로 운반과 설치가 용이합니다.</p>
                         </div>
                     </div>
                 </section>
