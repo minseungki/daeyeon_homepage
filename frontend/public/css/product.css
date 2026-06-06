@@ -147,7 +147,7 @@ tr:hover td { background: #f5f8ff; }
     display: flex;
     flex-wrap: wrap;
     gap: 8px;
-    padding: 16px 0 28px;
+    padding: 8px 0 20px;
 }
 .size-chip {
     background: #f0f4f8;
@@ -158,6 +158,23 @@ tr:hover td { background: #f5f8ff; }
     font-weight: 600;
     color: #333;
     white-space: nowrap;
+}
+/* HF 이미지 + 사이즈 나란히 */
+.hf-row {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 16px 0 8px;
+}
+.hf-row img {
+    width: 120px;
+    height: auto;
+    flex-shrink: 0;
+    border-radius: 6px;
+    border: 1px solid #e2e6ea;
+}
+@media (min-width: 640px) {
+    .hf-row { flex-direction: row; align-items: flex-start; gap: 24px; }
 }
 
 /* 대각선 헤더 — 360~480px 극소형 */
