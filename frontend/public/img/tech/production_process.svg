@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 230">
+  <defs>
+    <style>
+      text { font-family: 'Malgun Gothic', 'Apple SD Gothic Neo', 'Noto Sans KR', sans-serif; }
+    </style>
+    <!-- Arrow marker -->
+    <marker id="arr" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#004692" opacity="0.55"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="230" rx="14" fill="#EEF2F7"/>
+
+  <!-- ── 헤더 ── -->
+  <text x="600" y="32" text-anchor="middle" font-size="14" font-weight="700"
+        fill="#004692" letter-spacing="1.5">DAEYOUN ONE STOP SOLUTION — 생산 공정</text>
+
+  <!-- ═══ STEP 1 : 설계 (x=45) ═══ -->
+  <rect x="45" y="50" width="150" height="140" rx="10" fill="#004692"/>
+  <!-- number badge -->
+  <circle cx="120" cy="72" r="17" fill="white"/>
+  <text x="120" y="77" text-anchor="middle" dominant-baseline="middle"
+        font-size="17" font-weight="800" fill="#004692">1</text>
+  <!-- divider -->
+  <line x1="55" y1="96" x2="185" y2="96" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <!-- title -->
+  <text x="120" y="120" text-anchor="middle" dominant-baseline="middle"
+        font-size="20" font-weight="700" fill="white">설계</text>
+  <!-- sub -->
+  <text x="120" y="148" text-anchor="middle" dominant-baseline="middle"
+        font-size="11" fill="rgba(255,255,255,0.72)">Design</text>
+  <!-- desc -->
+  <text x="120" y="169" text-anchor="middle" dominant-baseline="middle"
+        font-size="10" fill="rgba(255,255,255,0.55)">금형 · 제품 설계</text>
+
+  <!-- ── Arrow 1→2 ── -->
+  <line x1="198" y1="120" x2="218" y2="120" stroke="#004692" stroke-width="2.5"
+        marker-end="url(#arr)" opacity="0.55"/>
+
+  <!-- ═══ STEP 2 : 금형제작 (x=225) ═══ -->
+  <rect x="225" y="50" width="150" height="140" rx="10" fill="#004692"/>
+  <circle cx="300" cy="72" r="17" fill="white"/>
+  <text x="300" y="77" text-anchor="middle" dominant-baseline="middle"
+        font-size="17" font-weight="800" fill="#004692">2</text>
+  <line x1="235" y1="96" x2="365" y2="96" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <text x="300" y="120" text-anchor="middle" dominant-baseline="middle"
+        font-size="18" font-weight="700" fill="white">금형제작</text>
+  <text x="300" y="148" text-anchor="middle" dominant-baseline="middle"
+        font-size="11" fill="rgba(255,255,255,0.72)">Mold Making</text>
+  <text x="300" y="169" text-anchor="middle" dominant-baseline="middle"
+        font-size="10" fill="rgba(255,255,255,0.55)">금형 설계·제조·보유</text>
+
+  <!-- ── Arrow 2→3 ── -->
+  <line x1="378" y1="120" x2="398" y2="120" stroke="#004692" stroke-width="2.5"
+        marker-end="url(#arr)" opacity="0.55"/>
+
+  <!-- ═══ STEP 3 : 사출 성형 (x=405) ═══ -->
+  <rect x="405" y="50" width="150" height="140" rx="10" fill="#004692"/>
+  <circle cx="480" cy="72" r="17" fill="white"/>
+  <text x="480" y="77" text-anchor="middle" dominant-baseline="middle"
+        font-size="17" font-weight="800" fill="#004692">3</text>
+  <line x1="415" y1="96" x2="545" y2="96" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <text x="480" y="120" text-anchor="middle" dominant-baseline="middle"
+        font-size="18" font-weight="700" fill="white">사출 성형</text>
+  <text x="480" y="148" text-anchor="middle" dominant-baseline="middle"
+        font-size="11" fill="rgba(255,255,255,0.72)">Injection Molding</text>
+  <text x="480" y="169" text-anchor="middle" dominant-baseline="middle"
+        font-size="10" fill="rgba(255,255,255,0.55)">소·중·대형 사출 설비</text>
+
+  <!-- ── Arrow 3→4 ── -->
+  <line x1="558" y1="120" x2="578" y2="120" stroke="#004692" stroke-width="2.5"
+        marker-end="url(#arr)" opacity="0.55"/>
+
+  <!-- ═══ STEP 4 : 정밀 가공 (x=585) ═══ -->
+  <rect x="585" y="50" width="150" height="140" rx="10" fill="#004692"/>
+  <circle cx="660" cy="72" r="17" fill="white"/>
+  <text x="660" y="77" text-anchor="middle" dominant-baseline="middle"
+        font-size="17" font-weight="800" fill="#004692">4</text>
+  <line x1="595" y1="96" x2="725" y2="96" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <text x="660" y="120" text-anchor="middle" dominant-baseline="middle"
+        font-size="18" font-weight="700" fill="white">정밀 가공</text>
+  <text x="660" y="148" text-anchor="middle" dominant-baseline="middle"
+        font-size="11" fill="rgba(255,255,255,0.72)">CNC Machining</text>
+  <text x="660" y="169" text-anchor="middle" dominant-baseline="middle"
+        font-size="10" fill="rgba(255,255,255,0.55)">CNC · 머시닝센터</text>
+
+  <!-- ── Arrow 4→5 ── -->
+  <line x1="738" y1="120" x2="758" y2="120" stroke="#004692" stroke-width="2.5"
+        marker-end="url(#arr)" opacity="0.55"/>
+
+  <!-- ═══ STEP 5 : 조립·검수 (x=765) ═══ -->
+  <rect x="765" y="50" width="150" height="140" rx="10" fill="#004692"/>
+  <circle cx="840" cy="72" r="17" fill="white"/>
+  <text x="840" y="77" text-anchor="middle" dominant-baseline="middle"
+        font-size="17" font-weight="800" fill="#004692">5</text>
+  <line x1="775" y1="96" x2="905" y2="96" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <text x="840" y="120" text-anchor="middle" dominant-baseline="middle"
+        font-size="18" font-weight="700" fill="white">조립 · 검수</text>
+  <text x="840" y="148" text-anchor="middle" dominant-baseline="middle"
+        font-size="11" fill="rgba(255,255,255,0.72)">Assembly &amp; QC</text>
+  <text x="840" y="169" text-anchor="middle" dominant-baseline="middle"
+        font-size="10" fill="rgba(255,255,255,0.55)">제품 조립 및 검수시험</text>
+
+  <!-- ── Arrow 5→6 ── -->
+  <line x1="918" y1="120" x2="938" y2="120" stroke="#004692" stroke-width="2.5"
+        marker-end="url(#arr)" opacity="0.55"/>
+
+  <!-- ═══ STEP 6 : 포장·출하 (x=945) ═══ -->
+  <rect x="945" y="50" width="150" height="140" rx="10" fill="#1a6bb8"/>
+  <circle cx="1020" cy="72" r="17" fill="white"/>
+  <text x="1020" y="77" text-anchor="middle" dominant-baseline="middle"
+        font-size="17" font-weight="800" fill="#1a6bb8">6</text>
+  <line x1="955" y1="96" x2="1085" y2="96" stroke="rgba(255,255,255,0.25)" stroke-width="1"/>
+  <text x="1020" y="120" text-anchor="middle" dominant-baseline="middle"
+        font-size="18" font-weight="700" fill="white">포장 · 출하</text>
+  <text x="1020" y="148" text-anchor="middle" dominant-baseline="middle"
+        font-size="11" fill="rgba(255,255,255,0.72)">Packaging &amp; Shipping</text>
+  <text x="1020" y="169" text-anchor="middle" dominant-baseline="middle"
+        font-size="10" fill="rgba(255,255,255,0.55)">완제품 포장 · 납품</text>
+
+  <!-- ── 하단 레이블 ── -->
+  <text x="600" y="213" text-anchor="middle" font-size="11" fill="#7a90aa" letter-spacing="0.5">
+    설계 → 금형 → 사출 → 가공 → 조립·검수 → 출하 전 공정 자체 생산
+  </text>
+</svg>

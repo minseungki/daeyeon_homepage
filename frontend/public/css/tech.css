@@ -1,0 +1,462 @@
+/* 기술 페이지 공통 */
+
+:root {
+    --main-blue: #004692;
+}
+
+.tech-section { margin-bottom: 56px; }
+
+.txt-title-bar {
+    font-size: 1rem;
+    font-weight: 800;
+    color: #fff;
+    background: var(--main-blue);
+    padding: 10px 16px;
+    border-radius: 6px;
+    margin: 0 0 20px;
+    letter-spacing: 0.5px;
+}
+
+/* 공정도 이미지 */
+.process-img {
+    width: 100%;
+    border-radius: 10px;
+    border: 1px solid #e2e6ea;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+    overflow: hidden;
+}
+.process-diagram {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.10);
+}
+
+/* 원스탑 솔루션 설명 텍스트 */
+.solution-desc {
+    background: #f8f9fa;
+    border-left: 4px solid var(--main-blue);
+    border-radius: 0 8px 8px 0;
+    padding: 20px 24px;
+    margin-bottom: 32px;
+    line-height: 1.9;
+    font-size: 0.92rem;
+    color: #444;
+}
+.solution-desc strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: 800;
+    color: var(--main-blue);
+    margin-bottom: 12px;
+    letter-spacing: 0.3px;
+}
+
+/* 포토 공정 플로우 */
+.process-flow {
+    display: flex;
+    align-items: flex-start;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    padding: 4px 0 20px;
+    gap: 0;
+}
+.process-step {
+    flex: 0 0 auto;
+    width: 160px;
+    text-align: center;
+}
+.process-photo {
+    position: relative;
+    width: 160px;
+    height: 120px;
+    border-radius: 10px;
+    overflow: hidden;
+    background: #f0f4f8;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+}
+.process-photo-icon {
+    position: absolute;
+    inset: 0;
+}
+.process-photo-icon svg {
+    display: block;
+    width: 100%;
+    height: 100%;
+    opacity: 1;
+}
+.process-num {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    width: 26px;
+    height: 26px;
+    background: #004692;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+    font-weight: 800;
+    color: white;
+    z-index: 2;
+}
+.process-step-label {
+    margin-top: 10px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #222;
+    line-height: 1.3;
+}
+.process-step-sub {
+    font-size: 10px;
+    color: #999;
+    margin-top: 3px;
+}
+.process-arrow {
+    flex: 0 0 24px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 0;
+}
+.process-arrow svg {
+    flex-shrink: 0;
+}
+@media (min-width: 1024px) {
+    .process-step { width: 175px; }
+    .process-photo { width: 175px; height: 131px; }
+    .process-arrow { height: 131px; }
+}
+
+/* 번호 달린 소제목 */
+.step-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.95rem;
+    font-weight: 700;
+    color: #222;
+    margin: 28px 0 14px;
+}
+.step-title::before {
+    content: '';
+    display: inline-block;
+    width: 4px;
+    height: 18px;
+    background: var(--main-blue);
+    border-radius: 2px;
+    flex-shrink: 0;
+}
+
+/* 2열 이미지 그리드 */
+.img-grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 12px;
+    margin-bottom: 8px;
+}
+.img-grid-2 img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #e2e6ea;
+    object-fit: cover;
+    aspect-ratio: 4 / 3;
+}
+
+/* 검사설비 테이블 */
+.qa-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+    border: 1px solid #dde3ea;
+    margin-bottom: 8px;
+}
+.qa-table {
+    width: 100%;
+    min-width: 560px;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+}
+.qa-table thead th {
+    background: var(--main-blue);
+    color: #fff;
+    font-weight: 700;
+    padding: 11px 12px;
+    text-align: center;
+    white-space: nowrap;
+    border-right: 1px solid rgba(255,255,255,0.18);
+}
+.qa-table thead th:last-child { border-right: none; }
+.qa-table tbody td {
+    padding: 9px 12px;
+    text-align: center;
+    border-bottom: 1px solid #e8ecf0;
+    border-right: 1px solid #e8ecf0;
+    color: #333;
+    vertical-align: middle;
+}
+.qa-table tbody td:last-child { border-right: none; }
+.qa-table tbody tr:last-child td { border-bottom: none; }
+.qa-table tbody tr:nth-child(even) td { background: #f7f9fb; }
+.qa-table tbody td:first-child {
+    font-weight: 700;
+    color: var(--main-blue);
+    background: #edf2f8;
+    white-space: nowrap;
+}
+
+/* 품질보증 설비 목록 */
+.qa-list {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+.qa-item {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.07);
+}
+.qa-item-main-img {
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
+    display: block;
+    border-bottom: 1px solid #e2e8f0;
+}
+.qa-item-body {
+    padding: 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.qa-item-title {
+    font-size: 0.97rem;
+    font-weight: 800;
+    color: var(--main-blue);
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+}
+.qa-item-desc {
+    font-size: 0.88rem;
+    color: #444;
+    line-height: 2;
+}
+.qa-item-desc li {
+    list-style: none;
+    padding-left: 1.2em;
+    text-indent: -1.2em;
+}
+.qa-item-desc li::before {
+    content: "ㆍ";
+    color: var(--main-blue);
+    font-weight: 700;
+}
+.qa-item-sub-img {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    border: 1px solid #e2e8f0;
+    margin-top: 4px;
+}
+
+/* 융착 Flow-chart */
+.flow-chart-wrap {
+    background: #f4f7fb;
+    border: 1px solid #dde3ea;
+    border-radius: 10px;
+    padding: 20px 16px;
+    margin-bottom: 20px;
+}
+.flow-chart-title {
+    font-size: 0.88rem;
+    font-weight: 800;
+    color: var(--main-blue);
+    margin-bottom: 14px;
+    letter-spacing: 0.3px;
+}
+.flow-chart-steps {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 0;
+    align-items: center;
+}
+.flow-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-blue);
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 10px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.4;
+    min-width: 68px;
+    white-space: pre-line;
+}
+.flow-step-num {
+    font-size: 0.65rem;
+    font-weight: 900;
+    background: rgba(255,255,255,0.25);
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4px;
+    flex-shrink: 0;
+}
+.flow-arrow {
+    color: #7a9cbf;
+    font-size: 1rem;
+    font-weight: 900;
+    padding: 0 4px;
+    flex-shrink: 0;
+    line-height: 1;
+}
+@media (max-width: 480px) {
+    .flow-step { font-size: 0.72rem; min-width: 60px; padding: 7px 6px; }
+    .flow-arrow { padding: 0 2px; font-size: 0.85rem; }
+}
+
+/* 사용설명서 테이블 */
+.manual-table-wrap {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    border-radius: 8px;
+    border: 1px solid #dde3ea;
+    margin-bottom: 8px;
+}
+.manual-table {
+    width: 100%;
+    min-width: 560px;
+    border-collapse: collapse;
+    font-size: 0.83rem;
+}
+.manual-table thead th {
+    background: var(--main-blue);
+    color: #fff;
+    font-weight: 700;
+    padding: 11px 14px;
+    text-align: center;
+    border-right: 1px solid rgba(255,255,255,0.18);
+    white-space: nowrap;
+}
+.manual-table thead th:last-child { border-right: none; }
+.manual-table tbody td {
+    padding: 10px 14px;
+    border-bottom: 1px solid #e8ecf0;
+    border-right: 1px solid #e8ecf0;
+    color: #333;
+    vertical-align: top;
+    line-height: 1.75;
+}
+.manual-table tbody td:last-child { border-right: none; }
+.manual-table tbody tr:last-child td { border-bottom: none; }
+.manual-table tbody tr:nth-child(even) td { background: #f7f9fb; }
+.manual-table tbody td:first-child {
+    font-weight: 700;
+    color: var(--main-blue);
+    text-align: center;
+    white-space: nowrap;
+    background: #edf2f8;
+}
+.manual-table .caution { color: #555; font-size: 0.82rem; }
+@media (min-width: 768px) {
+    .manual-table { font-size: 0.87rem; }
+}
+
+/* 인증서 이미지 갤러리 */
+.cert-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-bottom: 8px;
+}
+.cert-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+    transition: box-shadow 0.2s;
+}
+.cert-card:hover { box-shadow: 0 4px 16px rgba(0,70,146,0.13); }
+.cert-card img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    aspect-ratio: 3 / 4;
+    border-bottom: 1px solid #e2e8f0;
+}
+.cert-card span {
+    padding: 10px 8px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    color: #333;
+    text-align: center;
+    line-height: 1.5;
+}
+
+@media (min-width: 480px) {
+    .cert-grid { grid-template-columns: repeat(3, 1fr); }
+}
+@media (min-width: 768px) {
+    .cert-grid { grid-template-columns: repeat(4, 1fr); gap: 20px; }
+    .cert-card span { font-size: 0.82rem; padding: 12px 10px; }
+}
+@media (min-width: 1024px) {
+    .cert-grid { grid-template-columns: repeat(5, 1fr); }
+}
+
+@media (min-width: 640px) {
+    .qa-item {
+        grid-template-columns: 240px 1fr;
+    }
+    .qa-item-main-img {
+        height: 100%;
+        aspect-ratio: unset;
+        object-fit: cover;
+        border-bottom: none;
+        border-right: 1px solid #e2e8f0;
+    }
+    .qa-table { font-size: 0.88rem; }
+}
+
+@media (min-width: 768px) {
+    .txt-title-bar { font-size: 1.05rem; }
+    .solution-desc { font-size: 0.95rem; padding: 24px 28px; }
+    .img-grid-2 { gap: 16px; }
+    .qa-item { grid-template-columns: 280px 1fr; }
+    .qa-item-body { padding: 24px; }
+    .qa-item-desc { font-size: 0.9rem; }
+    .qa-table { font-size: 0.9rem; }
+}
+
+@media (min-width: 1024px) {
+    .tech-section { margin-bottom: 72px; }
+    .solution-desc { font-size: 0.97rem; }
+    .step-title { font-size: 1rem; }
+    .img-grid-2 { gap: 20px; }
+    .qa-item { grid-template-columns: 320px 1fr; }
+    .qa-item-title { font-size: 1rem; }
+}

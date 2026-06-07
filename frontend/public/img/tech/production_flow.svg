@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="690" viewBox="0 0 690 650" role="img" xmlns="http://www.w3.org/2000/svg">
+<title>대연 생산 공정도</title>
+<desc>수입검사부터 포장출하까지 8단계 공정 일러스트</desc>
+
+<defs>
+  <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse">
+    <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </marker>
+</defs>
+
+<rect x="0" y="0" width="680" height="640" fill="#DCEAF7"/>
+<rect x="8" y="0" width="664" height="14" fill="#1A4A7A"/>
+<rect x="8" y="12" width="664" height="4" fill="#0066CC"/>
+<rect x="8" y="16" width="664" height="218" fill="#DCEAF7"/>
+<rect x="8" y="16" width="664" height="8" fill="#B8D0E8"/>
+<rect x="8" y="226" width="664" height="8" fill="#A0BDD8"/>
+<rect x="173" y="16" width="6" height="218" fill="#A0BDD8" opacity="0.5"/>
+<rect x="339" y="16" width="6" height="218" fill="#A0BDD8" opacity="0.5"/>
+<rect x="505" y="16" width="6" height="218" fill="#A0BDD8" opacity="0.5"/>
+<rect x="8" y="234" width="664" height="215" fill="#E8F1F9"/>
+<rect x="8" y="234" width="664" height="8" fill="#B8D0E8"/>
+<rect x="8" y="441" width="664" height="8" fill="#A0BDD8"/>
+<rect x="173" y="234" width="6" height="215" fill="#A0BDD8" opacity="0.4"/>
+<rect x="339" y="234" width="6" height="215" fill="#A0BDD8" opacity="0.4"/>
+<rect x="505" y="234" width="6" height="215" fill="#A0BDD8" opacity="0.4"/>
+<rect x="0" y="0" width="8" height="449" fill="#1A4A7A"/>
+<rect x="672" y="0" width="8" height="449" fill="#1A4A7A"/>
+<rect x="0" y="226" width="8" height="8" fill="#004692"/>
+<rect x="672" y="226" width="8" height="8" fill="#004692"/>
+<rect x="0" y="449" width="680" height="78" fill="#AABFD4"/>
+<rect x="0" y="449" width="680" height="8" fill="#A0BDD8"/>
+<rect x="0" y="525" width="680" height="12" fill="#8090A0"/>
+<rect x="0" y="537" width="680" height="58" fill="#6A7E90"/>
+<rect x="50" y="563" width="28" height="5" rx="2" fill="#FFFFFF" opacity="0.35"/>
+<rect x="150" y="563" width="28" height="5" rx="2" fill="#FFFFFF" opacity="0.35"/>
+<rect x="250" y="563" width="28" height="5" rx="2" fill="#FFFFFF" opacity="0.35"/>
+<rect x="350" y="563" width="28" height="5" rx="2" fill="#FFFFFF" opacity="0.35"/>
+<rect x="450" y="563" width="28" height="5" rx="2" fill="#FFFFFF" opacity="0.35"/>
+<rect x="550" y="563" width="28" height="5" rx="2" fill="#FFFFFF" opacity="0.35"/>
+
+<!-- Step circles -->
+<circle cx="90" cy="11" r="13" fill="#004692"/>
+<text x="90" y="16" font-family="sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">1</text>
+<circle cx="256" cy="11" r="13" fill="#004692"/>
+<text x="256" y="16" font-family="sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">2</text>
+<circle cx="422" cy="11" r="13" fill="#004692"/>
+<text x="422" y="16" font-family="sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">3</text>
+<circle cx="588" cy="11" r="13" fill="#004692"/>
+<text x="588" y="16" font-family="sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">4</text>
+<circle cx="588" cy="229" r="13" fill="#0066CC"/>
+<text x="588" y="234" font-family="sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">5</text>
+<circle cx="422" cy="229" r="13" fill="#0066CC"/>
+<text x="422" y="234" font-family="sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">6</text>
+<circle cx="256" cy="229" r="13" fill="#0066CC"/>
+<text x="256" y="234" font-family="sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">7</text>
+<circle cx="90" cy="229" r="13" fill="#0066CC"/>
+<text x="90" y="234" font-family="sans-serif" font-size="12" font-weight="900" fill="#FFFFFF" text-anchor="middle">8</text>
+
+<!-- Title bars F1 -->
+<rect x="16" y="24" width="149" height="22" rx="3" fill="#004692"/>
+<text x="90" y="39" font-family="sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">수입 검사</text>
+<rect x="182" y="24" width="149" height="22" rx="3" fill="#004692"/>
+<text x="256" y="39" font-family="sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">사출 성형</text>
+<rect x="348" y="24" width="149" height="22" rx="3" fill="#004692"/>
+<text x="422" y="39" font-family="sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">기계 가공</text>
+<rect x="514" y="24" width="149" height="22" rx="3" fill="#004692"/>
+<text x="588" y="39" font-family="sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">사전 조립</text>
+
+<!-- Title bars F2 -->
+<rect x="514" y="244" width="149" height="22" rx="3" fill="#0066CC"/>
+<text x="588" y="259" font-family="sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">용착</text>
+<rect x="348" y="244" width="149" height="22" rx="3" fill="#0066CC"/>
+<text x="422" y="259" font-family="sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">공정 검사</text>
+<rect x="182" y="244" width="149" height="22" rx="3" fill="#0066CC"/>
+<text x="256" y="259" font-family="sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">최종 조립</text>
+<rect x="16" y="244" width="149" height="22" rx="3" fill="#0066CC"/>
+<text x="90" y="259" font-family="sans-serif" font-size="11" font-weight="700" fill="#FFFFFF" text-anchor="middle">포장</text>
+
+<!-- Subtitles F1 -->
+<text x="90" y="58" font-family="sans-serif" font-size="9" fill="#1A4A7A" text-anchor="middle">자체 QA — LOT별 전수검사</text>
+<text x="90" y="70" font-family="sans-serif" font-size="9" fill="#1A4A7A" text-anchor="middle">용융지수 · 수분함량 확인</text>
+<text x="256" y="58" font-family="sans-serif" font-size="9" fill="#1A4A7A" text-anchor="middle">원재료 투입 → 초품 제작</text>
+<text x="256" y="70" font-family="sans-serif" font-size="9" fill="#1A4A7A" text-anchor="middle">외관 · 치수 · 중량 검사</text>
+<text x="422" y="58" font-family="sans-serif" font-size="9" fill="#1A4A7A" text-anchor="middle">사이즈별 정밀 가공</text>
+<text x="422" y="70" font-family="sans-serif" font-size="9" fill="#1A4A7A" text-anchor="middle">12시간 냉각 후 재검사</text>
+<text x="588" y="58" font-family="sans-serif" font-size="9" fill="#1A4A7A" text-anchor="middle">바디 · 엔드 · 볼 수동 조립</text>
+<text x="588" y="70" font-family="sans-serif" font-size="9" fill="#1A4A7A" text-anchor="middle">작업자 100% 전수 육안검사</text>
+
+<!-- Subtitles F2 -->
+<text x="588" y="278" font-family="sans-serif" font-size="9" fill="#00408A" text-anchor="middle">최신 용착기 자동 용착</text>
+<text x="588" y="290" font-family="sans-serif" font-size="9" fill="#00408A" text-anchor="middle">24시간 안정화 · 일련번호</text>
+<text x="422" y="278" font-family="sans-serif" font-size="9" fill="#00408A" text-anchor="middle">EN · KS · ASME 국제규격</text>
+<text x="422" y="290" font-family="sans-serif" font-size="9" fill="#00408A" text-anchor="middle">치수 · 기밀 · 정수압 검사</text>
+<text x="256" y="278" font-family="sans-serif" font-size="9" fill="#00408A" text-anchor="middle">100% 전수검사 후 완제품</text>
+<text x="256" y="290" font-family="sans-serif" font-size="9" fill="#00408A" text-anchor="middle">QR 바코드 추적성 부착</text>
+<text x="90" y="278" font-family="sans-serif" font-size="9" fill="#00408A" text-anchor="middle">발주 수량별 완제품 포장</text>
+<text x="90" y="290" font-family="sans-serif" font-size="9" fill="#00408A" text-anchor="middle">운송차량 적재 · 고객 출하</text>
+
+<!-- CELL 1 -->
+<rect x="18" y="184" width="145" height="7" rx="3" fill="#4A7AB0"/>
+<rect x="26" y="178" width="129" height="7" rx="2" fill="#5C8EC4"/>
+<rect x="32" y="161" width="22" height="17" rx="2" fill="#C8DFF2"/>
+<rect x="32" y="161" width="22" height="5" fill="#A0C4E0" opacity="0.8"/>
+<rect x="59" y="157" width="24" height="21" rx="2" fill="#C8DFF2"/>
+<rect x="59" y="157" width="24" height="5" fill="#A0C4E0" opacity="0.8"/>
+<rect x="88" y="163" width="20" height="15" rx="2" fill="#C8DFF2"/>
+<rect x="16" y="183" width="22" height="16" rx="2" fill="#004692" opacity="0.8"/>
+<rect x="38" y="185" width="5" height="14" fill="#003070" opacity="0.9"/>
+<rect x="14" y="185" width="4" height="16" fill="#003070" opacity="0.9"/>
+<circle cx="22" cy="199" r="5" fill="#1A2A3A"/>
+<circle cx="36" cy="199" r="5" fill="#1A2A3A"/>
+<circle cx="140" cy="149" r="9" fill="#F5C5A3"/>
+<rect x="133" y="158" width="14" height="22" rx="3" fill="#004692"/>
+<rect x="147" y="163" width="10" height="13" rx="1" fill="#FFFFFF" opacity="0.9"/>
+<line x1="149" y1="167" x2="155" y2="167" stroke="#888" stroke-width="1"/>
+<line x1="149" y1="171" x2="155" y2="171" stroke="#888" stroke-width="1"/>
+<line x1="136" y1="161" x2="130" y2="175" stroke="#004692" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="118" cy="141" r="8" fill="none" stroke="#004692" stroke-width="2"/>
+<line x1="124" y1="147" x2="130" y2="154" stroke="#004692" stroke-width="2.5" stroke-linecap="round"/>
+
+<!-- CELL 2 -->
+<rect x="196" y="115" width="62" height="76" rx="4" fill="#1A4A7A"/>
+<rect x="202" y="122" width="50" height="28" rx="3" fill="#003060"/>
+<rect x="206" y="126" width="38" height="18" rx="2" fill="#0066CC" opacity="0.8"/>
+<rect x="210" y="129" width="12" height="3" rx="1" fill="#7EC8FF" opacity="0.9"/>
+<rect x="210" y="134" width="22" height="2" rx="1" fill="#7EC8FF" opacity="0.5"/>
+<circle cx="212" cy="167" r="3" fill="#00CC44" opacity="0.9"/>
+<circle cx="222" cy="167" r="3" fill="#FFCC00" opacity="0.9"/>
+<circle cx="232" cy="167" r="3" fill="#FF4444" opacity="0.8"/>
+<rect x="258" y="145" width="30" height="9" rx="3" fill="#2A6A9A"/>
+<rect x="288" y="146" width="12" height="7" rx="2" fill="#0066CC" opacity="0.7"/>
+<rect x="301" y="141" width="20" height="16" rx="2" fill="#5A9ACC" opacity="0.9"/>
+<polygon points="216,115 238,115 232,102 222,102" fill="#2A5A8A"/>
+<rect x="300" y="173" width="16" height="9" rx="1" fill="#7AAED0" opacity="0.9"/>
+<rect x="302" y="165" width="14" height="9" rx="1" fill="#7AAED0" opacity="0.8"/>
+<circle cx="333" cy="145" r="9" fill="#F5C5A3"/>
+<rect x="326" y="154" width="14" height="22" rx="3" fill="#CC3333"/>
+<line x1="326" y1="161" x2="318" y2="173" stroke="#CC3333" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="340" y1="159" x2="348" y2="171" stroke="#CC3333" stroke-width="2.5" stroke-linecap="round"/>
+
+<!-- CELL 3 -->
+<rect x="362" y="123" width="72" height="68" rx="4" fill="#1A3A6A"/>
+<rect x="368" y="129" width="60" height="38" rx="3" fill="#003060"/>
+<rect x="373" y="134" width="28" height="18" rx="2" fill="#1A5A8A" opacity="0.9"/>
+<rect x="375" y="136" width="10" height="14" rx="1" fill="#2288BB" opacity="0.7"/>
+<circle cx="414" cy="144" r="6" fill="none" stroke="#7EC8FF" stroke-width="1.5"/>
+<line x1="414" y1="138" x2="414" y2="141" stroke="#7EC8FF" stroke-width="1.5"/>
+<line x1="420" y1="144" x2="417" y2="144" stroke="#7EC8FF" stroke-width="1.5"/>
+<rect x="368" y="171" width="60" height="14" rx="2" fill="#001840"/>
+<circle cx="378" cy="178" r="3" fill="#00CC44" opacity="0.9"/>
+<circle cx="389" cy="178" r="3" fill="#FFCC00" opacity="0.9"/>
+<circle cx="400" cy="178" r="3" fill="#FF4444" opacity="0.8"/>
+<rect x="354" y="183" width="52" height="8" rx="2" fill="#2A5A8A"/>
+<rect x="358" y="177" width="8" height="7" rx="1" fill="#5A8ACC"/>
+<rect x="370" y="175" width="8" height="9" rx="1" fill="#5A8ACC"/>
+<rect x="382" y="178" width="8" height="6" rx="1" fill="#5A8ACC"/>
+<circle cx="452" cy="143" r="9" fill="#F5C5A3"/>
+<rect x="445" y="152" width="14" height="22" rx="3" fill="#004692"/>
+<line x1="459" y1="157" x2="466" y2="169" stroke="#004692" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="445" y1="159" x2="437" y2="167" stroke="#004692" stroke-width="2.5" stroke-linecap="round"/>
+
+<!-- CELL 4 -->
+<rect x="522" y="177" width="140" height="13" rx="2" fill="#2A5A8A"/>
+<rect x="528" y="190" width="6" height="26" fill="#1A4A7A"/>
+<rect x="648" y="190" width="6" height="26" fill="#1A4A7A"/>
+<circle cx="545" cy="173" r="8" fill="#4A8ACC"/>
+<circle cx="545" cy="173" r="3" fill="#2A6AA0"/>
+<rect x="557" y="166" width="18" height="12" rx="2" fill="#3A7AB0"/>
+<rect x="579" y="168" width="22" height="10" rx="2" fill="#2A6AA0"/>
+<rect x="606" y="169" width="12" height="9" rx="2" fill="#4A8ACC"/>
+<rect x="622" y="167" width="20" height="11" rx="2" fill="#3A7AB0"/>
+<circle cx="540" cy="145" r="9" fill="#F5C5A3"/>
+<rect x="533" y="154" width="14" height="24" rx="3" fill="#CC3333"/>
+<line x1="547" y1="159" x2="554" y2="171" stroke="#CC3333" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="533" y1="160" x2="526" y2="171" stroke="#CC3333" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="634" cy="143" r="9" fill="#F5D5B3"/>
+<rect x="627" y="152" width="14" height="24" rx="3" fill="#004692"/>
+<line x1="641" y1="157" x2="648" y2="171" stroke="#004692" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="627" y1="158" x2="620" y2="171" stroke="#004692" stroke-width="2.5" stroke-linecap="round"/>
+
+<!-- CELL 5 -->
+<rect x="524" y="315" width="56" height="82" rx="4" fill="#1A3A6A"/>
+<rect x="530" y="321" width="44" height="28" rx="3" fill="#002050"/>
+<rect x="534" y="324" width="20" height="18" rx="2" fill="#1A5A8A"/>
+<rect x="556" y="325" width="14" height="14" rx="2" fill="#1A5060"/>
+<circle cx="578" cy="342" r="5" fill="#0099FF" opacity="0.9"/>
+<circle cx="578" cy="342" r="10" fill="#AADDFF" opacity="0.35"/>
+<rect x="566" y="335" width="32" height="14" rx="3" fill="#3A7AB0"/>
+<rect x="573" y="333" width="18" height="5" rx="2" fill="#5A9ACC"/>
+<line x1="582" y1="336" x2="589" y2="329" stroke="#66BBFF" stroke-width="1.5" stroke-linecap="round"/>
+<line x1="585" y1="338" x2="593" y2="334" stroke="#66BBFF" stroke-width="1.5" stroke-linecap="round"/>
+<circle cx="624" cy="310" r="9" fill="#E8A87C"/>
+<rect x="617" y="311" width="14" height="8" rx="2" fill="#1A1A1A" opacity="0.85"/>
+<rect x="617" y="319" width="14" height="24" rx="3" fill="#CC3333"/>
+<line x1="617" y1="327" x2="610" y2="341" stroke="#CC3333" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="631" y1="327" x2="638" y2="337" stroke="#CC3333" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="522" y="400" width="140" height="6" rx="2" fill="#2A5A8A"/>
+<rect x="530" y="388" width="12" height="13" rx="2" fill="#4A8ACC"/>
+<rect x="547" y="386" width="12" height="15" rx="2" fill="#4A8ACC"/>
+<rect x="564" y="388" width="12" height="13" rx="2" fill="#4A8ACC"/>
+
+<!-- CELL 6 -->
+<rect x="357" y="359" width="140" height="11" rx="2" fill="#2A5A8A"/>
+<rect x="363" y="370" width="6" height="26" fill="#1A4A7A"/>
+<rect x="485" y="370" width="6" height="26" fill="#1A4A7A"/>
+<circle cx="392" cy="339" r="18" fill="#1A3A6A"/>
+<circle cx="392" cy="339" r="13" fill="#002050"/>
+<circle cx="392" cy="339" r="9" fill="none" stroke="#7EC8FF" stroke-width="1.5"/>
+<line x1="392" y1="339" x2="398" y2="332" stroke="#00CC66" stroke-width="2" stroke-linecap="round"/>
+<rect x="414" y="345" width="42" height="14" rx="3" fill="#3A7AB0"/>
+<path d="M456 352 Q469 348 472 339" stroke="#2A5A8A" stroke-width="2" fill="none"/>
+<path d="M412 352 Q402 348 400 339" stroke="#2A5A8A" stroke-width="2" fill="none"/>
+<circle cx="492" cy="319" r="9" fill="#F5C5A3"/>
+<rect x="485" y="328" width="14" height="26" rx="3" fill="#E8E8E8"/>
+<line x1="499" y1="335" x2="506" y2="347" stroke="#E8E8E8" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="485" y1="335" x2="478" y2="347" stroke="#E8E8E8" stroke-width="2.5" stroke-linecap="round"/>
+<rect x="464" y="330" width="12" height="16" rx="1" fill="#FFFFFF" opacity="0.95"/>
+<polyline points="466,341 469,344 476,336" stroke="#004692" stroke-width="1.5" fill="none"/>
+
+<!-- CELL 7 -->
+<ellipse cx="256" cy="359" rx="50" ry="13" fill="#2A5A8A"/>
+<ellipse cx="256" cy="354" rx="50" ry="13" fill="#3A7AB0"/>
+<rect x="234" y="342" width="16" height="12" rx="2" fill="#5A9ACC"/>
+<rect x="256" y="340" width="16" height="14" rx="2" fill="#6AAAD4"/>
+<rect x="278" y="343" width="14" height="11" rx="2" fill="#5A9ACC"/>
+<rect x="240" y="317" width="22" height="24" rx="3" fill="#004692"/>
+<rect x="244" y="320" width="14" height="12" rx="1" fill="#002A6A"/>
+<rect x="246" y="322" width="4" height="3" rx="0.5" fill="#7EC8FF"/>
+<rect x="252" y="322" width="4" height="3" rx="0.5" fill="#7EC8FF"/>
+<circle cx="205" cy="326" r="9" fill="#F5C5A3"/>
+<rect x="198" y="335" width="14" height="24" rx="3" fill="#004692"/>
+<line x1="212" y1="341" x2="220" y2="351" stroke="#004692" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="198" y1="341" x2="190" y2="351" stroke="#004692" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="307" cy="324" r="9" fill="#F5D5B3"/>
+<rect x="300" y="333" width="14" height="24" rx="3" fill="#CC3333"/>
+<line x1="300" y1="340" x2="293" y2="351" stroke="#CC3333" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="314" y1="339" x2="321" y2="350" stroke="#CC3333" stroke-width="2.5" stroke-linecap="round"/>
+
+<!-- CELL 8 -->
+<rect x="16" y="383" width="148" height="7" rx="3" fill="#4A7AB0"/>
+<rect x="24" y="377" width="132" height="7" rx="2" fill="#5C8EC4"/>
+<rect x="28" y="359" width="24" height="18" rx="2" fill="#C8904A"/>
+<rect x="28" y="359" width="24" height="5" fill="#A07030" opacity="0.8"/>
+<line x1="40" y1="359" x2="40" y2="377" stroke="#7A5020" stroke-width="1" opacity="0.6"/>
+<rect x="58" y="357" width="26" height="20" rx="2" fill="#C8904A"/>
+<rect x="58" y="357" width="26" height="5" fill="#A07030" opacity="0.8"/>
+<line x1="71" y1="357" x2="71" y2="377" stroke="#7A5020" stroke-width="1" opacity="0.6"/>
+<rect x="90" y="361" width="22" height="16" rx="2" fill="#C8904A"/>
+<rect x="90" y="361" width="22" height="5" fill="#A07030" opacity="0.8"/>
+<rect x="124" y="312" width="30" height="56" rx="4" fill="#1A4A7A"/>
+<rect x="129" y="317" width="20" height="14" rx="3" fill="#002050"/>
+<circle cx="139" cy="349" r="10" fill="none" stroke="#2A6AA0" stroke-width="3"/>
+<circle cx="139" cy="349" r="4" fill="#3A8ACC"/>
+<circle cx="90" cy="315" r="9" fill="#F5C5A3"/>
+<rect x="83" y="324" width="14" height="24" rx="3" fill="#CC3333"/>
+<line x1="83" y1="330" x2="76" y2="342" stroke="#CC3333" stroke-width="2.5" stroke-linecap="round"/>
+<line x1="97" y1="329" x2="104" y2="339" stroke="#CC3333" stroke-width="2.5" stroke-linecap="round"/>
+
+<!-- 입고 트럭 -->
+<rect x="80" y="473" width="92" height="46" rx="4" fill="#1A4A7A"/>
+<rect x="80" y="473" width="28" height="46" rx="4" fill="#003070"/>
+<rect x="83" y="478" width="20" height="14" rx="2" fill="#87CEEB" opacity="0.75"/>
+<rect x="108" y="477" width="60" height="36" rx="2" fill="#2A5A8A"/>
+<rect x="113" y="481" width="12" height="10" rx="1" fill="#3A7AB0"/>
+<rect x="130" y="481" width="12" height="10" rx="1" fill="#3A7AB0"/>
+<rect x="147" y="481" width="12" height="10" rx="1" fill="#3A7AB0"/>
+<circle cx="96" cy="519" r="9" fill="#1A1A1A"/>
+<circle cx="96" cy="519" r="4" fill="#333"/>
+<circle cx="142" cy="519" r="9" fill="#1A1A1A"/>
+<circle cx="142" cy="519" r="4" fill="#333"/>
+<circle cx="160" cy="519" r="9" fill="#1A1A1A"/>
+<circle cx="160" cy="519" r="4" fill="#333"/>
+<rect x="14" y="488" width="52" height="18" rx="3" fill="#004692"/>
+<text x="40" y="501" font-family="sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">입고</text>
+
+<!-- 출하 트럭 -->
+<rect x="498" y="473" width="106" height="46" rx="4" fill="#1A3A6A"/>
+<rect x="576" y="473" width="28" height="46" rx="4" fill="#002050"/>
+<rect x="578" y="478" width="22" height="14" rx="2" fill="#87CEEB" opacity="0.7"/>
+<rect x="498" y="477" width="78" height="36" rx="2" fill="#2A5A8A"/>
+<rect x="503" y="481" width="14" height="16" rx="2" fill="#C8904A"/>
+<rect x="522" y="481" width="14" height="16" rx="2" fill="#C8904A"/>
+<rect x="541" y="481" width="14" height="16" rx="2" fill="#C8904A"/>
+<rect x="560" y="481" width="12" height="14" rx="2" fill="#C8904A"/>
+<circle cx="516" cy="519" r="9" fill="#1A1A1A"/>
+<circle cx="516" cy="519" r="4" fill="#333"/>
+<circle cx="538" cy="519" r="9" fill="#1A1A1A"/>
+<circle cx="538" cy="519" r="4" fill="#333"/>
+<circle cx="578" cy="519" r="9" fill="#1A1A1A"/>
+<circle cx="578" cy="519" r="4" fill="#333"/>
+<circle cx="596" cy="519" r="9" fill="#1A1A1A"/>
+<circle cx="596" cy="519" r="4" fill="#333"/>
+<rect x="614" y="488" width="52" height="18" rx="3" fill="#0066CC"/>
+<text x="640" y="501" font-family="sans-serif" font-size="10" font-weight="700" fill="#FFFFFF" text-anchor="middle">출하</text>
+
+<!-- 선박 -->
+<path d="M588 528 Q640 519 672 524 L672 549 L588 549 Z" fill="#1A3A6A"/>
+<rect x="608" y="508" width="52" height="22" rx="2" fill="#2A5A8A"/>
+<rect x="612" y="492" width="6" height="18" fill="#2A6AA0"/>
+<rect x="610" y="489" width="10" height="5" rx="1" fill="#3A7AB0"/>
+<path d="M578 547 Q600 542 620 547 Q640 552 662 547 L662 559 L578 559 Z" fill="#5A8AB0" opacity="0.5"/>
+
+<!-- F1 수평 화살표 -->
+<line x1="169" y1="125" x2="181" y2="125" stroke="#004692" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="335" y1="125" x2="347" y2="125" stroke="#004692" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="501" y1="125" x2="513" y2="125" stroke="#004692" stroke-width="2" marker-end="url(#arr)"/>
+
+<!-- 4→5 수직 화살표 -->
+<line x1="520" y1="222" x2="520" y2="234" stroke="#004692" stroke-width="2" marker-end="url(#arr)"/>
+
+<!-- F2 수평 화살표 -->
+<line x1="511" y1="345" x2="499" y2="345" stroke="#0066CC" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="345" y1="345" x2="333" y2="345" stroke="#0066CC" stroke-width="2" marker-end="url(#arr)"/>
+<line x1="179" y1="345" x2="167" y2="345" stroke="#0066CC" stroke-width="2" marker-end="url(#arr)"/>
+
+</svg>

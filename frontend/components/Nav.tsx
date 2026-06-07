@@ -107,6 +107,7 @@ export default function Nav() {
                                                 <Link
                                                     href={it.href}
                                                     className={pathname === it.href ? "active" : ""}
+                                                    onClick={() => setMobileOpen(false)}
                                                 >
                                                     {it.label}
                                                 </Link>
