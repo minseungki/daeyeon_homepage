@@ -17,6 +17,8 @@ export const rootMetadata: Metadata = {
     // metadataBase: new URL(`${SITE.baseUrl}/`),
     title: { default: SITE.defaultTitle, template: `%s | (주)${SITE.name}` },
     description: SITE.description,
+    // TODO: 정식 오픈 시 아래 robots 줄 삭제 (검색엔진 색인 차단)
+    robots: { index: false, follow: false },
     // openGraph: {
     //     type: "website",
     //     locale: "ko_KR",
