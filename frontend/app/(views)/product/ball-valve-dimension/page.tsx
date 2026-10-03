@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import DefaultPageShell from "@/components/DefaultPageShell";
 import { asset, stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/product/ball-valve-dimension");
+export const metadata: Metadata = buildSeoByPath("/product/ball-valve-dimension", {
+    title: "볼밸브 주요치수",
+    description: "(주)대연 PE 볼밸브의 규격별 주요 치수표와 도면을 제공합니다.",
+});
 
 export default function ProductBallValveDimensionPage() {
     return (

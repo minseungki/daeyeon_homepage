@@ -7,11 +7,11 @@ export default function Header() {
     return (
         <header className="header">
             <div className="container header-inner">
-                <h1 className="logo">
+                <div className="logo">
                     <Link href="/" aria-label={`${SITE.name} 홈으로`}>
                         <img src={asset("img/home/logo.png")} alt="DAEYOUN"/>
                     </Link>
-                </h1>
+                </div>
                 <Nav/>
             </div>
             <div className="nav-bg"></div>

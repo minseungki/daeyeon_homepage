@@ -3,14 +3,11 @@ import type { Metadata, Viewport } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SplashScreen from "@/components/SplashScreen";
-import { SITE } from "@/config/site";
+import { rootMetadata } from "@/lib/seo";
 import React from "react";
 
 // 전역 기본값(페이지에서 덮어씀)
-export const metadata: Metadata = {
-    title: SITE.name,
-    description: SITE.description,
-};
+export const metadata: Metadata = rootMetadata;
 
 export const viewport: Viewport = {
     width: "device-width",

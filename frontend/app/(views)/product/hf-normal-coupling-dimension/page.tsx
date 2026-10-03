@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import DefaultPageShell from "@/components/DefaultPageShell";
 import { asset, stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/product/hf-normal-coupling-dimension");
+export const metadata: Metadata = buildSeoByPath("/product/hf-normal-coupling-dimension", {
+    title: "HF 일반이음관 주요치수",
+    description: "엘보, 티, 레듀셔, 엔드캡, 플랜지 어댑터 등 (주)대연 열융착(H/F) 일반 이음관의 규격별 치수표입니다.",
+});
 
 function SizeGrid({ sizes }: { sizes: string[] }) {
     return (

@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
 import { asset, stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/tech/quality-assurance-system");
+export const metadata: Metadata = buildSeoByPath("/tech/quality-assurance-system", {
+    title: "품질보증시스템",
+    description: "인장시험기, 열간내압 시험기, X-Ray 검사 등 (주)대연의 품질보증 설비와 검사 체계를 소개합니다.",
+});
 
 const equipmentRows = [
     { name: "열간내압그래프 시험기", spec: "20kgf / ㎠",       qty: 2, use: "열간내압 시험" },

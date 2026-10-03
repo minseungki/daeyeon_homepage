@@ -4,7 +4,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
 import { stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/tech/manual");
+export const metadata: Metadata = buildSeoByPath("/tech/manual", {
+    title: "사용설명서",
+    description: "(주)대연 PE 볼밸브 및 EF·HF 이음관의 시공 방법과 사용 시 주의사항을 안내합니다.",
+});
 
 const flowSteps = [
     "관의 절단",

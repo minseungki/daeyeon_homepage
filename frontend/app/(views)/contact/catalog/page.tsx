@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
 import { asset, stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/contact/catalog");
+export const metadata: Metadata = buildSeoByPath("/contact/catalog", {
+    title: "카다로그&승인원",
+    description: "(주)대연 국문·영문 제품 카탈로그와 승인원 PDF를 내려받으실 수 있습니다.",
+});
 
 export default function ContactCatalogPage() {
     return (

@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import DefaultPageShell from "@/components/DefaultPageShell";
 import { asset, stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/product/ef-coupling-strength");
+export const metadata: Metadata = buildSeoByPath("/product/ef-coupling-strength", {
+    title: "EF 이음관의 장점",
+    description: "(주)대연 전기융착식(E/F) 폴리에틸렌 이음관의 특징과 시공상의 장점을 소개합니다.",
+});
 
 export default function ProductEfCouplingStrengthPage() {
     return (

@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
 import { asset, stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/about/export");
+export const metadata: Metadata = buildSeoByPath("/about/export", {
+    title: "주요수출업체",
+    description: "(주)대연의 PE 볼밸브·이음관 해외 수출 현황. 중국, 미국, 호주, 일본, 인도 등 주요 수출국과 거래처를 소개합니다.",
+});
 
 export default function AboutExportPage() {
     return (

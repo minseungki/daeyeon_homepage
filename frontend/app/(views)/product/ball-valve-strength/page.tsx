@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import DefaultPageShell from "@/components/DefaultPageShell";
 import { asset, stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/product/ball-valve-strength");
+export const metadata: Metadata = buildSeoByPath("/product/ball-valve-strength", {
+    title: "볼밸브의 장점",
+    description: "(주)대연 가스용·수도용 PE 볼밸브의 구조, 부속 재질, 기어박스 등 제품 특장점을 소개합니다.",
+});
 
 export default function ProductBallValveStrengthPage() {
     return (

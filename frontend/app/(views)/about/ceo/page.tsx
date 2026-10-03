@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
 import { asset, stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/about/ceo");
+export const metadata: Metadata = buildSeoByPath("/about/ceo", {
+    title: "CEO 인사말",
+    description: "(주)대연 대표이사 인사말. 고객과 함께 성장하는 배관 부속 전문 기업 대연의 경영 철학을 전합니다.",
+});
 
 export default function AboutCeoPage() {
     return (

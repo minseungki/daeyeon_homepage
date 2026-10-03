@@ -20,12 +20,12 @@ export default function SubVisual({title, message, pageClass} : subVisualProps) 
                 padding: 0 20px;
             }
 
-            .sub-visual-inner h2 { font-size: 28px; font-weight: 700; letter-spacing: 2px; margin-bottom: 10px; }
+            .sub-visual-inner h1 { font-size: 28px; font-weight: 700; letter-spacing: 2px; margin-bottom: 10px; }
             .sub-visual-inner p { font-size: 13px; font-weight: 300; opacity: 0.8; word-break: keep-all; }
 
             @media (min-width: 1024px) {
                 .sub-visual { height: 450px; }
-                .sub-visual-inner h2 { font-size: 50px; letter-spacing: 5px; margin-bottom: 15px; }
+                .sub-visual-inner h1 { font-size: 50px; letter-spacing: 5px; margin-bottom: 15px; }
                 .sub-visual-inner p { font-size: 18px; }
             }
             
@@ -48,7 +48,7 @@ export default function SubVisual({title, message, pageClass} : subVisualProps) 
             `}</style>
             <section className={`sub-visual ${pageClass ?? ""}`.trim()}>
                 <div className="sub-visual-inner">
-                    <h2>{title}</h2>
+                    <h1>{title}</h1>
                     <p>{message}</p>
                 </div>
             </section>

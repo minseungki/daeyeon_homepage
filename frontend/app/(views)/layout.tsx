@@ -1,8 +1,12 @@
 import "../globals.css";
-import type { Viewport } from "next";
+import type { Metadata, Viewport } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SplashScreen from "@/components/SplashScreen";
+import { rootMetadata } from "@/lib/seo";
+
+// 전역 기본값(페이지에서 덮어씀)
+export const metadata: Metadata = rootMetadata;
 
 export const viewport: Viewport = {
     width: "device-width",

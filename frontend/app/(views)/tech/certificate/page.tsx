@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
 import { asset, stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/tech/certificate");
+export const metadata: Metadata = buildSeoByPath("/tech/certificate", {
+    title: "인증서",
+    description: "KS, ASTM 등 (주)대연 PE 볼밸브·이음관 제품이 획득한 국내외 인증서를 확인하실 수 있습니다.",
+});
 
 const certImages = [
     { img: "01", label: "KS인증" },

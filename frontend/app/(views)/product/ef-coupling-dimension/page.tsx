@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import DefaultPageShell from "@/components/DefaultPageShell";
 import { asset, stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/product/ef-coupling-dimension");
+export const metadata: Metadata = buildSeoByPath("/product/ef-coupling-dimension", {
+    title: "EF 이음관 주요치수",
+    description: "EF 소켓, 엘보, 레듀셔, 티, 엔드캡, 서비스티, 새들 등 (주)대연 전기융착 이음관의 규격별 치수표입니다.",
+});
 
 export default function ProductEfCouplingDimensionPage() {
     return (

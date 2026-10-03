@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
 import { stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/about/index");
+export const metadata: Metadata = buildSeoByPath("/about/index", {
+    title: "회사 소개",
+    description: "가스·수도용 PE 볼밸브와 EF·HF 이음관을 생산하는 배관 부속 전문 제조기업 (주)대연을 소개합니다.",
+});
 
 export default function AboutIndexPage() {
     return (

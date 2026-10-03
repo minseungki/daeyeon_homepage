@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
 import { stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/contact/information");
+export const metadata: Metadata = buildSeoByPath("/contact/information", {
+    title: "문의안내",
+    description: "(주)대연 제품 및 견적 문의 안내. 전화 041-546-9966, 팩스 041-546-9965, 이메일 kevin@daeyoun.kr.",
+});
 
 export default function ContactInformationPage() {
     return (

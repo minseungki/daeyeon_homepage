@@ -24,7 +24,7 @@ export default function SplashScreen() {
                 <div className="splash-logo">
                     <img src={asset("img/home/logo.png")} alt="DAEYOUN" />
                 </div>
-                <h1 className="splash-brand">DAEYOUN</h1>
+                <p className="splash-brand">DAEYOUN</p>
                 <p className="splash-tagline">Connecting the World</p>
                 <div className="splash-progress">
                     <div className="splash-progress-bar" />

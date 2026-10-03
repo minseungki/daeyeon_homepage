@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
 import { stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/about/history");
+export const metadata: Metadata = buildSeoByPath("/about/history", {
+    title: "회사연혁",
+    description: "(주)대연의 설립부터 현재까지 주요 연혁과 성장 과정을 소개합니다.",
+});
 
 export default function AboutHistoryPage() {
     return (

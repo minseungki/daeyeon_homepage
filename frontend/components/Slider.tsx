@@ -63,7 +63,7 @@ export default function Slider({ slides, interval = 5000, title, description }: 
         </div>
 
         <div className="visual-content">
-            <h2>{title}</h2>
+            <h1>{title}</h1>
             <p>{description}</p>
         </div>
 

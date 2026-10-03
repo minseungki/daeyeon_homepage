@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import DefaultPageShell from "@/components/DefaultPageShell";
 import { asset, stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/tech/production-system");
+export const metadata: Metadata = buildSeoByPath("/tech/production-system", {
+    title: "생산시스템",
+    description: "금형 제작부터 사출, 가공, 밸브 조립까지 이어지는 (주)대연의 생산 공정과 설비를 소개합니다.",
+});
 
 export default function TechProductionSystemPage() {
     return (

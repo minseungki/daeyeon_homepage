@@ -3,7 +3,10 @@ import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
 import { stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/about/organization");
+export const metadata: Metadata = buildSeoByPath("/about/organization", {
+    title: "조직도",
+    description: "(주)대연의 조직 구성과 부서별 역할을 안내합니다.",
+});
 
 export default function AboutOrganizationPage() {
     return (

@@ -5,7 +5,10 @@ import KakaoMap from "@/components/KakaoMap";
 import { SITE } from "@/config/site";
 import { stylesheet } from "@/lib/asset";
 
-export const metadata: Metadata = buildSeoByPath("/about/location");
+export const metadata: Metadata = buildSeoByPath("/about/location", {
+    title: "찾아오시는 길",
+    description: "(주)대연 위치 안내. 충남 아산시 도고면 도송로 23, TEL 041-546-9966.",
+});
 
 export default function AboutLocationPage() {
     return (
