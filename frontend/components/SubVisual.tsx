@@ -18,6 +18,7 @@ export default function SubVisual({title, message, pageClass} : subVisualProps) 
                 color: #fff;
                 text-align: center;
                 padding: 0 20px;
+                view-transition-name: sub-visual;
             }
 
             .sub-visual-inner h1 { font-size: 28px; font-weight: 700; letter-spacing: 2px; margin-bottom: 10px; }
@@ -49,7 +50,7 @@ export default function SubVisual({title, message, pageClass} : subVisualProps) 
             <section className={`sub-visual ${pageClass ?? ""}`.trim()}>
                 <div className="sub-visual-inner">
                     <h1>{title}</h1>
-                    <p>{message}</p>
+                    <p style={{display:'none'}}>{message}</p>
                 </div>
             </section>
         </>

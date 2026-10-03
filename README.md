@@ -49,6 +49,7 @@ frontend/
 │  └─ css/                    # css 폴더
 │  └─ img/                    # 이미지 폴더
 │
+├─ .env                       # 초기 생성 필요
 ├─ next.config.js
 ├─ package.json
 └─ tsconfig.json
@@ -126,6 +127,7 @@ export default function Head() {
 ```
 - 카카오맵 키는 GitHub > Settings > Environments 안에 설정되어있고
 - 해당 키는 로컬 .env에 넣어서 로컬에서 사용
+- 키 확인은 카카오 developer > 플랫폼 키 > 자바스크립트 키 
 
 ### 유튜브 영상
 - /components/YouTubeEmbed.tsx 파일을 이용하여 생성한다.

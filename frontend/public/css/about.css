@@ -290,7 +290,8 @@
     .org-structure-layout::before {
         display: block; content: '';
         position: absolute; top: 0;
-        left: calc(12.5% + 16px); right: calc(12.5% + 16px);
+        /* 4열(gap 20px) 그리드에서 첫/마지막 본부 중앙 = 12.5% - 7.5px */
+        left: calc(12.5% - 7.5px); right: calc(12.5% - 7.5px);
         height: 2px; background: #c8d8ea;
     }
     .org-structure-layout::after {

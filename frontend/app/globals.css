@@ -23,7 +23,7 @@ ul { list-style: none; }
 
 /* 본문 레이아웃 — mobile base (360px) */
 .container { max-width: 1400px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
-.content-wrap { padding-top: 60px; padding-bottom: 60px; }
+.content-wrap { padding-top: 60px; padding-bottom: 60px; view-transition-name: page-content; }
 
 /* --- 헤더 공통 스타일 — mobile base (70px) --- */
 .header {
@@ -325,4 +325,41 @@ ul { list-style: none; }
 [data-scroll="more"] {
     -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent);
     mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent);
+}
+
+/* 페이지 전환 (View Transitions API, app/ViewTransitionHandler.tsx) */
+::view-transition-old(root) {
+    animation: 200ms ease-out both vt-fade-out;
+}
+::view-transition-new(root) {
+    animation: 300ms ease-out both vt-fade-in;
+}
+
+::view-transition-old(page-content) {
+    animation: 150ms ease-out both vt-fade-out;
+}
+::view-transition-new(page-content) {
+    animation: 350ms ease-out both vt-slide-in;
+}
+
+@keyframes vt-fade-in {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+@keyframes vt-fade-out {
+    from { opacity: 1; }
+    to { opacity: 0; }
+}
+@keyframes vt-slide-in {
+    from { opacity: 0; transform: translateY(24px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    ::view-transition-old(root),
+    ::view-transition-new(root),
+    ::view-transition-old(page-content),
+    ::view-transition-new(page-content) {
+        animation: none;
+    }
 }

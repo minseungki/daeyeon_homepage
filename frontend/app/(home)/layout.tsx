@@ -3,6 +3,7 @@ import type { Metadata, Viewport } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SplashScreen from "@/components/SplashScreen";
+import ViewTransitionHandler from "@/app/ViewTransitionHandler";
 import { rootMetadata } from "@/lib/seo";
 import { notoSansKr } from "@/lib/fonts";
 import React from "react";
@@ -26,6 +27,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             </head>
             <body>
                 <SplashScreen />
+                <ViewTransitionHandler />
                 <Header />
                 <main>{children}</main>
                 <Footer />
