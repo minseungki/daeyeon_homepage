@@ -13,6 +13,8 @@ const siteUrl = (process.env.SITE_URL
 const nextConfig: NextConfig = {
   /* config options here */
     trailingSlash: true,
+    // 응답 헤더의 X-Powered-By: Next.js 노출 제거
+    poweredByHeader: false,
     ...(isPages
         ? { output: "export", basePath, assetPrefix: basePath }
         : { basePath }),
