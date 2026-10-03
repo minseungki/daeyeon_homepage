@@ -1,3 +1,5 @@
+import { asset } from "@/lib/asset";
+
 type subVisualProps = {
     title: string;
     message: string;
@@ -28,19 +30,19 @@ export default function SubVisual({title, message, pageClass} : subVisualProps) 
             }
             
             .sub-visual.about {
-                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/about/company_bg.jpg') no-repeat center/cover;
+                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${asset("img/about/company_bg.jpg")}') no-repeat center/cover;
             }
             
             .sub-visual.product {
-                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/product/visual_products.jpg') no-repeat center/cover;
+                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${asset("img/product/visual_products.jpg")}') no-repeat center/cover;
             }
             
             .sub-visual.tech {
-                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/tech/visual_technology.jpg') no-repeat center/cover;
+                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${asset("img/tech/visual_technology.jpg")}') no-repeat center/cover;
             }
             
             .sub-visual.contact {
-                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('img/contact/visual_contact.jpg') no-repeat center/cover;
+                background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('${asset("img/contact/visual_contact.jpg")}') no-repeat center/cover;
             }
             
             `}</style>

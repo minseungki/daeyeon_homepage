@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
+import { asset } from "@/lib/asset";
 
 export const metadata: Metadata = buildSeoByPath("/contact/catalog");
 
 export default function ContactCatalogPage() {
     return (
         <>
-            <link rel="stylesheet" href="css/catalog.css?v=2"/>
+            <link rel="stylesheet" href={asset("css/catalog.css?v=2")}/>
 
             <PageShell subVisual={{
                 title: "카다로그&승인원",
@@ -17,7 +18,7 @@ export default function ContactCatalogPage() {
                 <div className="catalog-grid">
                     <div className="catalog-card">
                         <div className="catalog-thumb">
-                            <img src="img/contact/cardalog_img_01.jpg" alt="대연 국문 카탈로그" />
+                            <img src={asset("img/contact/cardalog_img_01.jpg")} alt="대연 국문 카탈로그" />
                         </div>
                         <div className="catalog-info">
                             <div className="info-top">
@@ -33,7 +34,7 @@ export default function ContactCatalogPage() {
 
                     <div className="catalog-card">
                         <div className="catalog-thumb">
-                            <img src="img/contact/cardalog_img_02.jpg" alt="대연 영문 카탈로그" />
+                            <img src={asset("img/contact/cardalog_img_02.jpg")} alt="대연 영문 카탈로그" />
                         </div>
                         <div className="catalog-info">
                             <div className="info-top">
@@ -49,7 +50,7 @@ export default function ContactCatalogPage() {
 
                     <div className="catalog-card">
                         <div className="catalog-thumb">
-                            <img src="img/contact/cardalog_img_03.jpg" alt="대연 승인원" />
+                            <img src={asset("img/contact/cardalog_img_03.jpg")} alt="대연 승인원" />
                         </div>
                         <div className="catalog-info">
                             <div className="info-top">

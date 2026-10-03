@@ -1,11 +1,12 @@
 import { SITE } from "@/config/site";
+import { asset } from "@/lib/asset";
 
 export default function Footer() {
     return (
         <footer className="footer">
             <div className="container footer-container">
                 <div className="footer-logo">
-                    <img src="img/home/footer_logo.gif" alt="DAEYOUN Co.,Ltd."/>
+                    <img src={asset("img/home/footer_logo.gif")} alt="DAEYOUN Co.,Ltd."/>
                 </div>
 
                 <div className="footer-info">

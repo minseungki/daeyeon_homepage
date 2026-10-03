@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
 import { buildSeoByPath } from "@/lib/seo";
 import DefaultPageShell from "@/components/DefaultPageShell";
+import { asset } from "@/lib/asset";
 
 export const metadata: Metadata = buildSeoByPath("/tech/production-system");
-
-const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "/daeyeon-homepage";
 
 export default function TechProductionSystemPage() {
     return (
         <>
-            <link rel="stylesheet" href="css/tech.css?v=5"/>
+            <link rel="stylesheet" href={asset("css/tech.css?v=5")}/>
 
             <DefaultPageShell subVisual={{
                 title: "생산시스템",
@@ -20,7 +19,7 @@ export default function TechProductionSystemPage() {
                 <section className="tech-section">
                     <div className="txt-title-bar">대연 제조 공정도 (DAEYOUN Product Process)</div>
                     <img
-                        src={`${BASE}/img/tech/production_flow.svg`}
+                        src={asset(`img/tech/production_flow.svg`)}
                         alt="대연 생산 공정도 — 수입검사 → 사출성형 → 기계가공 → 사전조립 → 용착 → 공정검사 → 최종조립 → 포장출하"
                         className="process-diagram"
                     />
@@ -39,26 +38,26 @@ export default function TechProductionSystemPage() {
 
                     <div className="step-title">1. 금형제작</div>
                     <div className="img-grid-2">
-                        <img src={`${BASE}/img/tech/production_img_02.jpg`} alt="금형제작 1"/>
-                        <img src={`${BASE}/img/tech/production_img_03.jpg`} alt="금형제작 2"/>
+                        <img src={asset(`img/tech/production_img_02.jpg`)} alt="금형제작 1"/>
+                        <img src={asset(`img/tech/production_img_03.jpg`)} alt="금형제작 2"/>
                     </div>
 
                     <div className="step-title">2. 사출 설비</div>
                     <div className="img-grid-2">
-                        <img src={`${BASE}/img/tech/production_img_04.jpg`} alt="사출 설비 1"/>
-                        <img src={`${BASE}/img/tech/production_img_05.jpg`} alt="사출 설비 2"/>
+                        <img src={asset(`img/tech/production_img_04.jpg`)} alt="사출 설비 1"/>
+                        <img src={asset(`img/tech/production_img_05.jpg`)} alt="사출 설비 2"/>
                     </div>
 
                     <div className="step-title">3. 가공팀 — 밸브 부품 정밀 자체 가공</div>
                     <div className="img-grid-2">
-                        <img src={`${BASE}/img/tech/production_img_06.jpg`} alt="가공팀 1"/>
-                        <img src={`${BASE}/img/tech/production_img_07.jpg`} alt="가공팀 2"/>
+                        <img src={asset(`img/tech/production_img_06.jpg`)} alt="가공팀 1"/>
+                        <img src={asset(`img/tech/production_img_07.jpg`)} alt="가공팀 2"/>
                     </div>
 
                     <div className="step-title">4. 밸브팀 (조립 및 제품검수시험)</div>
                     <div className="img-grid-2">
-                        <img src={`${BASE}/img/tech/production_img_08.jpg`} alt="밸브팀 1"/>
-                        <img src={`${BASE}/img/tech/production_img_09.jpg`} alt="밸브팀 2"/>
+                        <img src={asset(`img/tech/production_img_08.jpg`)} alt="밸브팀 1"/>
+                        <img src={asset(`img/tech/production_img_09.jpg`)} alt="밸브팀 2"/>
                     </div>
                 </section>
             </DefaultPageShell>

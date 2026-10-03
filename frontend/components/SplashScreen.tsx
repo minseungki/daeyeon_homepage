@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import { asset } from "@/lib/asset";
 
 export default function SplashScreen() {
     const [visible, setVisible] = useState(false);
@@ -21,7 +22,7 @@ export default function SplashScreen() {
         <div className={`splash-overlay${hiding ? " splash-hiding" : ""}`}>
             <div className="splash-content">
                 <div className="splash-logo">
-                    <img src="img/home/logo.png" alt="DAEYOUN" />
+                    <img src={asset("img/home/logo.png")} alt="DAEYOUN" />
                 </div>
                 <h1 className="splash-brand">DAEYOUN</h1>
                 <p className="splash-tagline">Connecting the World</p>

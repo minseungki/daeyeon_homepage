@@ -1,10 +1,9 @@
 import type { Metadata } from "next";
 import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
+import { asset } from "@/lib/asset";
 
 export const metadata: Metadata = buildSeoByPath("/tech/quality-assurance-system");
-
-const BASE = process.env.NEXT_PUBLIC_BASE_PATH ?? "/daeyeon-homepage";
 
 const equipmentRows = [
     { name: "열간내압그래프 시험기", spec: "20kgf / ㎠",       qty: 2, use: "열간내압 시험" },
@@ -32,7 +31,7 @@ const qaItems = [
             "최대 인장 하중 250Ton",
             "최대 외경 1,000mm 제품의 통인장 강도 시험을 통하여 제품의 품질을 보증함.",
         ],
-        mainImg: `${BASE}/img/tech/quality_assurance_img_01.jpg`,
+        mainImg: asset(`img/tech/quality_assurance_img_01.jpg`),
         subImg:  null,
     },
     {
@@ -43,7 +42,7 @@ const qaItems = [
             "사용 가능 포트 : 20Port",
             "최대 외경 1,000mm 제품까지 시험 가능",
         ],
-        mainImg: `${BASE}/img/tech/quality_assurance_img_03.jpg`,
+        mainImg: asset(`img/tech/quality_assurance_img_03.jpg`),
         subImg:  null,
     },
     {
@@ -54,7 +53,7 @@ const qaItems = [
             "중요품목 전수검사를 통한 제품의 품질을 보증",
             "시사출시 QA검사를 통한 제품 품질의 보증",
         ],
-        mainImg: `${BASE}/img/tech/quality_assurance_img_05.jpg`,
+        mainImg: asset(`img/tech/quality_assurance_img_05.jpg`),
         subImg:  null,
     },
     {
@@ -62,7 +61,7 @@ const qaItems = [
         desc: [
             "제품 포장은 마지막 공정이자 품질 보증을 위해 제품 전수 검사를 실시하며 \"저항측정, 외관상태, 열선정열 등\" 검사를 실시하며 합격품만이 포장이 된다.",
         ],
-        mainImg: `${BASE}/img/tech/quality_assurance_img_07.jpg`,
+        mainImg: asset(`img/tech/quality_assurance_img_07.jpg`),
         subImg:  null,
     },
 ];
@@ -70,7 +69,7 @@ const qaItems = [
 export default function TechQualityAssuranceSystemPage() {
     return (
         <>
-            <link rel="stylesheet" href="css/tech.css?v=7"/>
+            <link rel="stylesheet" href={asset("css/tech.css?v=7")}/>
 
             <PageShell subVisual={{
                 title: "품질보증시스템",

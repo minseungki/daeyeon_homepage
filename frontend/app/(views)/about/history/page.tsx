@@ -1,13 +1,14 @@
 import type { Metadata } from "next";
 import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
+import { asset } from "@/lib/asset";
 
 export const metadata: Metadata = buildSeoByPath("/about/history");
 
 export default function AboutHistoryPage() {
     return (
         <>
-            <link rel="stylesheet" href="css/about.css?v=2"/>
+            <link rel="stylesheet" href={asset("css/about.css?v=2")}/>
 
             <PageShell subVisual={{
                 title: "회사연혁",
