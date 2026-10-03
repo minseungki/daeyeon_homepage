@@ -67,13 +67,15 @@ export default function Slider({ slides, interval = 5000, title, description }: 
             <p>{description}</p>
         </div>
 
-        <div className="slider-dots" aria-label="슬라이드 선택">
+        <div className="slider-dots" role="group" aria-label="슬라이드 선택">
             {slides.map((_, i) => (
-                <span
+                <button
+                    type="button"
                     key={i}
                     className={`dot ${current === i ? "active" : ""}`}
                     onClick={() => changeSlide(i)}
                     aria-label={`슬라이드 ${i + 1}`}
+                    aria-current={current === i ? "true" : undefined}
                 />
             ))}
         </div>

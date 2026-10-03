@@ -22,7 +22,7 @@ export default function ProductBallValveDimensionPage() {
                     <h2 className="section-title">가스용, 수도용 PE 볼밸브 주요치수</h2>
                     <div className="sub-section">
                         <h3>ISO · ASTM · JIS 스텐다드 PE 볼 밸브</h3>
-                        <img loading="lazy" decoding="async" src={asset("img/product/pe_02_img_01.jpg")} className="box-img"/>
+                        <img loading="lazy" decoding="async" src={asset("img/product/pe_02_img_01.jpg")} alt="ISO·ASTM·JIS 스탠다드 PE 볼 밸브 제품 및 치수 도면" className="box-img"/>
                         <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <caption>* ISO / KS Standard PE Valve Dimensional Table</caption>
                             <colgroup><col style={{ width: "120px" }}/></colgroup>
@@ -395,7 +395,7 @@ export default function ProductBallValveDimensionPage() {
 
                     <div className="sub-section">
                         <h3>NO - 퍼지 타입 PE 볼 밸브</h3>
-                        <img loading="lazy" decoding="async" src={asset("img/product/pe_02_img_03.jpg")} className="box-img"/>
+                        <img loading="lazy" decoding="async" src={asset("img/product/pe_02_img_03.jpg")} alt="NO-퍼지 타입 PE 볼 밸브 제품 및 치수 도면" className="box-img"/>
                         <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <caption>* ISO / KS No-Purge type PE Valve Dimensional Table</caption>
                             <colgroup>
@@ -482,7 +482,7 @@ export default function ProductBallValveDimensionPage() {
 
                     <div className="sub-section">
                         <h3>1 - 퍼지 타입 PE 볼 밸브</h3>
-                        <img loading="lazy" decoding="async" src={asset("img/product/pe_02_img_04.jpg")} className="box-img"/>
+                        <img loading="lazy" decoding="async" src={asset("img/product/pe_02_img_04.jpg")} alt="1-퍼지 타입 PE 볼 밸브 제품 및 치수 도면" className="box-img"/>
                         <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <caption>* ISO / KS No-Purge type PE Valve Dimensional Table</caption>
                             <colgroup>
@@ -580,7 +580,7 @@ export default function ProductBallValveDimensionPage() {
 
                     <div className="sub-section">
                     <h3>2 - 퍼지 타입 PE 볼 밸브</h3>
-                    <img loading="lazy" decoding="async" src={asset("img/product/pe_02_img_05.jpg")} className="box-img"/>
+                    <img loading="lazy" decoding="async" src={asset("img/product/pe_02_img_05.jpg")} alt="2-퍼지 타입 PE 볼 밸브 제품 및 치수 도면" className="box-img"/>
                     <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                         <caption>* ISO / KS 2-Purge type PE Valve Dimensional Table</caption>
                         <colgroup>
@@ -689,7 +689,7 @@ export default function ProductBallValveDimensionPage() {
 
                     <div className="sub-section">
                 <h3>PE 볼 밸브 (Short type)</h3>
-                <img loading="lazy" decoding="async" src={asset("img/product/pe_02_img_06.jpg")} className="box-img"/>
+                <img loading="lazy" decoding="async" src={asset("img/product/pe_02_img_06.jpg")} alt="PE 볼 밸브 숏 타입 제품 및 치수 도면" className="box-img"/>
                 <table className="vertical-table font-xx-small" style={{ tableLayout: "fixed", minWidth: "900px" }}>
                     <caption>* KS 볼 밸브 (꼬마타입)</caption>
                     <colgroup><col style={{ width: "120px" }}/></colgroup>

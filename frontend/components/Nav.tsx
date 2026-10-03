@@ -82,23 +82,26 @@ export default function Nav() {
             <button
                 className={`hamburger ${mobileOpen ? "open" : ""}`}
                 onClick={() => setMobileOpen(!mobileOpen)}
-                aria-label="메뉴 열기"
+                aria-label={mobileOpen ? "메뉴 닫기" : "메뉴 열기"}
+                aria-expanded={mobileOpen}
+                aria-controls="mobile-nav"
             >
                 <span /><span /><span />
             </button>
 
             {/* 모바일 드로어 */}
             {mobileOpen && (
-                <div className="mobile-nav">
+                <div className="mobile-nav" id="mobile-nav">
                     <ul className="mobile-gnb">
                         {groups.map((g) => (
                             <li key={g.label} className="mobile-group">
                                 <button
                                     className={`mobile-group-btn ${openGroup === g.label ? "active" : ""}`}
                                     onClick={() => setOpenGroup(openGroup === g.label ? null : g.label)}
+                                    aria-expanded={openGroup === g.label}
                                 >
                                     {g.label}
-                                    <span className="arrow">{openGroup === g.label ? "▲" : "▼"}</span>
+                                    <span className="arrow" aria-hidden="true">{openGroup === g.label ? "▲" : "▼"}</span>
                                 </button>
                                 {openGroup === g.label && (
                                     <ul className="mobile-submenu">
