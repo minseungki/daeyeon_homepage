@@ -27,7 +27,6 @@ h3 { font-size: 0.95rem; font-weight: 700; margin: 24px 0 10px; color: #555; }
 /* 테이블 공통 */
 table {
     width: 100%;
-    min-width: 700px;
     border-collapse: separate;
     border-spacing: 0;
     border: 1px solid #e2e6ea;
@@ -41,8 +40,7 @@ th, td {
     border-right: 1px solid #e2e6ea;
     border-bottom: 1px solid #e2e6ea;
     padding: 8px 10px;
-    font-size: 0.70rem;
-    white-space: nowrap;
+    font-size: 0.8rem;
 }
 th:last-child, td:last-child { border-right: none; }
 tbody tr:last-child td { border-bottom: none; }
@@ -62,6 +60,8 @@ tr:hover td { background: #f5f8ff; }
 /* 세로형 테이블 */
 .vertical-table thead th { background: var(--main-blue); color: #fff; text-align: center; }
 .vertical-table td { text-align: center; }
+/* 숫자 치수표는 줄바꿈 없이 내용 폭만큼 확보하고, 화면보다 넓으면 감싼 영역에서 가로 스크롤 */
+.vertical-table th, .vertical-table td { white-space: nowrap; }
 .vertical-table th, .vertical-table td { width: auto; }
 .vertical-table .diagonal-header { width: 110px; }
 .vertical-table caption { text-align: right; font-size: 0.85rem; color: #999; margin-top: 6px; }
@@ -138,8 +138,9 @@ tr:hover td { background: #f5f8ff; }
     border-radius: 4px;
     margin: 16px 0 12px;
 }
-.ef-table { min-width: 380px; }
-.table-caption { font-size: 0.82rem; font-weight: 700; color: #333; margin: 14px 0 6px; padding-left: 4px; }
+/* 열이 적은 EF 치수표는 화면 폭에 맞춘다 (내용이 넘치는 표만 가로 스크롤) */
+.ef-table { min-width: 0; }
+.dim-table-caption { font-size: 0.82rem; font-weight: 700; color: #333; margin: 14px 0 6px; padding-left: 4px; }
 
 /* HF 사이즈 그리드 */
 .size-note { font-size: 0.78rem; color: #888; margin-bottom: 12px; }
@@ -179,23 +180,28 @@ tr:hover td { background: #f5f8ff; }
 
 /* 대각선 헤더 — 360~480px 극소형 */
 @media (max-width: 479px) {
-    th, td { padding: 6px 8px; font-size: 0.66rem; }
+    th, td { padding: 7px 8px; font-size: 0.78rem; }
     .diagonal-header { width: 100px; height: 55px; }
     .vertical-table .diagonal-header { width: 100px; }
     .diagonal-header .right-top,
     .diagonal-header .left-bottom { font-size: 0.58rem; }
 }
 
+/* 1024px 미만: 인라인 table-layout: fixed 를 해제해 열 폭을 내용에 맞춘다 (좁으면 가로 스크롤) */
+@media (max-width: 1023px) {
+    .vertical-table { table-layout: auto !important; }
+}
+
 /* ===== md (768px) ===== */
 @media (min-width: 768px) {
-    th, td { padding: 8px 10px; font-size: 0.70rem; }
+    th, td { padding: 8px 10px; font-size: 0.8rem; }
 }
 
 /* ===== lg (1024px) ===== */
 @media (min-width: 1024px) {
     .info-section { margin-bottom: 70px; }
     .section-title { font-size: 1.2rem; }
-    th, td { padding: 10px 14px; font-size: 0.74rem; white-space: normal; }
+    th, td { padding: 10px 14px; font-size: 0.85rem; white-space: normal; }
     .diagonal-header { width: 120px; height: 60px; }
     .diagonal-header .right-top { top: 8px; right: 10px; }
     .diagonal-header .left-bottom { bottom: 8px; left: 10px; }

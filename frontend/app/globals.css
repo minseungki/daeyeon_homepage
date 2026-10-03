@@ -11,7 +11,7 @@
 /* 기본 초기화 */
 * { margin: 0; padding: 0; box-sizing: border-box; }
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: var(--font-noto-sans-kr), 'Noto Sans KR', sans-serif;
     color: #333;
     line-height: 1.6;
     word-break: keep-all;
@@ -319,4 +319,10 @@ ul { list-style: none; }
         height: 12px;
         background: #333;
     }
+}
+
+/* 가로 스크롤 표: 오른쪽에 내용이 더 있으면 끝을 흐리게 (components/TableScrollHint.tsx) */
+[data-scroll="more"] {
+    -webkit-mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent);
+    mask-image: linear-gradient(to right, #000 calc(100% - 48px), transparent);
 }

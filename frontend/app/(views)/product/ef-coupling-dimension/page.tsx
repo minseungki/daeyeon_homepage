@@ -28,7 +28,7 @@ export default function ProductEfCouplingDimensionPage() {
                         <div className="product-label">EF 소켓</div>
                         <img loading="lazy" decoding="async" src={asset("img/product/ef_02_img_01.jpg")} alt="EF 소켓" className="box-img"/>
 
-                        <p className="table-caption">KS / ISO EF Coupler Dimensional Table (국내사양)</p>
+                        <p className="dim-table-caption">KS / ISO EF Coupler Dimensional Table (국내사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -60,7 +60,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">ASTM EF Coupler Dimensional Table (미국사양)</p>
+                        <p className="dim-table-caption">ASTM EF Coupler Dimensional Table (미국사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -83,7 +83,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">JIS EF Coupler Dimensional Table (일본사양)</p>
+                        <p className="dim-table-caption">JIS EF Coupler Dimensional Table (일본사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -107,7 +107,7 @@ export default function ProductEfCouplingDimensionPage() {
                         <div className="product-label">EF 조합형이음관</div>
                         <img loading="lazy" decoding="async" src={asset("img/product/ef_02_img_02.jpg")} alt="EF 조합형이음관" className="box-img"/>
 
-                        <p className="table-caption">KS / ISO EF Combination Coupler Dimensional Table (국내사양)</p>
+                        <p className="dim-table-caption">KS / ISO EF Combination Coupler Dimensional Table (국내사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "130px" }}/></colgroup>
                             <thead><tr>
@@ -136,7 +136,7 @@ export default function ProductEfCouplingDimensionPage() {
                         <div className="product-label">E/F 90° 엘보</div>
                         <img loading="lazy" decoding="async" src={asset("img/product/ef_02_img_03.jpg")} alt="EF 90도 엘보" className="box-img"/>
 
-                        <p className="table-caption">KS / ISO EF 90° Elbow Dimensional Table (국내사양)</p>
+                        <p className="dim-table-caption">KS / ISO EF 90° Elbow Dimensional Table (국내사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -158,7 +158,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">ASTM EF 90° Elbow Dimensional Table (미국사양)</p>
+                        <p className="dim-table-caption">ASTM EF 90° Elbow Dimensional Table (미국사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -174,7 +174,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">JIS EF 90° Elbow Dimensional Table (일본사양)</p>
+                        <p className="dim-table-caption">JIS EF 90° Elbow Dimensional Table (일본사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -192,7 +192,7 @@ export default function ProductEfCouplingDimensionPage() {
                         <div className="product-label">E/F 45° 엘보</div>
                         <img loading="lazy" decoding="async" src={asset("img/product/ef_02_img_04.jpg")} alt="EF 45도 엘보" className="box-img"/>
 
-                        <p className="table-caption">KS / ISO EF 45° Elbow Dimensional Table (국내사양)</p>
+                        <p className="dim-table-caption">KS / ISO EF 45° Elbow Dimensional Table (국내사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -224,7 +224,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">ASTM EF 45° Elbow Dimensional Table (미국사양)</p>
+                        <p className="dim-table-caption">ASTM EF 45° Elbow Dimensional Table (미국사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -247,7 +247,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">JIS EF 45° Elbow Dimensional Table (일본사양)</p>
+                        <p className="dim-table-caption">JIS EF 45° Elbow Dimensional Table (일본사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -274,7 +274,7 @@ export default function ProductEfCouplingDimensionPage() {
                         <div className="txt-title-bar">레듀셔</div>
                         <img loading="lazy" decoding="async" src={asset("img/product/ef_02_img_05.jpg")} alt="EF 레듀셔" className="box-img"/>
 
-                        <p className="table-caption">KS / ISO EF Reducer Dimensional Table (국내사양) — ①</p>
+                        <p className="dim-table-caption">KS / ISO EF Reducer Dimensional Table (국내사양) — ①</p>
                         <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -306,7 +306,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">KS / ISO EF Reducer Dimensional Table (국내사양) — ②</p>
+                        <p className="dim-table-caption">KS / ISO EF Reducer Dimensional Table (국내사양) — ②</p>
                         <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -335,7 +335,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">ASTM EF Reducer Dimensional Table (미국사양)</p>
+                        <p className="dim-table-caption">ASTM EF Reducer Dimensional Table (미국사양)</p>
                         <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "140px" }}/></colgroup>
                             <thead><tr>
@@ -360,7 +360,7 @@ export default function ProductEfCouplingDimensionPage() {
                         <div className="txt-title-bar">엔드캡</div>
                         <img loading="lazy" decoding="async" src={asset("img/product/ef_02_img_06.jpg")} alt="EF 엔드캡" className="box-img"/>
 
-                        <p className="table-caption">KS / ISO EF End Cap Dimensional Table (국내사양)</p>
+                        <p className="dim-table-caption">KS / ISO EF End Cap Dimensional Table (국내사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -379,7 +379,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">ASTM EF End Cap Dimensional Table (미국사양)</p>
+                        <p className="dim-table-caption">ASTM EF End Cap Dimensional Table (미국사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -401,7 +401,7 @@ export default function ProductEfCouplingDimensionPage() {
                         <div className="txt-title-bar">티</div>
                         <img loading="lazy" decoding="async" src={asset("img/product/ef_02_img_07.jpg")} alt="EF 티" className="box-img"/>
 
-                        <p className="table-caption">KS / ISO EF TEE Dimensional Table (국내사양) — ①</p>
+                        <p className="dim-table-caption">KS / ISO EF TEE Dimensional Table (국내사양) — ①</p>
                         <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -433,7 +433,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">KS / ISO EF TEE Dimensional Table (국내사양) — ②</p>
+                        <p className="dim-table-caption">KS / ISO EF TEE Dimensional Table (국내사양) — ②</p>
                         <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -464,7 +464,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">ASTM EF TEE Dimensional Table (미국사양)</p>
+                        <p className="dim-table-caption">ASTM EF TEE Dimensional Table (미국사양)</p>
                         <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "120px" }}/></colgroup>
                             <thead><tr>
@@ -482,7 +482,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">JIS EF TEE Dimensional Table (일본사양)</p>
+                        <p className="dim-table-caption">JIS EF TEE Dimensional Table (일본사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -504,7 +504,7 @@ export default function ProductEfCouplingDimensionPage() {
                         <div className="txt-title-bar">서비스티</div>
                         <img loading="lazy" decoding="async" src={asset("img/product/ef_02_img_08.jpg")} alt="EF 서비스티" className="box-img"/>
 
-                        <p className="table-caption">KS / ISO EF Tapping Tee Dimensional Table (국내사양) — ①</p>
+                        <p className="dim-table-caption">KS / ISO EF Tapping Tee Dimensional Table (국내사양) — ①</p>
                         <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -525,7 +525,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">KS / ISO EF Tapping Tee Dimensional Table (국내사양) — ②</p>
+                        <p className="dim-table-caption">KS / ISO EF Tapping Tee Dimensional Table (국내사양) — ②</p>
                         <table className="vertical-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -554,7 +554,7 @@ export default function ProductEfCouplingDimensionPage() {
                         <div className="txt-title-bar">스톱퍼 새들</div>
                         <img loading="lazy" decoding="async" src={asset("img/product/ef_02_img_09.jpg")} alt="EF 스톱퍼 새들" className="box-img"/>
 
-                        <p className="table-caption">KS / ISO EF Stopper Saddle Dimensional Table (국내사양)</p>
+                        <p className="dim-table-caption">KS / ISO EF Stopper Saddle Dimensional Table (국내사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>
@@ -570,7 +570,7 @@ export default function ProductEfCouplingDimensionPage() {
                             </tbody>
                         </table>
 
-                        <p className="table-caption">JIS EF Stopper Saddle Dimensional Table (일본사양)</p>
+                        <p className="dim-table-caption">JIS EF Stopper Saddle Dimensional Table (일본사양)</p>
                         <table className="vertical-table ef-table" style={{ tableLayout: "fixed" }}>
                             <colgroup><col style={{ width: "110px" }}/></colgroup>
                             <thead><tr>

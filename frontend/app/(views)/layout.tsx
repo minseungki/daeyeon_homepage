@@ -3,7 +3,9 @@ import type { Metadata, Viewport } from "next";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import SplashScreen from "@/components/SplashScreen";
+import TableScrollHint from "@/components/TableScrollHint";
 import { rootMetadata } from "@/lib/seo";
+import { notoSansKr } from "@/lib/fonts";
 
 // 전역 기본값(페이지에서 덮어씀)
 export const metadata: Metadata = rootMetadata;
@@ -16,7 +18,7 @@ export const viewport: Viewport = {
 
 export default function SiteLayout({ children }: { children: React.ReactNode }) {
     return (
-        <html lang="ko">
+        <html lang="ko" className={notoSansKr.variable}>
             <head>
                 {/* eslint-disable-next-line @next/next/no-sync-scripts */}
                 <script src={`//dapi.kakao.com/v2/maps/sdk.js?appkey=${process.env.NEXT_PUBLIC_KAKAO_APPKEY}&libraries=services&autoload=false`} />
@@ -26,6 +28,7 @@ export default function SiteLayout({ children }: { children: React.ReactNode }) 
                 <Header />
                 <main>{children}</main>
                 <Footer />
+                <TableScrollHint />
             </body>
         </html>
     );

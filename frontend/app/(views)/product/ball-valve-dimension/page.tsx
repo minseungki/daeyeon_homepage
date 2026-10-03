@@ -30,7 +30,7 @@ export default function ProductBallValveDimensionPage() {
                             <tr>
                                 <th className="diagonal-header">
                                     <span className="left-bottom">SIZE</span>
-                                    <span className="right-top">DIMENSON</span>
+                                    <span className="right-top">DIMENSION</span>
                                 </th>
                                 <th>SDR</th>
                                 <th>A</th>
@@ -242,7 +242,7 @@ export default function ProductBallValveDimensionPage() {
                             <tr>
                                 <th className="diagonal-header">
                                     <span className="left-bottom">SIZE</span>
-                                    <span className="right-top">DIMENSON</span>
+                                    <span className="right-top">DIMENSION</span>
                                 </th>
                                 <th>A</th>
                                 <th>B</th>
@@ -351,7 +351,7 @@ export default function ProductBallValveDimensionPage() {
                                 <tr>
                                     <th className="diagonal-header">
                                         <span className="left-bottom">SIZE</span>
-                                        <span className="right-top">DIMENSON</span>
+                                        <span className="right-top">DIMENSION</span>
                                     </th>
                                     <th>A</th>
                                     <th>B</th>
@@ -405,7 +405,7 @@ export default function ProductBallValveDimensionPage() {
                             <tr>
                                 <th className="diagonal-header">
                                     <span className="left-bottom">SIZE</span>
-                                    <span className="right-top">DIMENSON</span>
+                                    <span className="right-top">DIMENSION</span>
                                 </th>
                                 <th>A</th>
                                 <th>B</th>
@@ -492,7 +492,7 @@ export default function ProductBallValveDimensionPage() {
                                 <tr>
                                     <th className="diagonal-header">
                                         <span className="left-bottom">SIZE</span>
-                                        <span className="right-top">DIMENSON</span>
+                                        <span className="right-top">DIMENSION</span>
                                     </th>
                                     <th>A</th>
                                     <th>B</th>
@@ -590,7 +590,7 @@ export default function ProductBallValveDimensionPage() {
                             <tr>
                                 <th className="diagonal-header">
                                     <span className="left-bottom">SIZE</span>
-                                    <span className="right-top">DIMENSON</span>
+                                    <span className="right-top">DIMENSION</span>
                                 </th>
                                 <th>A</th>
                                 <th>B</th>
@@ -697,7 +697,7 @@ export default function ProductBallValveDimensionPage() {
                     <tr>
                         <th className="diagonal-header">
                             <span className="left-bottom">SIZE</span>
-                            <span className="right-top">DIMENSON</span>
+                            <span className="right-top">DIMENSION</span>
                         </th>
                         <th>63mm</th>
                         <th>90mm</th>
