@@ -2,7 +2,7 @@ import { Fragment } from "react";
 import type { Metadata } from "next";
 import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
-import { asset } from "@/lib/asset";
+import { stylesheet } from "@/lib/asset";
 
 export const metadata: Metadata = buildSeoByPath("/tech/manual");
 
@@ -152,7 +152,7 @@ function ManualTable() {
 export default function TechManualPage() {
     return (
         <>
-            <link rel="stylesheet" href={asset("css/tech.css?v=9")}/>
+            <link rel="stylesheet" href={stylesheet("tech.css")}/>
 
             <PageShell subVisual={{
                 title: "사용설명서",

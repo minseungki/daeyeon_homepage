@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { buildSeoByPath } from "@/lib/seo";
 import DefaultPageShell from "@/components/DefaultPageShell";
-import { asset } from "@/lib/asset";
+import { asset, stylesheet } from "@/lib/asset";
 
 export const metadata: Metadata = buildSeoByPath("/product/ball-valve-strength");
 
 export default function ProductBallValveStrengthPage() {
     return (
         <>
-            <link rel="stylesheet" href={asset("css/product.css?v=3")}/>
+            <link rel="stylesheet" href={stylesheet("product.css")}/>
 
             <DefaultPageShell subVisual={{
                 title: "볼밸브의 장점",
@@ -25,7 +25,7 @@ export default function ProductBallValveStrengthPage() {
                         </colgroup>
                         <tr>
                             <th>PE 볼 밸브의 장점</th>
-                            <td><img src={asset("img/product/pe_img_01.jpg")} alt="PE 볼 밸브 장점 이미지"/></td>
+                            <td><img loading="lazy" decoding="async" src={asset("img/product/pe_img_01.jpg")} alt="PE 볼 밸브 장점 이미지"/></td>
                             <td colSpan={2}>
                                 <ul className="check-list">
                                     <li>KS 규격품 (KS M ISO 10933 : 열가소성 플라스틱 수동식 볼 밸브)</li>
@@ -64,10 +64,10 @@ export default function ProductBallValveStrengthPage() {
                     <div className="sub-section">
                         <h3>볼 밸브 부속 재질</h3>
                         <div className="img-container">
-                            <img src={asset("img/product/pe_img_02.jpg")} alt="부속 재질 전체 구조" className="img-full"/>
+                            <img loading="lazy" decoding="async" src={asset("img/product/pe_img_02.jpg")} alt="부속 재질 전체 구조" className="img-full"/>
 
                             <div className="img-center-wrapper">
-                                <img src={asset("img/product/pe_img_03.jpg")} alt="부속 재질 상세" className="img-center"/>
+                                <img loading="lazy" decoding="async" src={asset("img/product/pe_img_03.jpg")} alt="부속 재질 상세" className="img-center"/>
                             </div>
                         </div>
                     </div>
@@ -200,7 +200,7 @@ export default function ProductBallValveStrengthPage() {
 
                 <section className="info-section">
                     <h2 className="section-title">Special Ball Valve</h2>
-                    <img src={asset("img/product/pe_img_04.jpg")} alt="Special Ball Valve"/>
+                    <img loading="lazy" decoding="async" src={asset("img/product/pe_img_04.jpg")} alt="Special Ball Valve"/>
                     <div className="special-section">
                         <p className="special-desc">“고객의 요청 시 제품의 높이, 바이패스, 플랜지 퍼지타입 등 Special 제작이 가능함.”</p>
                     </div>
@@ -208,7 +208,7 @@ export default function ProductBallValveStrengthPage() {
 
                 <section className="info-section">
                     <h2 className="section-title">기어박스 구성도 및 제품규격</h2>
-                    <img src={asset("img/product/pe_img_05.jpg")} alt="기어박스 구성도" className="box-img"/>
+                    <img loading="lazy" decoding="async" src={asset("img/product/pe_img_05.jpg")} alt="기어박스 구성도" className="box-img"/>
                     <div className="sub-section">
                         <h3>제품구조</h3>
                         <table className="vertical-table">

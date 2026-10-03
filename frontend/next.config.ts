@@ -10,7 +10,11 @@ const nextConfig: NextConfig = {
         ? { output: "export", basePath, assetPrefix: basePath }
         : { basePath, trailingSlash: true }),
     // lib/asset.ts 가 basePath 를 알 수 있도록 빌드 시 주입
-    env: { NEXT_PUBLIC_BASE_PATH: basePath },
+    env: {
+        NEXT_PUBLIC_BASE_PATH: basePath,
+        // public/css 캐시 무효화용 버전 (빌드마다 갱신)
+        NEXT_PUBLIC_ASSET_VERSION: Date.now().toString(36),
+    },
 };
 
 export default nextConfig;

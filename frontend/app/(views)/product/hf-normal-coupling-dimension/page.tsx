@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { buildSeoByPath } from "@/lib/seo";
 import DefaultPageShell from "@/components/DefaultPageShell";
-import { asset } from "@/lib/asset";
+import { asset, stylesheet } from "@/lib/asset";
 
 export const metadata: Metadata = buildSeoByPath("/product/hf-normal-coupling-dimension");
 
@@ -18,7 +18,7 @@ function SizeGrid({ sizes }: { sizes: string[] }) {
 export default function ProductHfNormalCouplingDimensionPage() {
     return (
         <>
-            <link rel="stylesheet" href={asset("css/product.css?v=5")}/>
+            <link rel="stylesheet" href={stylesheet("product.css")}/>
 
             <DefaultPageShell subVisual={{
                 title: "HF 일반이음관 주요치수",
@@ -31,7 +31,7 @@ export default function ProductHfNormalCouplingDimensionPage() {
                     <div className="sub-section">
                         <div className="txt-title-bar">90° Elbow</div>
                         <div className="hf-row">
-                            <img src={asset("img/product/hf_img_01.jpg")} alt="90° Elbow"/>
+                            <img loading="lazy" decoding="async" src={asset("img/product/hf_img_01.jpg")} alt="90° Elbow"/>
                             <div>
                                 <p className="size-note">단위 : mm</p>
                                 <SizeGrid sizes={[
@@ -44,7 +44,7 @@ export default function ProductHfNormalCouplingDimensionPage() {
                     <div className="sub-section">
                         <div className="txt-title-bar">45° Elbow</div>
                         <div className="hf-row">
-                            <img src={asset("img/product/hf_img_02.jpg")} alt="45° Elbow"/>
+                            <img loading="lazy" decoding="async" src={asset("img/product/hf_img_02.jpg")} alt="45° Elbow"/>
                             <div>
                                 <p className="size-note">단위 : mm</p>
                                 <SizeGrid sizes={[
@@ -57,7 +57,7 @@ export default function ProductHfNormalCouplingDimensionPage() {
                     <div className="sub-section">
                         <div className="txt-title-bar">End Cap</div>
                         <div className="hf-row">
-                            <img src={asset("img/product/hf_img_03.jpg")} alt="End Cap"/>
+                            <img loading="lazy" decoding="async" src={asset("img/product/hf_img_03.jpg")} alt="End Cap"/>
                             <div>
                                 <p className="size-note">단위 : mm</p>
                                 <SizeGrid sizes={[
@@ -70,7 +70,7 @@ export default function ProductHfNormalCouplingDimensionPage() {
                     <div className="sub-section">
                         <div className="txt-title-bar">TEE</div>
                         <div className="hf-row">
-                            <img src={asset("img/product/hf_img_04.jpg")} alt="TEE"/>
+                            <img loading="lazy" decoding="async" src={asset("img/product/hf_img_04.jpg")} alt="TEE"/>
                             <div>
                                 <p className="size-note">단위 : mm</p>
                                 <SizeGrid sizes={[
@@ -89,7 +89,7 @@ export default function ProductHfNormalCouplingDimensionPage() {
                     <div className="sub-section">
                         <div className="txt-title-bar">Reducer</div>
                         <div className="hf-row">
-                            <img src={asset("img/product/hf_img_05.jpg")} alt="Reducer"/>
+                            <img loading="lazy" decoding="async" src={asset("img/product/hf_img_05.jpg")} alt="Reducer"/>
                             <div>
                                 <p className="size-note">단위 : mm</p>
                                 <SizeGrid sizes={[
@@ -107,7 +107,7 @@ export default function ProductHfNormalCouplingDimensionPage() {
                     <div className="sub-section">
                         <div className="txt-title-bar">Flange Adapter</div>
                         <div className="hf-row">
-                            <img src={asset("img/product/hf_img_06.jpg")} alt="Flange Adapter"/>
+                            <img loading="lazy" decoding="async" src={asset("img/product/hf_img_06.jpg")} alt="Flange Adapter"/>
                             <div>
                                 <p className="size-note">단위 : mm</p>
                                 <SizeGrid sizes={[

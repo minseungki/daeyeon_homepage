@@ -1,14 +1,14 @@
 import type { Metadata } from "next";
 import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
-import { asset } from "@/lib/asset";
+import { asset, stylesheet } from "@/lib/asset";
 
 export const metadata: Metadata = buildSeoByPath("/about/ceo");
 
 export default function AboutCeoPage() {
     return (
         <>
-            <link rel="stylesheet" href={asset("css/about.css?v=2")}/>
+            <link rel="stylesheet" href={stylesheet("about.css")}/>
 
             <PageShell subVisual={{
                 title: "CEO 인사말",
@@ -17,7 +17,7 @@ export default function AboutCeoPage() {
             }}>
                 <section className="ceo-intro-flex">
                     <div className="ceo-image">
-                        <img
+                        <img loading="lazy" decoding="async"
                             src={asset("img/about/greeting_img_01.jpg")}
                             alt={`대표이사 김영식`}
                         />

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
-import { asset } from "@/lib/asset";
+import { asset, stylesheet } from "@/lib/asset";
 
 export const metadata: Metadata = buildSeoByPath("/tech/quality-assurance-system");
 
@@ -69,7 +69,7 @@ const qaItems = [
 export default function TechQualityAssuranceSystemPage() {
     return (
         <>
-            <link rel="stylesheet" href={asset("css/tech.css?v=7")}/>
+            <link rel="stylesheet" href={stylesheet("tech.css")}/>
 
             <PageShell subVisual={{
                 title: "품질보증시스템",
@@ -111,7 +111,7 @@ export default function TechQualityAssuranceSystemPage() {
                     <div className="qa-list">
                         {qaItems.map((item, i) => (
                             <div className="qa-item" key={i}>
-                                <img
+                                <img loading="lazy" decoding="async"
                                     src={item.mainImg}
                                     alt={item.title}
                                     className="qa-item-main-img"
@@ -124,7 +124,7 @@ export default function TechQualityAssuranceSystemPage() {
                                         ))}
                                     </ul>
                                     {item.subImg && (
-                                        <img
+                                        <img loading="lazy" decoding="async"
                                             src={item.subImg}
                                             alt={`${item.title} 상세`}
                                             className="qa-item-sub-img"

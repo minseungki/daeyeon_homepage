@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
-import { asset } from "@/lib/asset";
+import { asset, stylesheet } from "@/lib/asset";
 
 export const metadata: Metadata = buildSeoByPath("/tech/certificate");
 
@@ -52,7 +52,7 @@ const certTableRows: { no: number; category: string; categoryRowspan?: number; s
 export default function TechCertificatePage() {
     return (
         <>
-            <link rel="stylesheet" href={asset("css/tech.css?v=8")}/>
+            <link rel="stylesheet" href={stylesheet("tech.css")}/>
 
             <PageShell subVisual={{
                 title: "인증서",
@@ -65,7 +65,7 @@ export default function TechCertificatePage() {
                     <div className="cert-grid">
                         {certImages.map((c) => (
                             <div className="cert-card" key={c.img}>
-                                <img
+                                <img loading="lazy" decoding="async"
                                     src={asset(`img/tech/certificate_img_${c.img}.jpg`)}
                                     alt={c.label.replace("\n", " ")}
                                 />

@@ -3,14 +3,14 @@ import { buildSeoByPath } from "@/lib/seo";
 import PageShell from "@/components/DefaultPageShell";
 import KakaoMap from "@/components/KakaoMap";
 import { SITE } from "@/config/site";
-import { asset } from "@/lib/asset";
+import { stylesheet } from "@/lib/asset";
 
 export const metadata: Metadata = buildSeoByPath("/about/location");
 
 export default function AboutLocationPage() {
     return (
         <>
-            <link rel="stylesheet" href={asset("css/about.css?v=2")}/>
+            <link rel="stylesheet" href={stylesheet("about.css")}/>
 
             <PageShell subVisual={{
                 title: "찾아오시는 길",
