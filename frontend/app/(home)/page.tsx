@@ -1,3 +1,4 @@
+import Link from "next/link";
 import YouTubeEmbed from "@/components/YouTubeEmbed";
 import { SITE } from "@/config/site";
 import Slider from "@/components/Slider";
@@ -27,20 +28,20 @@ export default function Home() {
                   <h2 className="section-heading">대연의 핵심 제품</h2>
                   <p className="section-desc">축적된 기술과 풍부한 경험을 바탕으로 안전하고 완벽한 제품을 생산 공급하기 위하여 노력하겠습니다.</p>
                   <div className="product-grid">
-                      <div className="product-item">
+                      <Link href="/product/ball-valve-strength" className="product-item">
                           <div className="product-img-box"><img loading="lazy" decoding="async" src={asset("img/home/solution/content_02_list_01.jpg")} alt="PE 볼밸브"/></div>
-                          <div className="product-info"><h4>PE 볼밸브</h4><p>최고의 기밀성과 내구성을 자랑하는 밸브 솔루션</p></div>
-                      </div>
-                      <div className="product-item">
+                          <div className="product-info"><h3>PE 볼밸브</h3><p>최고의 기밀성과 내구성을 자랑하는 밸브 솔루션</p></div>
+                      </Link>
+                      <Link href="/product/ef-coupling-strength" className="product-item">
                           <div className="product-img-box"><img loading="lazy" decoding="async" src={asset("img/home/solution/content_02_list_02.jpg")} alt="EF 이음관"/></div>
-                          <div className="product-info"><h4>EF 이음관</h4><p>정밀한 시공과 안전한 연결을 보장하는 이음 부속</p></div>
-                      </div>
-                      <div className="product-item">
-                          <div className="product-img-box"><img loading="lazy" decoding="async" src={asset("img/home/solution/content_02_list_03.jpg")} alt="PE 볼밸브"/></div>
-                          <div className="product-info"><h4>PE 볼밸브</h4><p>다양한 규격과 규제에 최적화된 고품질 밸브</p></div>
-                      </div>
+                          <div className="product-info"><h3>EF 이음관</h3><p>정밀한 시공과 안전한 연결을 보장하는 이음 부속</p></div>
+                      </Link>
+                      <Link href="/product/hf-normal-coupling-dimension" className="product-item">
+                          <div className="product-img-box"><img loading="lazy" decoding="async" src={asset("img/home/solution/content_02_list_03.jpg")} alt="HF 이음관"/></div>
+                          <div className="product-info"><h3>HF 이음관</h3><p>열융착 방식으로 견고하게 접합되는 다양한 규격의 이음 부속</p></div>
+                      </Link>
                   </div>
-                  <div className="btn-wrap"><a href="#" className="btn-detail">더 알아보기</a></div>
+                  <div className="btn-wrap"><Link href="/product/ball-valve-strength" className="btn-detail">더 알아보기</Link></div>
               </div>
           </section>
           <section className="about-video">
